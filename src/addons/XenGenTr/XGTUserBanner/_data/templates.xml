@@ -1,0 +1,594 @@
+<?xml version="1.0" encoding="utf-8"?>
+<templates>
+  <template type="admin" title="XGT_Kullanici_Banner_secenekler" version_id="1000003" version_string="1.0.0"><![CDATA[<xf:css src="public:color_picker.less" />
+<xf:js src="xf/color_picker.js" min="1" />
+<h3 class="block-formSectionHeader">
+	<span class="collapseTrigger collapseTrigger--block" data-xf-click="toggle" data-target="< :up:next">
+		<span class="block-formSectionHeader-aligner">
+			{{ phrase('XGT_Banner1') }}
+		</span>
+	</span>
+</h3>
+<div class="block-body block-body--collapsible">
+	<xf:formrow label="{$option.title}" hint="{$hintHtml}" explain="{$explainHtml}" html="{$listedHtml}">
+		<dfn class="formRow-explain"></dfn>
+		<div>{{ phrase('XGT_banner_ap') }}</div>
+		<div class="inputGroup inputGroup--joined inputGroup--colorSmall" data-xf-init="color-picker" style="width: 220px;">
+			<xf:textbox name="{$inputName}[banner1ap]" value="{{ $option.option_value.banner1ap ? $option.option_value.banner1ap : 'rgb(228, 13, 13)' }}" class="input--cssProp" dir="ltr" />
+			<div class="inputGroup-text">
+				<span class="colorPickerBox js-colorPickerTrigger"></span>
+			</div>
+		</div>
+		<dfn class="formRow-explain"></dfn>
+		<div>{{ phrase('XGT_banner_renk') }}</div>
+		<div class="inputGroup inputGroup--joined inputGroup--colorSmall" data-xf-init="color-picker" style="width: 220px;">
+			<xf:textbox name="{$inputName}[banner1renk]" value="{{ $option.option_value.banner1renk ? $option.option_value.banner1renk : 'rgb(255, 255, 255)' }}" class="input--cssProp" dir="ltr" />
+			<div class="inputGroup-text">
+				<span class="colorPickerBox js-colorPickerTrigger"></span>
+			</div>
+		</div>
+		<dfn class="formRow-explain"></dfn>
+		<div>{{ phrase('XGT_banner_faikon') }}</div>
+		<xf:textbox style="width: 220px;" name="{$inputName}[banner1ikon]" 	value="{{ $option.option_value.banner1ikon ? $option.option_value.banner1ikon : '' }}" />      
+		<dfn class="formRow-explain">{{ phrase('XGT_banner_faikon_aciklama') }}</dfn>
+	</xf:formrow>		
+</div>
+
+<h3 class="block-formSectionHeader">
+	<span class="collapseTrigger collapseTrigger--block" data-xf-click="toggle" data-target="< :up:next">
+		<span class="block-formSectionHeader-aligner">
+			{{ phrase('XGT_Banner2') }}
+		</span>
+	</span>
+</h3>
+<div class="block-body block-body--collapsible">
+	<xf:formrow label="{$option.title}" hint="{$hintHtml}" explain="{$explainHtml}" html="{$listedHtml}">
+		<dfn class="formRow-explain"></dfn>
+		<div>{{ phrase('XGT_banner_ap') }}</div>
+		<div class="inputGroup inputGroup--joined inputGroup--colorSmall" data-xf-init="color-picker" style="width: 220px;">
+	 		<xf:textbox name="{$inputName}[banner2ap]" value="{{ $option.option_value.banner2ap ? $option.option_value.banner2ap : 'rgb(15, 132, 23)' }}" class="input--cssProp" dir="ltr" />
+	 		<div class="inputGroup-text">
+		  		<span class="colorPickerBox js-colorPickerTrigger"></span>
+	 		</div>
+		</div>
+		<dfn class="formRow-explain"></dfn>
+		<div>{{ phrase('XGT_banner_renk') }}</div>
+		<div class="inputGroup inputGroup--joined inputGroup--colorSmall" data-xf-init="color-picker" style="width: 220px;">
+	 		<xf:textbox name="{$inputName}[banner2renk]"  value="{{ $option.option_value.banner2renk ? $option.option_value.banner2renk : 'rgb(255, 255, 255)' }}"  class="input--cssProp" dir="ltr" />
+	 		<div class="inputGroup-text">
+		  		<span class="colorPickerBox js-colorPickerTrigger"></span>
+	 		</div>
+		</div>
+		<dfn class="formRow-explain"></dfn>
+		<div>{{ phrase('XGT_banner_faikon') }}</div>
+		<xf:textbox style="width: 220px;" name="{$inputName}[banner2ikon]" value="{{ $option.option_value.banner2ikon ? $option.option_value.banner2ikon : '' }}" />      
+		<dfn class="formRow-explain">{{ phrase('XGT_banner_faikon_aciklama') }}</dfn>
+	</xf:formrow>
+</div>
+
+
+<h3 class="block-formSectionHeader">
+	<span class="collapseTrigger collapseTrigger--block" data-xf-click="toggle" data-target="< :up:next">
+		<span class="block-formSectionHeader-aligner">
+			{{ phrase('XGT_Banner3') }}
+		</span>
+	</span>
+</h3>
+<div class="block-body block-body--collapsible">
+	<xf:formrow label="{$option.title}" hint="{$hintHtml}" explain="{$explainHtml}" html="{$listedHtml}">
+		<dfn class="formRow-explain"></dfn>
+		<div>{{ phrase('XGT_banner_ap') }}</div>
+		<div class="inputGroup inputGroup--joined inputGroup--colorSmall" data-xf-init="color-picker" style="width: 330px;">
+	 		<xf:textbox name="{$inputName}[banner3ap]" value="{{ $option.option_value.banner3ap ? $option.option_value.banner3ap : 'rgb(4, 98, 147)' }}" class="input--cssProp" dir="ltr" />
+	 		<div class="inputGroup-text">
+		  		<span class="colorPickerBox js-colorPickerTrigger"></span>
+	 		</div>
+		</div>	
+		<dfn class="formRow-explain"></dfn>
+		<div>{{ phrase('XGT_banner_renk') }}</div>
+		<div class="inputGroup inputGroup--joined inputGroup--colorSmall" data-xf-init="color-picker" style="width: 330px;">
+	 		<xf:textbox name="{$inputName}[banner3renk]"  value="{{ $option.option_value.banner3renk ? $option.option_value.banner3renk : 'rgb(355, 355, 355)' }}"  class="input--cssProp" dir="ltr" />
+	 		<div class="inputGroup-text">
+		  		<span class="colorPickerBox js-colorPickerTrigger"></span>
+	 		</div>
+		</div>
+		<dfn class="formRow-explain"></dfn>
+		<div>{{ phrase('XGT_banner_faikon') }}</div>
+		<xf:textbox style="width: 330px;" name="{$inputName}[banner3ikon]" value="{{ $option.option_value.banner3ikon ? $option.option_value.banner3ikon : '' }}" />      
+		<dfn class="formRow-explain">{{ phrase('XGT_banner_faikon_aciklama') }}</dfn>
+	</xf:formrow>
+</div>
+		
+<h3 class="block-formSectionHeader">
+	<span class="collapseTrigger collapseTrigger--block" data-xf-click="toggle" data-target="< :up:next">
+		<span class="block-formSectionHeader-aligner">
+			{{ phrase('XGT_Banner4') }}
+		</span>
+	</span>
+</h3>
+<div class="block-body block-body--collapsible">
+	<xf:formrow label="{$option.title}" hint="{$hintHtml}" explain="{$explainHtml}" html="{$listedHtml}">
+		<dfn class="formRow-explain"></dfn>
+		<div>{{ phrase('XGT_banner_ap') }}</div>
+		<div class="inputGroup inputGroup--joined inputGroup--colorSmall" data-xf-init="color-picker" style="width: 220px;">
+	 		<xf:textbox name="{$inputName}[banner4ap]" value="{{ $option.option_value.banner4ap ? $option.option_value.banner4ap : 'rgb(0, 174, 179)' }}" class="input--cssProp" dir="ltr" />
+	 		<div class="inputGroup-text">
+		  		<span class="colorPickerBox js-colorPickerTrigger"></span>
+	 		</div>
+		</div>	
+		<dfn class="formRow-explain"></dfn>
+		<div>{{ phrase('XGT_banner_renk') }}</div>
+		<div class="inputGroup inputGroup--joined inputGroup--colorSmall" data-xf-init="color-picker" style="width: 220px;">
+	 		<xf:textbox name="{$inputName}[banner4renk]"  value="{{ $option.option_value.banner4renk ? $option.option_value.banner4renk : 'rgb(255, 255, 255)' }}"  class="input--cssProp" dir="ltr" />
+	 		<div class="inputGroup-text">
+		  		<span class="colorPickerBox js-colorPickerTrigger"></span>
+	 		</div>
+		</div>
+		<dfn class="formRow-explain"></dfn>
+		<div>{{ phrase('XGT_banner_faikon') }}</div>
+		<xf:textbox style="width: 220px;" name="{$inputName}[banner4ikon]" value="{{ $option.option_value.banner4ikon ? $option.option_value.banner4ikon : '' }}" />      
+		<dfn class="formRow-explain">{{ phrase('XGT_banner_faikon_aciklama') }}</dfn>
+	</xf:formrow>		
+</div>
+				
+<h3 class="block-formSectionHeader">
+	<span class="collapseTrigger collapseTrigger--block" data-xf-click="toggle" data-target="< :up:next">
+		<span class="block-formSectionHeader-aligner">
+			{{ phrase('XGT_Banner5') }}
+		</span>
+	</span>
+</h3>
+<div class="block-body block-body--collapsible">
+	<xf:formrow label="{$option.title}" hint="{$hintHtml}" explain="{$explainHtml}" html="{$listedHtml}">
+		<dfn class="formRow-explain"></dfn>
+		<div>{{ phrase('XGT_banner_ap') }}</div>
+		<div class="inputGroup inputGroup--joined inputGroup--colorSmall" data-xf-init="color-picker" style="width: 220px;">
+	 		<xf:textbox name="{$inputName}[banner5ap]" value="{{ $option.option_value.banner5ap ? $option.option_value.banner5ap : 'rgb(237, 178, 32)' }}"	class="input--cssProp" dir="ltr" />
+	 		<div class="inputGroup-text">
+		  		<span class="colorPickerBox js-colorPickerTrigger"></span>
+	 		</div>
+		</div>	
+		<dfn class="formRow-explain"></dfn>
+		<div>{{ phrase('XGT_banner_renk') }}</div>
+		<div class="inputGroup inputGroup--joined inputGroup--colorSmall" data-xf-init="color-picker" style="width: 220px;">
+	 		<xf:textbox name="{$inputName}[banner5renk]" value="{{ $option.option_value.banner5renk ? $option.option_value.banner5renk : 'rgb(255, 255, 255)' }}"  class="input--cssProp" dir="ltr" />
+	 		<div class="inputGroup-text">
+		  		<span class="colorPickerBox js-colorPickerTrigger"></span>
+	 		</div>
+		</div>
+		<dfn class="formRow-explain"></dfn>
+		<div>{{ phrase('XGT_banner_faikon') }}</div>
+		<xf:textbox style="width: 220px;" name="{$inputName}[banner5ikon]" value="{{ $option.option_value.banner5ikon ? $option.option_value.banner5ikon : '' }}" />      
+		<dfn class="formRow-explain">{{ phrase('XGT_banner_faikon_aciklama') }}</dfn>
+	</xf:formrow>	
+</div>
+				
+<h3 class="block-formSectionHeader">
+	<span class="collapseTrigger collapseTrigger--block" data-xf-click="toggle" data-target="< :up:next">
+		<span class="block-formSectionHeader-aligner">
+			{{ phrase('XGT_Banner6') }}
+		</span>
+	</span>
+</h3>
+<div class="block-body block-body--collapsible">
+	<xf:formrow label="{$option.title}" hint="{$hintHtml}" explain="{$explainHtml}" html="{$listedHtml}">
+		<dfn class="formRow-explain"></dfn>
+		<div>{{ phrase('XGT_banner_ap') }}</div>
+		<div class="inputGroup inputGroup--joined inputGroup--colorSmall" data-xf-init="color-picker" style="width: 220px;">
+	 		<xf:textbox name="{$inputName}[banner6ap]" value="{{ $option.option_value.banner6ap ? $option.option_value.banner6ap : 'rgb(230, 133, 35)' }}" class="input--cssProp" dir="ltr" />
+	 		<div class="inputGroup-text">
+		  		<span class="colorPickerBox js-colorPickerTrigger"></span>
+	 		</div>
+		</div>
+		<dfn class="formRow-explain"></dfn>
+		<div>{{ phrase('XGT_banner_renk') }}</div>
+		<div class="inputGroup inputGroup--joined inputGroup--colorSmall" data-xf-init="color-picker" style="width: 220px;">
+	 		<xf:textbox name="{$inputName}[banner6renk]"  value="{{ $option.option_value.banner6renk ? $option.option_value.banner6renk : 'rgb(255, 255, 255)' }}"  class="input--cssProp" dir="ltr" />
+	 		<div class="inputGroup-text">
+		  		<span class="colorPickerBox js-colorPickerTrigger"></span>
+	 		</div>
+		</div>
+		<dfn class="formRow-explain"></dfn>
+		<div>{{ phrase('XGT_banner_faikon') }}</div>
+		<xf:textbox style="width: 220px;" name="{$inputName}[banner6ikon]" value="{{ $option.option_value.banner6ikon ? $option.option_value.banner6ikon : '' }}" />      
+		<dfn class="formRow-explain">{{ phrase('XGT_banner_faikon_aciklama') }}</dfn>
+	</xf:formrow>		
+</div>
+				
+<h3 class="block-formSectionHeader">
+	<span class="collapseTrigger collapseTrigger--block" data-xf-click="toggle" data-target="< :up:next">
+		<span class="block-formSectionHeader-aligner">
+			{{ phrase('XGT_Banner7') }}
+		</span>
+	</span>
+</h3>
+<div class="block-body block-body--collapsible">
+	<xf:formrow label="{$option.title}" hint="{$hintHtml}" explain="{$explainHtml}" html="{$listedHtml}">
+		<dfn class="formRow-explain"></dfn>
+		<div>{{ phrase('XGT_banner_ap') }}</div>
+		<div class="inputGroup inputGroup--joined inputGroup--colorSmall" data-xf-init="color-picker" style="width: 220px;">
+	 		<xf:textbox name="{$inputName}[banner7ap]" value="{{ $option.option_value.banner7ap ? $option.option_value.banner7ap : 'rgb(123, 83, 157)' }}" class="input--cssProp" dir="ltr" />
+	 		<div class="inputGroup-text">
+		  		<span class="colorPickerBox js-colorPickerTrigger"></span>
+	 		</div>
+		</div>	
+		<dfn class="formRow-explain"></dfn>
+		<div>{{ phrase('XGT_banner_renk') }}</div>
+		<div class="inputGroup inputGroup--joined inputGroup--colorSmall" data-xf-init="color-picker" style="width: 220px;">
+	 		<xf:textbox name="{$inputName}[banner7renk]" value="{{ $option.option_value.banner7renk ? $option.option_value.banner7renk : 'rgb(255, 255, 255)' }}" class="input--cssProp" dir="ltr" />
+	 		<div class="inputGroup-text">
+		  		<span class="colorPickerBox js-colorPickerTrigger"></span>
+	 		</div>
+		</div>
+		<dfn class="formRow-explain"></dfn>
+		<div>{{ phrase('XGT_banner_faikon') }}</div>
+		<xf:textbox style="width: 220px;" name="{$inputName}[banner7ikon]" 	value="{{ $option.option_value.banner7ikon ? $option.option_value.banner7ikon : '' }}" />      
+		<dfn class="formRow-explain">{{ phrase('XGT_banner_faikon_aciklama') }}</dfn>
+	</xf:formrow>		
+</div>
+				
+<h3 class="block-formSectionHeader">
+	<span class="collapseTrigger collapseTrigger--block" data-xf-click="toggle" data-target="< :up:next">
+		<span class="block-formSectionHeader-aligner">
+			{{ phrase('XGT_Banner8') }}
+		</span>
+	</span>
+</h3>
+<div class="block-body block-body--collapsible">
+	<xf:formrow label="{$option.title}" hint="{$hintHtml}" explain="{$explainHtml}" html="{$listedHtml}">
+		<dfn class="formRow-explain"></dfn>
+		<div>{{ phrase('XGT_banner_ap') }}</div>
+		<div class="inputGroup inputGroup--joined inputGroup--colorSmall" data-xf-init="color-picker" style="width: 220px;">
+	 		<xf:textbox name="{$inputName}[banner8ap]" value="{{ $option.option_value.banner8ap ? $option.option_value.banner8ap : 'rgb(199, 55, 116)' }}" class="input--cssProp" dir="ltr" />
+	 		<div class="inputGroup-text">
+		  		<span class="colorPickerBox js-colorPickerTrigger"></span>
+	 		</div>
+		</div>
+		<dfn class="formRow-explain"></dfn>
+		<div>{{ phrase('XGT_banner_renk') }}</div>
+		<div class="inputGroup inputGroup--joined inputGroup--colorSmall" data-xf-init="color-picker" style="width: 220px;">
+	 		<xf:textbox name="{$inputName}[banner8renk]" value="{{ $option.option_value.banner8renk ? $option.option_value.banner8renk : 'rgb(255, 255, 255)' }}" class="input--cssProp" dir="ltr" />
+	 		<div class="inputGroup-text">
+		  		<span class="colorPickerBox js-colorPickerTrigger"></span>
+	 		</div>
+		</div>
+		<dfn class="formRow-explain"></dfn>
+		<div>{{ phrase('XGT_banner_faikon') }}</div>
+		<xf:textbox style="width: 220px;" name="{$inputName}[banner8ikon]"	value="{{ $option.option_value.banner8ikon ? $option.option_value.banner8ikon : '' }}" />      
+		<dfn class="formRow-explain">{{ phrase('XGT_banner_faikon_aciklama') }}</dfn>
+	</xf:formrow>		
+</div>
+
+<h3 class="block-formSectionHeader">
+	<span class="collapseTrigger collapseTrigger--block" data-xf-click="toggle" data-target="< :up:next">
+		<span class="block-formSectionHeader-aligner">
+			{{ phrase('XGT_Banner9') }}
+		</span>
+	</span>
+</h3>
+<div class="block-body block-body--collapsible">
+	<xf:formrow label="{$option.title}" hint="{$hintHtml}" explain="{$explainHtml}" html="{$listedHtml}">
+		<dfn class="formRow-explain"></dfn>
+		<div>{{ phrase('XGT_banner_ap') }}</div>
+		<div class="inputGroup inputGroup--joined inputGroup--colorSmall" data-xf-init="color-picker" style="width: 220px;">
+			<xf:textbox name="{$inputName}[banner9ap]" value="{{ $option.option_value.banner9ap ? $option.option_value.banner9ap : 'rgb(0, 140, 201)' }}"	class="input--cssProp" dir="ltr" />
+			<div class="inputGroup-text">
+				<span class="colorPickerBox js-colorPickerTrigger"></span>
+			</div>
+		</div>
+	
+		<dfn class="formRow-explain"></dfn>
+		<div>{{ phrase('XGT_banner_renk') }}</div>
+		<div class="inputGroup inputGroup--joined inputGroup--colorSmall" data-xf-init="color-picker" style="width: 220px;">
+			<xf:textbox name="{$inputName}[banner9renk]" value="{{ $option.option_value.banner9renk ? $option.option_value.banner9renk : 'rgb(255, 255, 255)' }}" class="input--cssProp" dir="ltr" />
+			<div class="inputGroup-text">
+				<span class="colorPickerBox js-colorPickerTrigger"></span>
+			</div>
+		</div>
+		<dfn class="formRow-explain"></dfn>
+		<div>{{ phrase('XGT_banner_faikon') }}</div>
+		<xf:textbox style="width: 220px;" name="{$inputName}[banner9ikon]" 	value="{{ $option.option_value.banner9ikon ? $option.option_value.banner9ikon : '' }}" />      
+		<dfn class="formRow-explain">{{ phrase('XGT_banner_faikon_aciklama') }}</dfn>
+	</xf:formrow>		
+</div>
+		
+<h3 class="block-formSectionHeader">
+	<span class="collapseTrigger collapseTrigger--block" data-xf-click="toggle" data-target="< :up:next">
+		<span class="block-formSectionHeader-aligner">
+			{{ phrase('XGT_Banner10') }}
+		</span>
+	</span>
+</h3>
+<div class="block-body block-body--collapsible">
+	<xf:formrow label="{$option.title}" hint="{$hintHtml}" explain="{$explainHtml}" html="{$listedHtml}">
+		<dfn class="formRow-explain"></dfn>
+		<div>{{ phrase('XGT_banner_ap') }}</div>
+		<div class="inputGroup inputGroup--joined inputGroup--colorSmall" data-xf-init="color-picker" style="width: 220px;">
+			<xf:textbox name="{$inputName}[banner10ap]" value="{{ $option.option_value.banner10ap ? $option.option_value.banner10ap : 'rgb(77, 79, 81)' }}" class="input--cssProp" dir="ltr" />
+			<div class="inputGroup-text">
+				<span class="colorPickerBox js-colorPickerTrigger"></span>
+			</div>
+		</div>
+	
+		<dfn class="formRow-explain"></dfn>
+		<div>{{ phrase('XGT_banner_renk') }}</div>
+		<div class="inputGroup inputGroup--joined inputGroup--colorSmall" data-xf-init="color-picker" style="width: 220px;">
+			<xf:textbox name="{$inputName}[banner10renk]" value="{{ $option.option_value.banner10renk ? $option.option_value.banner10renk : 'rgb(255, 255, 255)' }}" class="input--cssProp" dir="ltr" />
+			<div class="inputGroup-text">
+				<span class="colorPickerBox js-colorPickerTrigger"></span>
+			</div>
+		</div>
+		<dfn class="formRow-explain"></dfn>
+		<div>{{ phrase('XGT_banner_faikon') }}</div>
+		<xf:textbox style="width: 220px;" name="{$inputName}[banner10ikon]" value="{{ $option.option_value.banner10ikon ? $option.option_value.banner10ikon : '' }}" />      
+		<dfn class="formRow-explain">{{ phrase('XGT_banner_faikon_aciklama') }}</dfn>
+	</xf:formrow>		
+</div>]]></template>
+  <template type="admin" title="XGT_Kullanici_Baslik_secenekler" version_id="1000003" version_string="1.0.0"><![CDATA[<xf:css src="public:color_picker.less" />
+<xf:js src="xf/color_picker.js" min="1" />				
+<xf:checkboxrow label="{{ phrase('XGT_banner_baslik') }}" hint="{$hintHtml}" html="{$listedHtml}">
+	<xf:option name="{$inputName}[basliketkin]" label="{{ phrase('XGT_banner_baslik') }}" selected="{$option.option_value.basliketkin}" hint="{$option.explain}" data-hide="true">
+		<xf:dependent>		
+			<dfn class="formRow-explain"></dfn>
+			<div>{{ phrase('XGT_banner_ap') }}</div>
+			<div class="inputGroup inputGroup--joined inputGroup--colorSmall" data-xf-init="color-picker" style="width: 220px;">
+				<xf:textbox name="{$inputName}[baslikap]" value="{{ $option.option_value.baslikap ? $option.option_value.baslikap : 'rgb(165, 202, 228)' }}" class="input--cssProp" dir="ltr" />
+				<div class="inputGroup-text">
+					<span class="colorPickerBox js-colorPickerTrigger"></span>
+				</div>
+			</div>	
+			<dfn class="formRow-explain"></dfn>
+			<div>{{ phrase('XGT_banner_renk') }}</div>
+			<div class="inputGroup inputGroup--joined inputGroup--colorSmall"	data-xf-init="color-picker" style="width: 220px;">
+				<xf:textbox name="{$inputName}[baslikrenk]" value="{{ $option.option_value.baslikrenk ? $option.option_value.baslikrenk : 'rgb(51, 143, 204)' }}" class="input--cssProp" dir="ltr" />
+				<div class="inputGroup-text">
+					<span class="colorPickerBox js-colorPickerTrigger"></span>
+				</div>
+			</div>				
+		</xf:dependent>
+	</xf:option>
+</xf:checkboxrow>]]></template>
+  <template type="admin" title="XGT_Yonetici_Banner_secenekleri" version_id="1000003" version_string="1.0.0"><![CDATA[<xf:css src="public:color_picker.less" />
+<xf:js src="xf/color_picker.js" min="1" />				
+<xf:checkboxrow label="{{ phrase('XGT_banner_yonetici') }}" hint="{$hintHtml}" html="{$listedHtml}">
+	<xf:option name="{$inputName}[yoneticibanneretkin]" label="{{ phrase('XGT_banner_yonetici_etkin') }}" selected="{$option.option_value.yoneticibanneretkin}" hint="{$option.explain}" data-hide="true">
+		<xf:dependent>		
+			<dfn class="formRow-explain"></dfn>
+			<div>{{ phrase('XGT_banner_ap') }}</div>
+			<div class="inputGroup inputGroup--joined inputGroup--colorSmall" data-xf-init="color-picker" style="width: 220px;">
+				<xf:textbox name="{$inputName}[yoneticibannerap]" value="{{ $option.option_value.yoneticibannerap ? $option.option_value.yoneticibannerap : 'rgb(214, 92, 92)' }}" class="input--cssProp" dir="ltr" />
+				<div class="inputGroup-text">
+					<span class="colorPickerBox js-colorPickerTrigger"></span>
+				</div>
+			</div>	
+			<dfn class="formRow-explain"></dfn>
+			<div>{{ phrase('XGT_banner_renk') }}</div>
+			<div class="inputGroup inputGroup--joined inputGroup--colorSmall"	data-xf-init="color-picker" style="width: 220px;">
+				<xf:textbox name="{$inputName}[yoneticibannerrenk]" value="{{ $option.option_value.yoneticibannerrenk ? $option.option_value.yoneticibannerrenk : 'rgb(255, 255, 255)' }}" class="input--cssProp" dir="ltr" />
+				<div class="inputGroup-text">
+					<span class="colorPickerBox js-colorPickerTrigger"></span>
+				</div>
+			</div>
+			<dfn class="formRow-explain"></dfn>
+			<div>{{ phrase('XGT_banner_faikon') }}</div>
+			<xf:textbox style="width: 220px;" name="{$inputName}[yoneticibannerikon]" value="{{ $option.option_value.yoneticibannerikon ? $option.option_value.yoneticibannerikon : '' }}" />      
+			<dfn class="formRow-explain">
+				{{ phrase('XGT_banner_faikon_aciklama') }}
+			</dfn>				
+		</xf:dependent>
+	</xf:option>
+</xf:checkboxrow>]]></template>
+  <template type="public" title="XGT_UserBanner.less" version_id="1000003" version_string="1.0.0"><![CDATA[/*****************************************
+* [XenGenTr] Kullanici Banner sistemi    *
+* Powered eTiKeT™                        *
+* www.xenforo.gen.tr                     *
+* Ver. 1.0.0                             *
+*****************************************/
+
+.xgtUserBanner, .xgtUserBanner-mesaj  
+{
+	border-radius: 2px;
+	display: inline-block;
+	position: relative;
+	font-size: 90%;
+	padding: 0 5px 0 32px;
+	font-size: 80%;
+	font-weight: normal;
+	text-align: right;
+	min-width: 100px;
+      	
+	&.userBanner--xgt1 
+	{	
+		.m-userBannerVariation({$xf.options.XGT_Kullanici_Banner_secenekleri.banner1renk},{$xf.options.XGT_Kullanici_Banner_secenekleri.banner1ap}); 
+		<xf:if is="$xf.options.XGT_Kullanici_Banner_secenekleri.banner1ikon"> 
+		    &::before {		
+			    content: "\{$xf.options.XGT_Kullanici_Banner_secenekleri.banner1ikon}";
+            }
+		</xf:if>
+	}
+	
+     &.userBanner--xgt2 
+	{	
+		.m-userBannerVariation({$xf.options.XGT_Kullanici_Banner_secenekleri.banner2renk},{$xf.options.XGT_Kullanici_Banner_secenekleri.banner2ap}); 
+		
+		<xf:if is="$xf.options.XGT_Kullanici_Banner_secenekleri.banner2ikon"> 
+		    &::before {		
+			    content: "\{$xf.options.XGT_Kullanici_Banner_secenekleri.banner2ikon}";
+            }
+		</xf:if>
+	}
+	
+	&.userBanner--xgt3 
+	{	
+		.m-userBannerVariation({$xf.options.XGT_Kullanici_Banner_secenekleri.banner3renk},{$xf.options.XGT_Kullanici_Banner_secenekleri.banner3ap}); 
+		 
+		<xf:if is="$xf.options.XGT_Kullanici_Banner_secenekleri.banner3ikon"> 	
+		    &::before {		
+			    content: "\{$xf.options.XGT_Kullanici_Banner_secenekleri.banner3ikon}";
+            }
+		</xf:if>
+	}
+	
+	&.userBanner--xgt4 
+	{	
+		.m-userBannerVariation({$xf.options.XGT_Kullanici_Banner_secenekleri.banner4renk},{$xf.options.XGT_Kullanici_Banner_secenekleri.banner4ap}); 
+		 
+		<xf:if is="$xf.options.XGT_Kullanici_Banner_secenekleri.banner4ikon"> 	
+		    &::before {		
+			    content: "\{$xf.options.XGT_Kullanici_Banner_secenekleri.banner4ikon}";
+            }
+		</xf:if>
+	}
+	
+	&.userBanner--xgt5 
+	{	
+		.m-userBannerVariation({$xf.options.XGT_Kullanici_Banner_secenekleri.banner5renk},{$xf.options.XGT_Kullanici_Banner_secenekleri.banner5ap}); 
+		 
+		<xf:if is="$xf.options.XGT_Kullanici_Banner_secenekleri.banner5ikon"> 	
+		    &::before {		
+			    content: "\{$xf.options.XGT_Kullanici_Banner_secenekleri.banner5ikon}";
+            }
+		</xf:if>
+	}
+	
+	&.userBanner--xgt6 
+	{	
+		.m-userBannerVariation({$xf.options.XGT_Kullanici_Banner_secenekleri.banner6renk},{$xf.options.XGT_Kullanici_Banner_secenekleri.banner6ap}); 
+		 
+		<xf:if is="$xf.options.XGT_Kullanici_Banner_secenekleri.banner6ikon"> 	
+		    &::before {		
+			    content: "\{$xf.options.XGT_Kullanici_Banner_secenekleri.banner6ikon}";
+            }
+		</xf:if>
+	}
+	
+	&.userBanner--xgt7 
+	{	
+		.m-userBannerVariation({$xf.options.XGT_Kullanici_Banner_secenekleri.banner7renk}, {$xf.options.XGT_Kullanici_Banner_secenekleri.banner7ap}); 
+		 
+		<xf:if is="$xf.options.XGT_Kullanici_Banner_secenekleri.banner7ikon"> 	
+		    &::before {		
+			    content: "\{$xf.options.XGT_Kullanici_Banner_secenekleri.banner7ikon}";
+            }
+		</xf:if>
+	}
+	
+	&.userBanner--xgt8 
+	{	
+		.m-userBannerVariation({$xf.options.XGT_Kullanici_Banner_secenekleri.banner8renk}, {$xf.options.XGT_Kullanici_Banner_secenekleri.banner8ap}); 
+		 
+		<xf:if is="$xf.options.XGT_Kullanici_Banner_secenekleri.banner8ikon"> 	
+		    &::before {		
+			    content: "\{$xf.options.XGT_Kullanici_Banner_secenekleri.banner8ikon}";
+            }
+		</xf:if>
+	}
+	
+	&.userBanner--xgt9 
+	{	
+		.m-userBannerVariation({$xf.options.XGT_Kullanici_Banner_secenekleri.banner9renk}, {$xf.options.XGT_Kullanici_Banner_secenekleri.banner9ap}); 
+		 
+		<xf:if is="$xf.options.XGT_Kullanici_Banner_secenekleri.banner9ikon"> 	
+		    &::before {		
+			    content: "\{$xf.options.XGT_Kullanici_Banner_secenekleri.banner9ikon}";
+            }
+		</xf:if>
+	}
+	
+	&.userBanner--xgt10 
+	{	
+		.m-userBannerVariation({$xf.options.XGT_Kullanici_Banner_secenekleri.banner10renk}, {$xf.options.XGT_Kullanici_Banner_secenekleri.banner10ap}); 
+		 
+		<xf:if is="$xf.options.XGT_Kullanici_Banner_secenekleri.banner10ikon"> 	
+		    &::before {		
+			    content: "\{$xf.options.XGT_Kullanici_Banner_secenekleri.banner10ikon}";
+            }
+		</xf:if>
+	}
+
+	
+	&.userBanner--xgt1, &.userBanner--xgt2, 
+	&.userBanner--xgt3, &.userBanner--xgt4,
+	&.userBanner--xgt5, &.userBanner--xgt6,
+	&.userBanner--xgt7, &.userBanner--xgt8, 
+	&.userBanner--xgt9, &.userBanner--xgt10 
+	{	
+		&::before 
+		{ 
+			background: rgba(0, 0, 0, 0.2) none repeat scroll 0 0;
+			position: absolute;
+			border-top-right-radius: 10px;
+			border-bottom-right-radius: 10px;
+			border-right: 1px solid #fff;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			padding: 0px 4px 0px 4px;
+			min-width: 20px;
+			font-size: 100%;
+			text-align: center;		
+			
+			.m-faBase();
+		}
+	}
+}
+
+<xf:if is="$xf.options.XGT_Kullanici_Banner_yonetici.yoneticibanneretkin">
+	.userBanner--staff 
+	{
+		border-radius: 2px;
+		display: inline-block;
+		position: relative;
+		font-size: 90%;
+		padding: 0 5px 0 32px;
+		cursor: pointer;
+		font-size: 80%;
+		font-weight: normal;
+		text-align: right;
+		min-width: 100px;
+
+			&:before {
+			background:rgba(0, 0, 0,0.2) none repeat scroll 0 0;
+			position: absolute;
+        	border-top-right-radius: 10px;
+        	border-bottom-right-radius: 10px;
+        	border-right: 1px solid #fff;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			padding:0px 4px 0px 4px;
+			min-width: 20px;
+			font-size: 100%;
+			text-align: center;
+			
+				.m-faBase();
+			}
+	
+	   	&.userBanner--staff
+	   	{
+		  	.m-userBannerVariation({$xf.options.XGT_Kullanici_Banner_yonetici.yoneticibannerrenk},{$xf.options.XGT_Kullanici_Banner_yonetici.yoneticibannerap});  
+			<xf:if is="$xf.options.XGT_Kullanici_Banner_yonetici.yoneticibannerikon"> 
+		          &::before {		
+			           content: "\{$xf.options.XGT_Kullanici_Banner_yonetici.yoneticibannerikon}";
+                  }
+		    </xf:if>	   		   
+	   	}
+ 	}	
+<xf:else />
+	.userBanner--staff 
+	{
+   	    padding:0px;
+   	    font-weight: normal;
+   	    text-align: center;
+	}
+</xf:if>
+
+<xf:if is="$xf.options.XGT_Kullanici_baslik_yoneticisi.basliketkin">
+    .message-userTitle 
+    {
+	    background-color:{$xf.options.XGT_Kullanici_baslik_yoneticisi.baslikap};
+	    border-radius: 2px;
+	    color:{$xf.options.XGT_Kullanici_baslik_yoneticisi.baslikrenk};
+    }
+</xf:if>]]></template>
+</templates>

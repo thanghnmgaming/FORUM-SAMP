@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<phrases>
+  <phrase title="option.loadingdelay" version_id="1000010" version_string="1.0.0 Alpha"><![CDATA[[MPL] - Loading Delay]]></phrase>
+  <phrase title="option.loadingload" version_id="2000070" version_string="2.0.1"><![CDATA[Loading Ekran Açılış]]></phrase>
+  <phrase title="option.loadingtext" version_id="1000010" version_string="1.0.0 Alpha"><![CDATA[[MPL]  - Loading]]></phrase>
+  <phrase title="option.loadingtextone" version_id="1000010" version_string="1.0.0 Alpha"><![CDATA[[MPL] - Loading Yazı 1]]></phrase>
+  <phrase title="option_explain.loadingdelay" version_id="1000010" version_string="1.0.0 Alpha"><![CDATA[[MPL] - Loading Delay Açılış Hızını Değiştirebilirsiniz.]]></phrase>
+  <phrase title="option_explain.loadingload" version_id="2000070" version_string="2.0.1"><![CDATA[Loading Ekran Açılış hızı]]></phrase>
+  <phrase title="option_explain.loadingtext" version_id="1000010" version_string="1.0.0 Alpha"><![CDATA[MPL - Loading Yazı Belirleyiniz.]]></phrase>
+  <phrase title="option_explain.loadingtextone" version_id="1000010" version_string="1.0.0 Alpha"><![CDATA[[MPL] - Loading Yazı 1. Yazı Belirleyiniz.]]></phrase>
+  <phrase title="option_group.mploading" version_id="1000010" version_string="1.0.0 Alpha"><![CDATA[[MPL] - Loading]]></phrase>
+  <phrase title="option_group_description.mploading" version_id="1000010" version_string="1.0.0 Alpha"><![CDATA[[MPL] - Loading ile başlangıç sayfanı düzenle]]></phrase>
+  <phrase title="style_prop.loadingtextlogo" version_id="2000070" version_string="2.0.0"><![CDATA[[MPL] - Loading Logo]]></phrase>
+  <phrase title="style_prop.mplheartbeat" version_id="2000070" version_string="2.0.1"><![CDATA[Kalp Atışı]]></phrase>
+  <phrase title="style_prop.mplhizi" version_id="2000070" version_string="2.0.1"><![CDATA[Kalp Hızı Ayarı]]></phrase>
+  <phrase title="style_prop.mplloadingbackground" version_id="1000010" version_string="1.0.0 Alpha"><![CDATA[Loading Arka Plan Rengi]]></phrase>
+  <phrase title="style_prop.mplloadingspinner" version_id="1000010" version_string="1.0.0 Alpha"><![CDATA[Loading Spinner Rengi]]></phrase>
+  <phrase title="style_prop.mplloadingspinnerlogo" version_id="2000070" version_string="2.0.0"><![CDATA[Loading Spinner]]></phrase>
+  <phrase title="style_prop.mplloadingtext" version_id="1000010" version_string="1.0.0 Alpha"><![CDATA[Loading Yazı Rengi]]></phrase>
+  <phrase title="style_prop.mplloadingtextone" version_id="1000010" version_string="1.0.0 Alpha"><![CDATA[Loading Birinci Yazı Rengi]]></phrase>
+  <phrase title="style_prop.mpllogosize" version_id="2000070" version_string="2.0.1"><![CDATA[Logo Boyutu]]></phrase>
+  <phrase title="style_prop_desc.loadingtextlogo" version_id="2000070" version_string="2.0.0"><![CDATA[[MPL] - Loading Yazı logo Belirleyebilirsiniz. Belirleyiniz. 
+
+<strong> Örnek: <Strong> https://i.hizliresim.com/deneme.png]]></phrase>
+  <phrase title="style_prop_desc.mplheartbeat" version_id="2000070" version_string="2.0.1"><![CDATA[Kalp Atışı Seçimi]]></phrase>
+  <phrase title="style_prop_desc.mplhizi" version_id="2000070" version_string="2.0.1"><![CDATA[Kalp Hızı Ayarı düzenlemesi]]></phrase>
+  <phrase title="style_prop_desc.mplloadingbackground" version_id="1000010" version_string="1.0.0 Alpha"><![CDATA[Loading arka plan rengini değiştirebilirsiniz.]]></phrase>
+  <phrase title="style_prop_desc.mplloadingspinner" version_id="1000010" version_string="1.0.0 Alpha"><![CDATA[Loading Spinner Rengini Değiştirebilirsiniz.]]></phrase>
+  <phrase title="style_prop_desc.mplloadingspinnerlogo" version_id="2000070" version_string="2.0.0"><![CDATA[]]></phrase>
+  <phrase title="style_prop_desc.mplloadingtext" version_id="1000010" version_string="1.0.0 Alpha"><![CDATA[Loading Yazı Rengi Değiştirebilirsiniz.]]></phrase>
+  <phrase title="style_prop_desc.mplloadingtextone" version_id="1000010" version_string="1.0.0 Alpha"><![CDATA[Loading Birinci Yazı Rengi Değiştirebilirsiniz.]]></phrase>
+  <phrase title="style_prop_desc.mpllogosize" version_id="2000070" version_string="2.0.1"><![CDATA[Logo Boyutu Ayarı]]></phrase>
+  <phrase title="style_prop_group.mplloading" version_id="1000010" version_string="1.0.0 Alpha"><![CDATA[[MPL] - Loading Style]]></phrase>
+  <phrase title="style_prop_group_desc.mplloading" version_id="1000010" version_string="1.0.0 Alpha"><![CDATA[[MPL] - Loading Style Style Panel]]></phrase>
+</phrases>

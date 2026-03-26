@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<options>
+  <option option_id="XGT_Kullanici_Banner_Kapat" edit_format="onoff" data_type="string">
+    <default_value>1</default_value>
+    <relation group_id="XGT_Kullanici_Banner" display_order="1"/>
+  </option>
+  <option option_id="XGT_Kullanici_Banner_secenekleri" edit_format="template" data_type="array" validation_class="XF\Option\Style" validation_method="triggerStyleUpdate">
+    <default_value>{"banner1ap":"rgb(228, 13, 13)","banner1renk":"rgb(255, 255, 255)","banner1ikon":"f521","banner2ap":"rgb(15, 132, 23)","banner2renk":"rgb(255, 255, 255)","banner2ikon":"f6a5","banner3ap":"rgb(4, 98, 147)","banner3renk":"rgb(255, 255, 255)","banner3ikon":"f6a4","banner4ap":"rgb(0, 174, 179)","banner4renk":"rgb(255, 255, 255)","banner4ikon":"f509","banner5ap":"rgb(237, 178, 32)","banner5renk":"rgb(255, 255, 255)","banner5ikon":"f5a9","banner6ap":"rgb(230, 133, 35)","banner6renk":"rgb(255, 255, 255)","banner6ikon":"f007","banner7ap":"rgb(123, 83, 157)","banner7renk":"rgb(255, 255, 255)","banner7ikon":"f4fc","banner8ap":"rgb(199, 55, 116)","banner8renk":"rgb(255, 255, 255)","banner8ikon":"f221","banner9ap":"rgb(0, 140, 201)","banner9renk":"rgb(255, 255, 255)","banner9ikon":"f222","banner10ap":"rgb(77, 79, 81)","banner10renk":"rgb(255, 255, 255)","banner10ikon":"f4fa"}</default_value>
+    <edit_format_params>XGT_Kullanici_Banner_secenekler</edit_format_params>
+    <sub_options>banner1ap
+banner1renk
+banner1ikon
+banner2ap
+banner2renk
+banner2ikon
+banner3ap
+banner3renk
+banner3ikon
+banner4ap
+banner4renk
+banner4ikon
+banner5ap
+banner5renk
+banner5ikon
+banner6ap
+banner6renk
+banner6ikon
+banner7ap
+banner7renk
+banner7ikon
+banner8ap
+banner8renk
+banner8ikon
+banner9ap
+banner9renk
+banner9ikon
+banner10ap
+banner10renk
+banner10ikon</sub_options>
+    <relation group_id="XGT_Kullanici_Banner" display_order="1000"/>
+  </option>
+  <option option_id="XGT_Kullanici_Banner_yonetici" edit_format="template" data_type="array" validation_class="XF\Option\Style" validation_method="triggerStyleUpdate">
+    <default_value>{"yoneticibanneretkin":"1","yoneticibannerap":"rgb(214, 92, 92)","yoneticibannerrenk":"rgb(255, 255, 255)","yoneticibannerikon":"f005"}</default_value>
+    <edit_format_params>XGT_Yonetici_Banner_secenekleri</edit_format_params>
+    <sub_options>yoneticibanneretkin
+yoneticibannerap
+yoneticibannerrenk
+yoneticibannerikon</sub_options>
+    <relation group_id="XGT_Kullanici_Banner" display_order="100"/>
+  </option>
+  <option option_id="XGT_Kullanici_baslik_yoneticisi" edit_format="template" data_type="array" validation_class="XF\Option\Style" validation_method="triggerStyleUpdate">
+    <default_value>{"basliketkin":"","baslikap":"","baslikrenk":""}</default_value>
+    <edit_format_params>XGT_Kullanici_Baslik_secenekler</edit_format_params>
+    <sub_options>basliketkin
+baslikap
+baslikrenk</sub_options>
+    <relation group_id="XGT_Kullanici_Banner" display_order="200"/>
+  </option>
+</options>

@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<templates>
+  <template type="public" title="node_list_ext" version_id="2100023" version_string="2.1.0 Beta 3"><![CDATA[<xf:macro name="node-icon" arg-node="!" arg-extras="">
+	
+	<xf:set var="$nodeIconRead">
+		<xf:if is="$node.isCustomNode()">
+			<xf:if is="{$node.node_icon_type}=='fa'">
+				<xf:if is="$xf.versionId < 2010000">
+					<i class="fa {$node.node_icon}"></i>
+				<xf:else/>
+					<xf:fa icon="{$node.node_icon}"/>
+				</xf:if>
+			<xf:elseif is="{$node.node_icon_type}=='img'"/>
+				<img src="{$node.node_icon}" alt="{$node.title}"/>
+			<xf:elseif is="{$node.node_icon_type}=='custom'"/>
+				{$node.node_icon|raw}
+			</xf:if>
+		<xf:else/>
+			<span class="node-icon" aria-hidden="true"><i></i></span>
+		</xf:if>
+	</xf:set>
+	
+	<xf:set var="$nodeIconUnread">
+		<xf:if is="$node.isCustomUnreadNode()">
+			<xf:if is="{$node.node_icon_type}=='fa'">
+				<xf:if is="$xf.versionId < 2010000">
+					<i class="fa {$node.node_icon_unread}"></i>
+				<xf:else/>
+					<xf:fa icon="{$node.node_icon_unread}"/>
+				</xf:if>
+			<xf:elseif is="{$node.node_icon_type}=='img'"/>
+				<img src="{$node.node_icon_unread}" alt="{$node.title}"/>
+			<xf:elseif is="{$node.node_icon_type}=='custom'"/>
+				{$node.node_icon_unread|raw}
+			</xf:if>
+		<xf:else/>
+			{$nodeIconRead|raw}
+		</xf:if>
+	</xf:set>
+	
+	<span class="node-icon-ext" aria-hidden="true">
+		<xf:if is="$extras && $extras.hasNew">
+			{$nodeIconUnread|raw}
+		<xf:else/>
+			{$nodeIconRead|raw}
+		</xf:if>
+	</span>
+
+</xf:macro>
+
+<xf:macro name="node-icon-submenu" arg-node="!" arg-link="!" arg-extras="" arg-subNodeLinkClass="">
+	
+	<xf:set var="$nodeIconRead">
+		<xf:if is="$node.isCustomNode()">
+			<xf:if is="{$node.node_icon_type}=='fa'">
+				<a href="{$link}" class="subNodeLink-ext fa--xf {$node.node_icon} {{ $extras && $extras.hasNew ? 'subNodeLink--unread' : '' }}">{$node.title}</a>
+			<xf:elseif is="{$node.node_icon_type}=='img'"/>
+				<a href="{$link}" class="subNodeLink-ext {{ $extras && $extras.hasNew ? 'subNodeLink--unread' : '' }}">
+					<img src="{$node.node_icon}" alt="{$node.title}"/>
+					{$node.title}
+				</a>
+			<xf:elseif is="{$node.node_icon_type}=='custom'"/>
+				<a href="{$link}" class="subNodeLink-ext {{ ($extras && $extras.hasNew) ? 'subNodeLink--unread' : '' }}">
+					{$node.node_icon|raw}{$node.title}
+				</a>
+			</xf:if>
+		<xf:else/>
+			<a href="{$link}" class="subNodeLink {$subNodeLinkClass} {{ $extras && $extras.hasNew ? 'subNodeLink--unread' : '' }}">{$node.title}</a>
+		</xf:if>
+	</xf:set>
+	
+	<xf:set var="$nodeIconUnread">
+		<xf:if is="$node.isCustomUnreadNode()">
+			<xf:if is="{$node.node_icon_type}=='fa'">
+				<a href="{$link}" class="subNodeLink-ext fa--xf {$node.node_icon_unread} {{ $extras && $extras.hasNew ? 'subNodeLink--unread' : '' }}">{$node.title}</a>
+			<xf:elseif is="{$node.node_icon_type}=='img'"/>
+				<a href="{$link}" class="subNodeLink-ext {{ $extras && $extras.hasNew ? 'subNodeLink--unread' : '' }}">
+					<img src="{$node.node_icon}" alt="{$node.title}"/>
+					{$node.title}
+				</a>
+			<xf:elseif is="{$node.node_icon_type}=='custom'"/>
+				<a href="{$link}" class="subNodeLink-ext {{ $extras && $extras.hasNew ? 'subNodeLink--unread' : '' }}">
+					{$node.node_icon_unread|raw}{$node.title}
+				</a>
+			</xf:if>
+		<xf:else/>
+			{$nodeIconRead|raw}
+		</xf:if>
+	</xf:set>
+	
+	<xf:if is="$extras && $extras.hasNew">
+		{$nodeIconUnread|raw}
+	<xf:else/>
+		{$nodeIconRead|raw}
+	</xf:if>
+</xf:macro>]]></template>
+  <template type="public" title="node_list_ext.less" version_id="2100025" version_string="2.1.0 Beta 5"><![CDATA[.node-icon-ext
+{
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+	width: 46px;
+	padding: @xf-paddingLarge 0 @xf-paddingLarge @xf-paddingLarge;
+	color: @xf-nodeIconReadColor;
+
+	i
+	{
+		display: block;
+		line-height: 1.125;
+		font-size: 32px;
+		
+		&:before, &{
+			.node--unread &
+			{
+				opacity: 1;
+				color: @xf-nodeIconUnreadColor;
+			}
+		}
+
+		&.fa:before,
+		&.fas:before,
+		&.far:before,
+		&.fal:before,
+		&.fa--xf:before
+		{
+			.m-faBase();
+		}
+		
+		&.far:before
+		{
+			font-weight: 400;
+		}
+		
+		&.fas:before
+		{
+			font-weight: 900;
+		}
+		
+		&.fal:before
+		{
+			font-weight: 300;
+		}
+	}
+}
+
+.subNodeLink-ext
+{
+	&.fa:before,
+	&.fa--xf:before
+	{
+		display: inline-block;
+		.m-faBase();
+		width: 1em;
+		padding-right: .3em;
+		text-decoration: none;
+
+		color: @xf-nodeIconReadColor;
+	}
+
+	&:hover:before
+	{
+		text-decoration: none;
+	}
+
+	&.subNodeLink--unread
+	{
+		font-weight: @xf-fontWeightHeavy;
+
+		&:before, i
+		{
+			color: @xf-nodeIconUnreadColor;
+		}
+	}
+}
+
+.subNodeMenu
+{
+	.subNodeLink-ext
+	{
+		display: block;
+		padding: @xf-blockPaddingV @xf-blockPaddingH;
+		text-decoration: none;
+		cursor: pointer;
+
+		&:hover
+		{
+			text-decoration: none;
+			background: @xf-contentHighlightBg;
+		}
+		
+		img{
+			height:1em;
+		}
+	}
+	
+	li li .subNodeLink-ext { padding-left: 1.5em; }
+	li li li .subNodeLink-ext { padding-left: 3em; }
+	li li li li .subNodeLink-ext { padding-left: 4.5em; }
+	li li li li li .subNodeLink-ext { padding-left: 6em; }
+	li li li li li li .subNodeLink-ext { padding-left: 7.5em; }
+}]]></template>
+</templates>

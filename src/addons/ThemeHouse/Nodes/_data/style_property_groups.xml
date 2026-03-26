@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<style_property_groups>
+  <style_property_group group_name="thnodes_grid" title="[TH] Nodes: Grid" display_order="2050"/>
+  <style_property_group group_name="thnodes_icons" title="[TH] Nodes: Icons" display_order="2050"/>
+  <style_property_group group_name="thnodes_styling" title="[TH] Nodes: Styling" display_order="2050"/>
+</style_property_groups>

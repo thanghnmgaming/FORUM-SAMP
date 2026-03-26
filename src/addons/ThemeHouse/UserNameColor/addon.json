@@ -1,0 +1,19 @@
+{
+    "legacy_addon_id": "",
+    "title": "[TH] User Name Color",
+    "description": "Allows your users to set a user name color for themselves.",
+    "version_id": 1000170,
+    "version_string": "1.0.1",
+    "dev": "ThemeHouse",
+    "dev_url": "https://www.themehouse.com",
+    "faq_url": "",
+    "support_url": "https://www.themehouse.com/help",
+    "extra_urls": [],
+    "require": {
+        "XF": [
+            2010010,
+            "XenForo 2.1.0+"
+        ]
+    },
+    "icon": "icon.png"
+}

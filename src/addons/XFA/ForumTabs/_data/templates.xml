@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<templates>
+  <template type="admin" title="xfa_ft_tab_delete" version_id="901000090" version_string="1.0.0"><![CDATA[<xf:title>{{ phrase('confirm_action') }}</xf:title>
+
+<xf:form action="{{ link('nodes-tab/delete', $tab) }}" ajax="true" class="block">
+	<div class="block-container">
+		<div class="block-body">
+			<xf:inforow rowtype="confirm">
+				{{ phrase('please_confirm_that_you_want_to_delete_following:') }}
+				<strong><a href="{{ link('nodes-tab/edit', $tab) }}">{$tab.title}</a></strong>
+			</xf:inforow>
+		</div>
+		<xf:submitrow rowtype="simple" icon="delete" />
+	</div>
+	<xf:redirect />
+</xf:form>]]></template>
+  <template type="admin" title="xfa_ft_tab_edit" version_id="901000090" version_string="1.0.0"><![CDATA[<xf:if is="$tab.isInsert()">
+    <xf:title>{{ phrase('xfa_ft_add_tab') }}</xf:title>
+    <xf:else />
+    <xf:title>{{ phrase('xfa_ft_edit_tab:') }} {$tab.title}</xf:title>
+</xf:if>
+
+<xf:pageaction if="$tab.isUpdate()">
+    <xf:button href="{{ link('nodes-tab/delete', $tab) }}" icon="delete" overlay="true" />
+</xf:pageaction>
+
+<xf:form action="{{ link('nodes-tab/save', $tab) }}" class="block" ajax="true">
+    <div class="block-container">
+        <div class="block-body">
+            <xf:textboxrow name="title" value="{$tab.title}"
+                           label="{{ phrase('title') }}" />
+
+            <xf:formrow rowtype="input" label="{{ phrase('xfa_ft_icon') }}">
+                <xf:macro template="public:xfa_fa_picker_macros" name="xfa_fa_picker"
+                      arg-name="icon"
+                      arg-value="{$tab.icon}"
+                      arg-row="{{ false }}" />
+            </xf:formrow>
+
+            <xf:formrow rowtype="input" label="{{ phrase('xfa_ft_applicable_categories') }}" explain="{{ phrase('xfa_ft_select_categories_to_display_in_tab') }}">
+                <ul class="inputList">
+                    <li><xf:select name="category_ids[]" value="{$tab.category_ids}" size="7" multiple="multiple" id="js-applicableForums">
+
+                        <xf:option value="" selected="!{$tab.category_ids}">{{ phrase('(none)') }}</xf:option>
+
+                        <xf:foreach loop="$nodeTree.getFlattened(0)" value="$treeEntry">
+                            <xf:if is="{$treeEntry.record.depth} == 0">
+                                <xf:option value="{$treeEntry.record.node_id}"
+                                       label="{{ repeat('&nbsp;&nbsp;', $treeEntry.depth)|raw }} {$treeEntry.record.title}" />
+                            </xf:if>
+                        </xf:foreach>
+
+                    </xf:select></li>
+
+                    <xf:checkbox>
+                        <xf:option label="{{ phrase('select_all') }}" id="js-selectAllForums" />
+                    </xf:checkbox>
+                </ul>
+            </xf:formrow>
+
+            <xf:checkboxrow rowid="usergroups" name="usergroups[]" value="{$tab.usergroups}"
+                            listclass="listColumns"
+                            label="{{ phrase('xfa_ft_visible_to_usergroups') }}">
+
+                <xf:hint>
+                    <xf:checkbox standalone="true">
+                        <xf:option check-all="#usergroups" label="{{ phrase('select_all') }}" />
+                    </xf:checkbox>
+                </xf:hint>
+                <xf:options source="$userGroups" />
+            </xf:checkboxrow>
+
+
+            <xf:numberboxrow name="order" value="{$tab.order}"
+                             label="{{ phrase('display_order') }}" />
+        </div>
+        <xf:submitrow icon="save" sticky="true" />
+    </div>
+</xf:form>
+
+<xf:js>
+$(function() {
+    $('#js-selectAllForums').click(function(e)
+    {
+        $('#js-applicableForums').find('option:enabled:not([value=""])').prop('selected', this.checked);
+    });
+});
+</xf:js>]]></template>
+  <template type="admin" title="xfa_ft_tabs_list" version_id="901000090" version_string="1.0.0"><![CDATA[<xf:title>{{ phrase('xfa_ft_nodes_tabs') }}</xf:title>
+
+<xf:pageaction>
+    <div class="buttonGroup">
+        <xf:button href="{{ link('nodes-tab/add') }}" icon="add">{{ phrase('xfa_ft_add_tab') }}</xf:button>
+    </div>
+</xf:pageaction>
+
+<xf:if is="{$tabs.count()}">
+<div class="block">
+    <div class="block-outer">
+        <xf:macro template="filter_macros" name="quick_filter" arg-key="{$filterKey}" arg-class="block-outer-opposite" />
+    </div>
+    <div class="block-container">
+        <div class="block-body">
+            <xf:datalist>
+                <xf:foreach loop="$tabs" value="$tab">
+                    <xf:datarow>
+                        <xf:cell class="dataList-cell--link dataList-cell--main" hash="{$tab.tab_id}">
+                            <a href="{{ link('nodes-tab/edit', $tab) }}">
+                                <div class="u-depth0">
+                                    <div class="dataList-mainRow">{$tab.title}</div>
+                                </div>
+                            </a>
+                        </xf:cell>
+                        <xf:delete href="{{ link('nodes-tab/delete', $tab) }}" />
+                    </xf:datarow>
+                </xf:foreach>
+            </xf:datalist>
+        </div>
+    </div>
+</div>
+<xf:else />
+<div class="blockMessage">{{ phrase('no_items_have_been_created_yet') }}</div>
+</xf:if>]]></template>
+  <template type="public" title="xfa_ft_forum_list" version_id="901000291" version_string="1.0.2"><![CDATA[<xf:js src="xfa/forumtabs/forumtabs.js" min="1" />
+
+<div class="block">
+    <div class="block-container">
+        <h2 class="block-tabHeader tabs hScroller xfa-forum-tabs"
+            data-xf-init="xfa-forum-tabs h-scroller"
+            data-panes=".js-ForumTabsContent"
+            data-state="replace"
+            role="tablist">
+                <span class="hScroller-scroll">
+                <xf:foreach loop="{$tabs}" value="{$tab}" i="$i">
+                    <a href="#{{ $tab.getUrl() }}"
+                       class="tabs-tab"
+                       role="tab"
+                       aria-controls="newest" id="{{ $tab.getUrl() }}">
+                        <xf:if is="{$tab.icon}"><i class="{$tab.icon}"></i></xf:if>
+                        {$tab.title}
+                    </a>
+                </xf:foreach>
+                </span>
+        </h2>
+        <ul class="tabPanes js-ForumTabsContent" style="margin-top: 5px;">
+            <xf:foreach loop="{$tabs}" value="{$tab}" i="$i">
+                <li role="tabpanel" id="{{ $tab.getUrl() }}">
+                    <xf:macro template="forum_list" name="node_list" arg-children="{$tabsNodeTrees.{$tab.tab_id}}" arg-extras="{$nodeExtras}" />
+                </li>
+            </xf:foreach>
+        </ul>
+    </div>
+</div>]]></template>
+</templates>

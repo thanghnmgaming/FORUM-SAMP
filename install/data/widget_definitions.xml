@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<widget_definitions>
+  <widget_definition definition_id="dl6_most_liked_posts" definition_class="DL6\MLTP\XF\Widget\MostLikedPosts"/>
+  <widget_definition definition_id="dl6_most_liked_threads" definition_class="DL6\MLTP\XF\Widget\MostLikedThreads"/>
+  <widget_definition definition_id="dl6_most_replied_threads" definition_class="DL6\MLTP\XF\Widget\MostRepliedThreads"/>
+  <widget_definition definition_id="dl6_most_viewed_threads" definition_class="DL6\MLTP\XF\Widget\MostViewedThreads"/>
+</widget_definitions>

@@ -1,0 +1,18 @@
+{
+    "legacy_addon_id": "",
+    "title": "[SVG]Forum logo",
+    "description": "Forum logo text or image",
+    "version_id": 2010771,
+    "version_string": "2.1.7.1",
+    "dev": "Skaiman\u2122",
+    "dev_url": "",
+    "faq_url": "",
+    "support_url": "tg://resolve?domain=Skaiman",
+    "extra_urls": {
+        "Visa QIWI Wallet": "//qiwi.me/skaiman",
+        "Yandex.Money": "//yasobe.ru/na/skaiman"},
+    "require": {
+        "XF": [2010070, "XenForo 2.1+"]
+    },
+    "icon": "resource_skaiman.png"
+}

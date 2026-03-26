@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<template_modifications>
+  <modification type="public" template="message_macros" modification_key="message_macros_xfrm" description="Add Resources to message_macros" execution_order="10" enabled="1" action="str_replace">
+    <find><![CDATA[					<xf:if is="$extras.reaction_score">]]></find>
+    <replace><![CDATA[					<xf:if is="$extras.resource_count AND $user.xfrm_resource_count">
+						<dl class="pairs pairs--justified">
+							<dt>{{ phrase('xfrm_resources') }}</dt>
+							<dd>
+								<a href="{{ link('resources/authors', $user) }}" class="menu-fauxLinkRow-linkRow u-concealed">
+									{$user.xfrm_resource_count|number}
+								</a>
+							</dd>
+						</dl>
+					</xf:if>
+$0]]></replace>
+  </modification>
+  <modification type="admin" template="style_property_template_messageUserElements" modification_key="style_property_template_xfrm" description="Add Resources to style_property_template_messageUserElements" execution_order="10" enabled="1" action="str_replace">
+    <find><![CDATA[	<xf:option name="{$formBaseKey}[reaction_score]" selected="{$property.property_value.reaction_score}">
+		{{ phrase('reaction_score') }}
+	</xf:option>]]></find>
+    <replace><![CDATA[	<xf:option name="{$formBaseKey}[resource_count]" selected="{$property.property_value.resource_count}">
+		{{ phrase('xfrm_resources') }}
+	</xf:option>
+$0]]></replace>
+  </modification>
+</template_modifications>

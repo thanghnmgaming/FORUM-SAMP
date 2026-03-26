@@ -1,0 +1,11 @@
+{
+    "src/addons/DL6/MLTP/addon.json": "ed806aa6d3e4a3bd94186a27f5e642cd0fe3873e56105bb57bd42901c68e3d71",
+    "src/addons/DL6/MLTP/icon.jpg": "cbf1022bf057efab2bf76c69aef914d5f704d17d15e777b0d48ba8c103930cf7",
+    "src/addons/DL6/MLTP/XF/Widget/MostLikedPosts.php": "934622313d9c04803f92a9cc04b86b98c417e5af924396446a28bb5cbf8bb096",
+    "src/addons/DL6/MLTP/XF/Widget/MostLikedThreads.php": "64169306f115681db86495b9e8b7dd087d62e45193ce9bfa667110c14dcd7e91",
+    "src/addons/DL6/MLTP/XF/Widget/MostRepliedThreads.php": "a605a2a92c6c584c10d88a8042fcea184b0c0f331fadb9d3fad697901a75db78",
+    "src/addons/DL6/MLTP/XF/Widget/MostViewedThreads.php": "ce9a380ca31b48b8f656c5a9508f6b136d20ac196ba4a93632df907cee7e0c24",
+    "src/addons/DL6/MLTP/_data/phrases.xml": "564dbb7a8110a41223c5c2b3f3a4c9f955aa85a15f09a27b88fb55dfbbebeff9",
+    "src/addons/DL6/MLTP/_data/templates.xml": "cb6b1222c17713ff3f71b828a49d48121b25495e0701856256714c74f8fb8d9a",
+    "src/addons/DL6/MLTP/_data/widget_definitions.xml": "6f9bcf7397f7743f73dced197ce5a5c1e89a2772d734f785aae226ba9eecc56e"
+}

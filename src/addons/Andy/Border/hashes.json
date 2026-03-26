@@ -1,0 +1,13 @@
+{
+    "src/addons/Andy/Border/addon.json": "e46a842203e293387b1693cf804db5a04736180c3fef80a6e18783669922bfe0",
+    "src/addons/Andy/Border/icon.jpg": "bc8d225016eed56f3d7a0297ea6f6f1cc48a42e38a5c76d01f90439b26199d7b",
+    "src/addons/Andy/Border/XF/Pub/Controller/Post.php": "c09f388871a17df6d5043a71e1c77b06b2c46d8732e1ade25dbc3cae71f22535",
+    "src/addons/Andy/Border/_data/class_extensions.xml": "6b0d198946114c0bf0dbdde399f14ec6d7852d3a1735a55e8916a8bfa6f650ba",
+    "src/addons/Andy/Border/_data/options.xml": "b86c4634d366561a36f558b3322d3982d05a9c048d5c7c52d9a5c7f399f76d1f",
+    "src/addons/Andy/Border/_data/option_groups.xml": "c6ecdffbc3baa722ac1df235e6395e6ffb8987028b28d1eb9329a44f2cc3f942",
+    "src/addons/Andy/Border/_data/permissions.xml": "a5f146eec5d7503768ace5952c722d5be7e93b3c82fa89d9905e2196d6017e80",
+    "src/addons/Andy/Border/_data/permission_interface_groups.xml": "eb68d2f595f5606dd784ac3e7eabf2b4bbf397f88014f981e31750997023ef3c",
+    "src/addons/Andy/Border/_data/phrases.xml": "a36cdebeff5664559b8325c5f0b9cec61eeb6bb387b42f7e76db77271a327796",
+    "src/addons/Andy/Border/_data/templates.xml": "e6470b53f181ff0518efa602694a7d5930a2822f42ad81d27e7c229cc068c776",
+    "src/addons/Andy/Border/_data/template_modifications.xml": "9f4f7aff93615949cc764a3b22d27a90ad7749fd99a7eafa2b20dfea75b831c6"
+}

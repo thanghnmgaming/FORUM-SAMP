@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<style_properties>
+  <style_property property_name="svg_forumLogo" group_name="basic" title="Text Logo style" description="Style text logo." property_type="css" display_order="500" css_components="text,background,padding,extra">
+    <value>{
+    "font-size": "3em",
+    "color": "@xf-textColorAttention"
+}</value>
+  </style_property>
+  <style_property property_name="svg_forumSlogan" group_name="basic" title="Forum slogan style" description="Style forum clogan." property_type="css" display_order="510" css_components="text,background,padding,extra">
+    <value>[]</value>
+  </style_property>
+  <style_property property_name="svg_header_disable" group_name="basic" title="Disable header" description="Disable display of header" property_type="value" value_type="boolean" value_group="svg_forum_logo" display_order="230">
+    <value>0</value>
+  </style_property>
+  <style_property property_name="svg_smallLogoText" group_name="basic" title="Small Logo Text" description="Change small logo text" property_type="value" value_type="string" value_group="svg_forum_logo" display_order="211">
+    <value>"Forum Logo"</value>
+  </style_property>
+  <style_property property_name="svg_smallLogoUrl" group_name="basic" title="Small Logo URL" description="The web path to a small image logo. When you use a text logo." property_type="value" value_type="string" value_group="svg_forum_logo" display_order="210">
+    <value>""</value>
+  </style_property>
+  <style_property property_name="svg_smallLogo_style" group_name="basic" title="Small Logo Style" description="Change style text small logo" property_type="css" display_order="520" css_components="text,background,padding,extra">
+    <value>{
+    "text-decoration": "none"
+}</value>
+  </style_property>
+  <style_property property_name="svg_smallLogo_type" group_name="basic" title="Small Logo Type" description="The choice of a small logo." property_type="value" value_type="radio" value_group="svg_forum_logo" display_order="220">
+    <value_parameters>default={{ phrase('default') }}
+small={{ phrase('small') }}
+text={{ phrase('text') }}</value_parameters>
+    <value>"default"</value>
+  </style_property>
+  <style_property property_name="svg_textLogo" group_name="basic" title="Text Logo" description="Text logo. If specified, the image will not be displayed." property_type="value" value_type="string" value_group="svg_forum_logo" display_order="240">
+    <value>"Forum Logo"</value>
+  </style_property>
+  <style_property property_name="svg_textLogo_align" group_name="basic" title="Logo align" description="Align logo in header." property_type="value" value_type="radio" value_group="svg_forum_logo" display_order="260">
+    <value_parameters>flex-start={{ phrase('left') }}
+center={{ phrase('align_center') }}
+flex-end={{ phrase('right') }}</value_parameters>
+    <value>"flex-start"</value>
+  </style_property>
+  <style_property property_name="svg_textLogo_googleFont" group_name="basic" title="Google Fonts" description="Google font connection." property_type="value" value_type="template" value_group="svg_forum_logo" display_order="231">
+    <value_parameters>template=svg_forumLogo_googleFont_property_template
+type=scalar</value_parameters>
+    <value>""</value>
+  </style_property>
+  <style_property property_name="svg_textLogo_webFont" group_name="basic" title="Web Fonts" description="Cuctom web font connection. Two types of font, woff and woff2, are enough. &lt;a href=&quot;https://transfonter.org/&quot; target=&quot;_blank&quot;&gt;Generator&lt;/a&gt;." property_type="value" value_type="template" value_group="svg_forum_logo" display_order="232">
+    <value_parameters>template=svg_forumLogo_webFont_property_template
+type=scalar</value_parameters>
+    <value>""</value>
+  </style_property>
+  <style_property property_name="svg_textSlogan" group_name="basic" title="Text Slogan" description="The text of the slogan. If specified, will be displayed with an image and a text logo." property_type="value" value_type="string" value_group="svg_forum_logo" display_order="250">
+    <value>"Forum text logo"</value>
+  </style_property>
+  <style_property property_name="svg_textSlogan_location" group_name="basic" title="Slogan location" description="The location of the tagline relative to the logo." property_type="value" value_type="radio" value_group="svg_forum_logo" display_order="270">
+    <value_parameters>row-reverse={{ phrase('left') }}
+row={{ phrase('right') }}
+column={{ phrase('svg_slogan_below_logo') }}
+column-reverse={{ phrase('svg_slogan_above_logo') }}</value_parameters>
+    <value>"row"</value>
+  </style_property>
+</style_properties>

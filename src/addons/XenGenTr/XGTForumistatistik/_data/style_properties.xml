@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<style_properties>
+  <style_property property_name="xgtForumIstatistikBaglantiRenk" group_name="xgtForumIstatistik_gorsel" title="Bağlantılar rengi" description="İstatistik veriler içindeki tüm bağlantıların rengi." property_type="value" value_type="color" value_group="GenelTasarim" display_order="30">
+    <value>"@xf-linkColor"</value>
+  </style_property>
+  <style_property property_name="xgtForumIstatistikFooter" group_name="xgtForumIstatistik_gorsel" title="Footer rengi" property_type="value" value_type="color" value_group="FooterTasarimi" display_order="300">
+    <value>"@xf-linkHoverColor"</value>
+  </style_property>
+  <style_property property_name="xgtForumIstatistikGenelRadius" group_name="xgtForumIstatistik_gorsel" title="Genel radius" property_type="value" value_type="unit" value_group="GenelTasarim" display_order="20">
+    <value>"4px"</value>
+  </style_property>
+  <style_property property_name="xgtForumIstatistikGovdeRenk" group_name="xgtForumIstatistik_gorsel" title="Gövde arka plan rengi" property_type="value" value_type="color" value_group="GenelTasarim" display_order="10">
+    <value>"@xf-contentBg"</value>
+  </style_property>
+  <style_property property_name="xgtForumIstatistikSatir1" group_name="xgtForumIstatistik_gorsel" title="1. Satır rengi" property_type="value" value_type="color" value_group="SatirOzellestirme" display_order="90">
+    <value>"rgb(252, 253, 255)"</value>
+  </style_property>
+  <style_property property_name="xgtForumIstatistikSatir2" group_name="xgtForumIstatistik_gorsel" title="2. Satır rengi" property_type="value" value_type="color" value_group="SatirOzellestirme" display_order="91">
+    <value>"@xf-subNavBg"</value>
+  </style_property>
+  <style_property property_name="xgtForumIstatistikSatirMetinBoyut" group_name="xgtForumIstatistik_gorsel" title="Metin boyutu" property_type="value" value_type="unit" value_group="SatirOzellestirme" display_order="93">
+    <value>"13px"</value>
+  </style_property>
+  <style_property property_name="xgtForumIstatistikSatirSinirRengi" group_name="xgtForumIstatistik_gorsel" title="Sinir rengi" property_type="value" value_type="color" value_group="SatirOzellestirme" display_order="92">
+    <value>"@xf-pageBg"</value>
+  </style_property>
+  <style_property property_name="xgtForumIstatistikSayisalRenk" group_name="xgtForumIstatistik_gorsel" title="Sayısal değer rengi" property_type="value" value_type="color" value_group="GenelTasarim" display_order="40">
+    <value>"@xf-textColorDimmed"</value>
+  </style_property>
+  <style_property property_name="xgtForumIstatistikTabHeader" group_name="xgtForumIstatistik_gorsel" title="Tab header - Renk" property_type="value" value_type="color" value_group="TabHeaderTasarimi" display_order="105">
+    <value>"@xf-linkHoverColor"</value>
+  </style_property>
+  <style_property property_name="xgtForumIstatistikTabHeaderAktif" group_name="xgtForumIstatistik_gorsel" title="Aktif buton - Renk" property_type="value" value_type="color" value_group="TabHeaderTasarimi" display_order="110">
+    <value>"@xf-subNavTextColor"</value>
+  </style_property>
+  <style_property property_name="xgtForumIstatistikTabHeaderAktifBorder" group_name="xgtForumIstatistik_gorsel" title="Alt sınır rengi" property_type="value" value_type="color" value_group="TabHeaderTasarimi" display_order="130">
+    <value>"@xf-textColorAttention"</value>
+  </style_property>
+  <style_property property_name="xgtForumIstatistikTabHeaderAktifMetin" group_name="xgtForumIstatistik_gorsel" title="Aktif buton - Metin" property_type="value" value_type="color" value_group="TabHeaderTasarimi" display_order="111">
+    <value>"@xf-borderColorHighlight"</value>
+  </style_property>
+  <style_property property_name="xgtForumIstatistikTabHeaderBoyut" group_name="xgtForumIstatistik_gorsel" title="Metin boyutu" property_type="value" value_type="unit" value_group="TabHeaderTasarimi" display_order="100">
+    <value>"15px"</value>
+  </style_property>
+  <style_property property_name="xgtForumIstatistikTabHeaderMetin" group_name="xgtForumIstatistik_gorsel" title="Metin rengi" property_type="value" value_type="color" value_group="TabHeaderTasarimi" display_order="104">
+    <value>"@xf-borderColorHighlight"</value>
+  </style_property>
+  <style_property property_name="xgtForumIstatistikTabHeaderSagBorder" group_name="xgtForumIstatistik_gorsel" title="Sağ sınır rengi" property_type="value" value_type="color" value_group="TabHeaderTasarimi" display_order="135">
+    <value>"rgb(64, 116, 153)"</value>
+  </style_property>
+  <style_property property_name="xgtForumIstatistikVurgula" group_name="xgtForumIstatistik_gorsel" title="Vurgu rengi" property_type="value" value_type="color" value_group="SatirOzellestirme" display_order="94">
+    <value>"@xf-linkHoverColor"</value>
+  </style_property>
+  <style_property property_name="xgtForumIstatistikVurgulaMetin" group_name="xgtForumIstatistik_gorsel" title="Vurgu metin rengi" property_type="value" value_type="color" value_group="SatirOzellestirme" display_order="95">
+    <value>"@xf-borderColorHighlight"</value>
+  </style_property>
+  <style_property property_name="xgtForumIstatistik_MiniHeader" group_name="xgtForumIstatistik_gorsel" title="Alt header - Arka plan rengi" property_type="value" value_type="color" value_group="AltHeaderTasarimi" display_order="200">
+    <value>"@xf-linkColor"</value>
+  </style_property>
+  <style_property property_name="xgtForumIstatistik_MiniHeaderMetin" group_name="xgtForumIstatistik_gorsel" title="Alt header metin rengi" property_type="value" value_type="color" value_group="AltHeaderTasarimi" display_order="210">
+    <value>"@xf-chromeTextColor"</value>
+  </style_property>
+</style_properties>

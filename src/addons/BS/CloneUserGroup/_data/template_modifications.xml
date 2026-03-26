@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<template_modifications>
+  <modification type="admin" template="user_group_list" modification_key="bs_cug_user_group_list_clone_button" execution_order="10" enabled="1" action="str_replace">
+    <find><![CDATA[<xf:delete href="{{ link('user-groups/delete', $userGroup) }}" />]]></find>
+    <replace><![CDATA[<xf:action href="{{ link('user-groups/add', null, {'clone_id': $userGroup.user_group_id}) }}">{{ phrase('button.copy') }}</xf:action>
+$0]]></replace>
+  </modification>
+</template_modifications>

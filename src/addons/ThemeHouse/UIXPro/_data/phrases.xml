@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<phrases>
+  <phrase title="admin_navigation.th_uixpro" version_id="1000011" version_string="1.0.0 Alpha 1"><![CDATA[Your report]]></phrase>
+  <phrase title="admin_navigation.uix_pro" version_id="1000011" version_string="1.0.0 Alpha 1"><![CDATA[UI.X Pro]]></phrase>
+  <phrase title="admin_permission.th_uixpro" version_id="1000011" version_string="1.0.0 Alpha 1"><![CDATA[Manage [TH] UI.X Pro]]></phrase>
+  <phrase title="th_uix_pro_rating.addons_installed_active" version_id="1000011" version_string="1.0.0 Alpha 1"><![CDATA[Keep your add-on list manageable]]></phrase>
+  <phrase title="th_uix_pro_rating.addons_installed_resolved" version_id="1000011" version_string="1.0.0 Alpha 1"><![CDATA[Add-on list is manageable]]></phrase>
+  <phrase title="th_uix_pro_rating.cdn_jquery_active" version_id="1000011" version_string="1.0.0 Alpha 1"><![CDATA[Load jQuery from CDN]]></phrase>
+  <phrase title="th_uix_pro_rating.cdn_jquery_resolved" version_id="1000011" version_string="1.0.0 Alpha 1"><![CDATA[jQuery loaded from CDN]]></phrase>
+  <phrase title="th_uix_pro_rating.covers_installed_active" version_id="1000011" version_string="1.0.0 Alpha 1"><![CDATA[Install Covers add-on]]></phrase>
+  <phrase title="th_uix_pro_rating.covers_installed_resolved" version_id="1000011" version_string="1.0.0 Alpha 1"><![CDATA[Covers add-on installed]]></phrase>
+  <phrase title="th_uix_pro_rating.custom_child_style_active" version_id="1000033" version_string="1.0.0 Beta 3"><![CDATA[Create a child style]]></phrase>
+  <phrase title="th_uix_pro_rating.custom_child_style_resolved" version_id="1000033" version_string="1.0.0 Beta 3"><![CDATA[Child style created]]></phrase>
+  <phrase title="th_uix_pro_rating.filters_installed_active" version_id="1000270" version_string="1.0.2"><![CDATA[Install Filters add-on]]></phrase>
+  <phrase title="th_uix_pro_rating.filters_installed_resolved" version_id="1000270" version_string="1.0.2"><![CDATA[Filters add-on installed]]></phrase>
+  <phrase title="th_uix_pro_rating.friendly_urls_active" version_id="1000011" version_string="1.0.0 Alpha 1"><![CDATA[Enable full friendly URLs]]></phrase>
+  <phrase title="th_uix_pro_rating.friendly_urls_resolved" version_id="1000011" version_string="1.0.0 Alpha 1"><![CDATA[Full friendly URLs enabled]]></phrase>
+  <phrase title="th_uix_pro_rating.https_active" version_id="1000011" version_string="1.0.0 Alpha 1"><![CDATA[Install & configure SSL certificate]]></phrase>
+  <phrase title="th_uix_pro_rating.https_resolved" version_id="1000011" version_string="1.0.0 Alpha 1"><![CDATA[SSL certificate installed & configured]]></phrase>
+  <phrase title="th_uix_pro_rating.image_proxy_active" version_id="1000011" version_string="1.0.0 Alpha 1"><![CDATA[Enable image proxy]]></phrase>
+  <phrase title="th_uix_pro_rating.image_proxy_resolved" version_id="1000011" version_string="1.0.0 Alpha 1"><![CDATA[Image proxy enabled]]></phrase>
+  <phrase title="th_uix_pro_rating.imageoptimizer_installed_active" version_id="1000011" version_string="1.0.0 Alpha 1"><![CDATA[Install Image Optimizer add-on]]></phrase>
+  <phrase title="th_uix_pro_rating.imageoptimizer_installed_resolved" version_id="1000011" version_string="1.0.0 Alpha 1"><![CDATA[Image Optimizer add-on installed]]></phrase>
+  <phrase title="th_uix_pro_rating.installandupgrade_installed_active" version_id="1000011" version_string="1.0.0 Alpha 1"><![CDATA[Install Install & Upgrade add-on]]></phrase>
+  <phrase title="th_uix_pro_rating.installandupgrade_installed_resolved" version_id="1000011" version_string="1.0.0 Alpha 1"><![CDATA[Install & Upgrade add-on installed]]></phrase>
+  <phrase title="th_uix_pro_rating.link_proxy_active" version_id="1000011" version_string="1.0.0 Alpha 1"><![CDATA[Enable link proxy]]></phrase>
+  <phrase title="th_uix_pro_rating.link_proxy_resolved" version_id="1000011" version_string="1.0.0 Alpha 1"><![CDATA[Link proxy enabled]]></phrase>
+  <phrase title="th_uix_pro_rating.logo_active" version_id="1000011" version_string="1.0.0 Alpha 1"><![CDATA[Change logo]]></phrase>
+  <phrase title="th_uix_pro_rating.logo_resolved" version_id="1000011" version_string="1.0.0 Alpha 1"><![CDATA[Logo changed]]></phrase>
+  <phrase title="th_uix_pro_rating.meta_description_active" version_id="1000011" version_string="1.0.0 Alpha 1"><![CDATA[Change board meta description]]></phrase>
+  <phrase title="th_uix_pro_rating.meta_description_resolved" version_id="1000033" version_string="1.0.0 Beta 3"><![CDATA[Board meta description customized]]></phrase>
+  <phrase title="th_uix_pro_rating.monetize_installed_active" version_id="1000151" version_string="1.0.1 Release Candidate 1"><![CDATA[Install Monetize add-on]]></phrase>
+  <phrase title="th_uix_pro_rating.monetize_installed_resolved" version_id="1000151" version_string="1.0.1 Release Candidate 1"><![CDATA[Monetize add-on installed]]></phrase>
+  <phrase title="th_uix_pro_rating.nav_items_active" version_id="1000033" version_string="1.0.0 Beta 3"><![CDATA[Too many main navigation items]]></phrase>
+  <phrase title="th_uix_pro_rating.nav_items_resolved" version_id="1000033" version_string="1.0.0 Beta 3"><![CDATA[Main navigation items manageable]]></phrase>
+  <phrase title="th_uix_pro_rating.node_count_active" version_id="1000011" version_string="1.0.0 Alpha 1"><![CDATA[Node count too large]]></phrase>
+  <phrase title="th_uix_pro_rating.node_count_resolved" version_id="1000011" version_string="1.0.0 Alpha 1"><![CDATA[Node count manageable]]></phrase>
+  <phrase title="th_uix_pro_rating.node_root_count_active" version_id="1000011" version_string="1.0.0 Alpha 1"><![CDATA[Root node count too large]]></phrase>
+  <phrase title="th_uix_pro_rating.node_root_count_resolved" version_id="1000011" version_string="1.0.0 Alpha 1"><![CDATA[Root node count manageable]]></phrase>
+  <phrase title="th_uix_pro_rating.nodes_installed_active" version_id="1000011" version_string="1.0.0 Alpha 1"><![CDATA[Install Nodes add-on]]></phrase>
+  <phrase title="th_uix_pro_rating.nodes_installed_resolved" version_id="1000011" version_string="1.0.0 Alpha 1"><![CDATA[Nodes add-on installed]]></phrase>
+  <phrase title="th_uix_pro_rating.oauth_providers_active" version_id="1000033" version_string="1.0.0 Beta 3"><![CDATA[Set up OAuth provider(s)]]></phrase>
+  <phrase title="th_uix_pro_rating.oauth_providers_resolved" version_id="1000033" version_string="1.0.0 Beta 3"><![CDATA[OAuth provider(s) configured]]></phrase>
+  <phrase title="th_uix_pro_rating.permissions_active" version_id="1000011" version_string="1.0.0 Alpha 1"><![CDATA[Configure permissions]]></phrase>
+  <phrase title="th_uix_pro_rating.permissions_resolved" version_id="1000011" version_string="1.0.0 Alpha 1"><![CDATA[Permissions configured]]></phrase>
+  <phrase title="th_uix_pro_rating.php72_active" version_id="1000011" version_string="1.0.0 Alpha 1"><![CDATA[Upgrade to PHP 7.2]]></phrase>
+  <phrase title="th_uix_pro_rating.php72_resolved" version_id="1000070" version_string="1.0.0"><![CDATA[PHP 7.2 installed]]></phrase>
+  <phrase title="th_uix_pro_rating.php7_active" version_id="1000011" version_string="1.0.0 Alpha 1"><![CDATA[Upgrade to PHP 7]]></phrase>
+  <phrase title="th_uix_pro_rating.php7_resolved" version_id="1000011" version_string="1.0.0 Alpha 1"><![CDATA[PHP 7 installed]]></phrase>
+  <phrase title="th_uix_pro_rating.php_ctype_active" version_id="1000011" version_string="1.0.0 Alpha 1"><![CDATA[Install cType extension]]></phrase>
+  <phrase title="th_uix_pro_rating.php_ctype_resolved" version_id="1000011" version_string="1.0.0 Alpha 1"><![CDATA[cType extension installed]]></phrase>
+  <phrase title="th_uix_pro_rating.php_curl_active" version_id="1000011" version_string="1.0.0 Alpha 1"><![CDATA[Install cURL extension]]></phrase>
+  <phrase title="th_uix_pro_rating.php_curl_resolved" version_id="1000011" version_string="1.0.0 Alpha 1"><![CDATA[cURL extension installed]]></phrase>
+  <phrase title="th_uix_pro_rating.php_dom_active" version_id="1000011" version_string="1.0.0 Alpha 1"><![CDATA[Install DOM extension]]></phrase>
+  <phrase title="th_uix_pro_rating.php_dom_resolved" version_id="1000011" version_string="1.0.0 Alpha 1"><![CDATA[DOM extension installed]]></phrase>
+  <phrase title="th_uix_pro_rating.php_gd_active" version_id="1000011" version_string="1.0.0 Alpha 1"><![CDATA[Install GD extension]]></phrase>
+  <phrase title="th_uix_pro_rating.php_gd_resolved" version_id="1000011" version_string="1.0.0 Alpha 1"><![CDATA[GD extension installed]]></phrase>
+  <phrase title="th_uix_pro_rating.php_iconv_active" version_id="1000170" version_string="1.0.1"><![CDATA[Install iconv extension]]></phrase>
+  <phrase title="th_uix_pro_rating.php_iconv_resolved" version_id="1000170" version_string="1.0.1"><![CDATA[iconv extension installed]]></phrase>
+  <phrase title="th_uix_pro_rating.php_json_active" version_id="1000011" version_string="1.0.0 Alpha 1"><![CDATA[Install JSON extension]]></phrase>
+  <phrase title="th_uix_pro_rating.php_json_resolved" version_id="1000011" version_string="1.0.0 Alpha 1"><![CDATA[JSON extension installed]]></phrase>
+  <phrase title="th_uix_pro_rating.php_mysqli_active" version_id="1000011" version_string="1.0.0 Alpha 1"><![CDATA[Install MySQLi extension]]></phrase>
+  <phrase title="th_uix_pro_rating.php_mysqli_resolved" version_id="1000011" version_string="1.0.0 Alpha 1"><![CDATA[MySQLi extension installed]]></phrase>
+  <phrase title="th_uix_pro_rating.php_pcre_active" version_id="1000011" version_string="1.0.0 Alpha 1"><![CDATA[Install PCRE extension]]></phrase>
+  <phrase title="th_uix_pro_rating.php_pcre_resolved" version_id="1000011" version_string="1.0.0 Alpha 1"><![CDATA[PCRE extension installed]]></phrase>
+  <phrase title="th_uix_pro_rating.php_simplexml_active" version_id="1000011" version_string="1.0.0 Alpha 1"><![CDATA[Install SimpleXML extension]]></phrase>
+  <phrase title="th_uix_pro_rating.php_simplexml_resolved" version_id="1000011" version_string="1.0.0 Alpha 1"><![CDATA[SimpleXML extension installed]]></phrase>
+  <phrase title="th_uix_pro_rating.php_spl_active" version_id="1000011" version_string="1.0.0 Alpha 1"><![CDATA[Install SPL extension]]></phrase>
+  <phrase title="th_uix_pro_rating.php_spl_resolved" version_id="1000011" version_string="1.0.0 Alpha 1"><![CDATA[SPL extension installed]]></phrase>
+  <phrase title="th_uix_pro_rating.php_zip_active" version_id="1000170" version_string="1.0.1"><![CDATA[Install Zip extension]]></phrase>
+  <phrase title="th_uix_pro_rating.php_zip_resolved" version_id="1000170" version_string="1.0.1"><![CDATA[Zip extension installed]]></phrase>
+  <phrase title="th_uix_pro_rating.postcomments_installed_active" version_id="1000011" version_string="1.0.0 Alpha 1"><![CDATA[Install Post Comments add-on]]></phrase>
+  <phrase title="th_uix_pro_rating.postcomments_installed_resolved" version_id="1000011" version_string="1.0.0 Alpha 1"><![CDATA[Post Comments add-on installed]]></phrase>
+  <phrase title="th_uix_pro_rating.reactplus_installed_active" version_id="1000151" version_string="1.0.1 Release Candidate 1"><![CDATA[Install Reactions Plus add-on]]></phrase>
+  <phrase title="th_uix_pro_rating.reactplus_installed_resolved" version_id="1000151" version_string="1.0.1 Release Candidate 1"><![CDATA[Reactions Plus add-on installed]]></phrase>
+  <phrase title="th_uix_pro_rating.romanize_urls_active" version_id="1000011" version_string="1.0.0 Alpha 1"><![CDATA[Enable URL romanization]]></phrase>
+  <phrase title="th_uix_pro_rating.romanize_urls_resolved" version_id="1000011" version_string="1.0.0 Alpha 1"><![CDATA[URL romanization enabled]]></phrase>
+  <phrase title="th_uix_pro_rating.topic_count_active" version_id="1000011" version_string="1.0.0 Alpha 1"><![CDATA[Topics count too large]]></phrase>
+  <phrase title="th_uix_pro_rating.topic_count_resolved" version_id="1000011" version_string="1.0.0 Alpha 1"><![CDATA[Topics count manageable]]></phrase>
+  <phrase title="th_uix_pro_rating.trending_installed_active" version_id="1000011" version_string="1.0.0 Alpha 1"><![CDATA[Install Trending add-on]]></phrase>
+  <phrase title="th_uix_pro_rating.trending_installed_resolved" version_id="1000011" version_string="1.0.0 Alpha 1"><![CDATA[Trending add-on installed]]></phrase>
+  <phrase title="th_uix_pro_rating.uix_installed_active" version_id="1000011" version_string="1.0.0 Alpha 1"><![CDATA[Install UI.X add-on]]></phrase>
+  <phrase title="th_uix_pro_rating.uix_installed_resolved" version_id="1000011" version_string="1.0.0 Alpha 1"><![CDATA[UI.X add-on installed]]></phrase>
+  <phrase title="th_uix_pro_rating.uix_pro_style_active" version_id="1000170" version_string="1.0.1"><![CDATA[Install the UI.X Pro style]]></phrase>
+  <phrase title="th_uix_pro_rating.uix_pro_style_resolved" version_id="1000170" version_string="1.0.1"><![CDATA[UI.X Pro style installed]]></phrase>
+  <phrase title="th_uix_pro_rating.uix_style_active" version_id="1000170" version_string="1.0.1"><![CDATA[Install the UI.X style]]></phrase>
+  <phrase title="th_uix_pro_rating.uix_style_resolved" version_id="1000170" version_string="1.0.1"><![CDATA[UI.X style installed]]></phrase>
+  <phrase title="th_uix_pro_rating.user_groups_active" version_id="1000011" version_string="1.0.0 Alpha 1"><![CDATA[Create user groups]]></phrase>
+  <phrase title="th_uix_pro_rating.user_groups_resolved" version_id="1000011" version_string="1.0.0 Alpha 1"><![CDATA[User groups created]]></phrase>
+  <phrase title="th_uix_pro_rating.widgets_active" version_id="1000033" version_string="1.0.0 Beta 3"><![CDATA[Customize widgets]]></phrase>
+  <phrase title="th_uix_pro_rating.widgets_resolved" version_id="1000033" version_string="1.0.0 Beta 3"><![CDATA[Widgets customized]]></phrase>
+  <phrase title="th_uix_pro_rating_hint.addons_installed" version_id="1000170" version_string="1.0.1"><![CDATA[You're currently running {count} add-ons. We recommend to keep your add-on list as small as possible but as large as necessary to keep it maintainable in the foreseeable future, and minimize the risk of running into incompatibilities with future updates.]]></phrase>
+  <phrase title="th_uix_pro_rating_hint.cdn_jquery" version_id="1000033" version_string="1.0.0 Beta 3"><![CDATA[Providing resources through <a href="https://en.wikipedia.org/wiki/Content_delivery_network">content delivery networks</a> helps speed up your page load time drastically.]]></phrase>
+  <phrase title="th_uix_pro_rating_hint.covers_installed" version_id="1000033" version_string="1.0.0 Beta 3"><![CDATA[While not essential, most social platforms allow for a cover image on user profiles. This helps your users feel like they can decorate their room so to speak and make themselves at home on your forum.]]></phrase>
+  <phrase title="th_uix_pro_rating_hint.custom_child_style" version_id="1000033" version_string="1.0.0 Beta 3"><![CDATA[Create a new style as child of the UI.X Pro style. Set it as default style and perform all of the following modifications in this style.]]></phrase>
+  <phrase title="th_uix_pro_rating_hint.filters_installed" version_id="1000270" version_string="1.0.2"><![CDATA[[TH] Filters is a single real-time content exploring and filtering experience. Your users will be able to find relevant content easier and faster. [TH] Filters will ultimately help enhance content discoverability, create a better user experience, and provide a modern experience.]]></phrase>
+  <phrase title="th_uix_pro_rating_hint.friendly_urls" version_id="1000033" version_string="1.0.0 Beta 3"><![CDATA[Friendly URLs improves URL readability for users and search engines, and provides an overall better understanding of your URLs. Read more on <a href="https://en.wikipedia.org/wiki/Clean_URL">friendly URLs</a>.]]></phrase>
+  <phrase title="th_uix_pro_rating_hint.https" version_id="1000170" version_string="1.0.1"><![CDATA[SSL encryption secures your users connection to your server and prevents third parties to read their data streams. SSL is mandatory these days, and pages that do not run SSL encryption will show as Not Secure in most modern browsers, and might be blocked from being accessed directly in the future. Read more on <a href="https://en.wikipedia.org/wiki/Transport_Layer_Security">SSL encryption</a>.]]></phrase>
+  <phrase title="th_uix_pro_rating_hint.image_proxy" version_id="1000170" version_string="1.0.1"><![CDATA[The image proxy downloads all images provided in user content to your server and serves them to your users from there. This option is required for your SSL encryption to stay intact when users provide images from non-encrypted sources.]]></phrase>
+  <phrase title="th_uix_pro_rating_hint.imageoptimizer_installed" version_id="1000170" version_string="1.0.1"><![CDATA[Automatically optimize any image uploaded to your forum. Compress your photos to save storage space and bandwidth and improve your website's load time. Image Optimizer supports Kraken.io, Resmush.it, jpegoptim, and pngquant.<br />You will need to have an active subscription on Kraken.io to use Kraken.io with Image Optimizer. To use Pngquant and Jpegoptim with Image Optimizer you must install them on your server.]]></phrase>
+  <phrase title="th_uix_pro_rating_hint.installandupgrade_installed" version_id="1000170" version_string="1.0.1"><![CDATA[Installing and upgrading your themes, add-ons and languages on your site just got easier with Install & Upgrade. With this add-on you can simply install add-ons or upgrade them with the product URL or those that are listed on the product list. It will also automatically check for updates for all your add-ons, themes, and languages. Connect your ThemeHouse and XenForo account within the administrative panel so you are in sync with any updates that come up. From there, when an update is available you can simply install it without logging in multiple times. We allow third-party add-on creators to write their own handlers so you can add their profiles with Install and Upgrade and effortlessly install or upgrade their add-ons as well.]]></phrase>
+  <phrase title="th_uix_pro_rating_hint.link_proxy" version_id="1000170" version_string="1.0.1"><![CDATA[The link proxy directs all outgoing links through your server first, preventing your visitors from directly going to insecure sites and therefore keeping your SSL encryption intact.]]></phrase>
+  <phrase title="th_uix_pro_rating_hint.logo" version_id="1000033" version_string="1.0.0 Beta 3"><![CDATA[Change your logo(s) under Style Properties > Basic Options. Make sure to change Logo URL, 2x logo URL, Metadata Logo URL, Favicon URL and Logo small image path.]]></phrase>
+  <phrase title="th_uix_pro_rating_hint.meta_description" version_id="1000033" version_string="1.0.0 Beta 3"><![CDATA[Change your boards meta information in the general board options to reflect your personal boards description, instead of the standard meta information, to have it show up on Search Engine results correctly.]]></phrase>
+  <phrase title="th_uix_pro_rating_hint.monetize_installed" version_id="1000151" version_string="1.0.1 Release Candidate 1"><![CDATA[Figuring out how to create revenue from your forum can be a challenge. We’ve combined some of the tools you need to simplify monetizing your forum. Display your user upgrades at the right time, in the right place, to the right users in an appealing way. Set up a paywall to require membership before accessing your forum. Display sponsors for specific nodes. Replace words with different words or a link and change links posted in your forum to your affiliate links. Plus set schedules for sending automated alerts, emails, and messages. Whichever method you choose to generate revenue or a combination of methods, Monetize will help.]]></phrase>
+  <phrase title="th_uix_pro_rating_hint.nav_items" version_id="1000033" version_string="1.0.0 Beta 3"><![CDATA[You have {count} main navigation items. We recommend keeping this count at 6 or lower to keep your main navigation reasonably slim.]]></phrase>
+  <phrase title="th_uix_pro_rating_hint.node_count" version_id="1000170" version_string="1.0.1"><![CDATA[You currently have {count} nodes. Keeping your node count at a manageable level helps your users to more easily discover the content they're looking for. Spreading content too thin also poses the risk of areas being abandoned when activity is not high enough. Consider turning sub-nodes into prefixes or use topics.]]></phrase>
+  <phrase title="th_uix_pro_rating_hint.node_root_count" version_id="1000170" version_string="1.0.1"><![CDATA[You currently have {count} root level nodes. Keeping your root node count at 5 or lower helps keep your front page easy to digest for users.]]></phrase>
+  <phrase title="th_uix_pro_rating_hint.nodes_installed" version_id="1000170" version_string="1.0.1"><![CDATA[Add dimension, quality, and allure to the display of your forum list, and stand out from your competition. [TH] Nodes can help you create a visually engaging forum and improve user experience with visual indicators by allowing you to style nodes, icons, and more.]]></phrase>
+  <phrase title="th_uix_pro_rating_hint.oauth_providers" version_id="1000170" version_string="1.0.1"><![CDATA[OAuth providers offer a quick way for users to register and log in with existing accounts from major platforms such as Facebook and Google, where they likely already have accounts. This speeds up the login process for the user and improves the likeliness of users registering on your site.]]></phrase>
+  <phrase title="th_uix_pro_rating_hint.permissions" version_id="1000033" version_string="1.0.0 Beta 3"><![CDATA[Configure your user group permissions, moderator permissions and administrator permissions.]]></phrase>
+  <phrase title="th_uix_pro_rating_hint.php7" version_id="1000011" version_string="1.0.0 Alpha 1"><![CDATA[PHP 7 is the latest major release of PHP. Running your software on PHP 7 offers huge performance boosts, which result in lower page load times and improved experiences for your visitors.]]></phrase>
+  <phrase title="th_uix_pro_rating_hint.php72" version_id="1000033" version_string="1.0.0 Beta 3"><![CDATA[PHP 7.2 is the latest stable release of PHP 7. Running PHP 7.2 further improves your site performance and therefore your visitors experience.]]></phrase>
+  <phrase title="th_uix_pro_rating_hint.php_ctype" version_id="1000170" version_string="1.0.1"><![CDATA[The PHP cType extension is a requirement for XenForo 2, and provides a set of tools to check whether characters fall into a certain class, according to the current locale.]]></phrase>
+  <phrase title="th_uix_pro_rating_hint.php_curl" version_id="1000170" version_string="1.0.1"><![CDATA[The PHP cURL extension is a requirement for XenForo 2, and provides the necessary tools to start secure connections to external servers.]]></phrase>
+  <phrase title="th_uix_pro_rating_hint.php_dom" version_id="1000170" version_string="1.0.1"><![CDATA[The PHP DOM extension is a requirement for XenForo 2, and provides a set of tools to manage and manipulate the Document Object Model.]]></phrase>
+  <phrase title="th_uix_pro_rating_hint.php_gd" version_id="1000170" version_string="1.0.1"><![CDATA[The PHP GD extension is a requirement for XenForo 2, and provides a set of tools to handle and manipulate images.]]></phrase>
+  <phrase title="th_uix_pro_rating_hint.php_iconv" version_id="1000170" version_string="1.0.1"><![CDATA[The PHP iconv extension is a requirement for XenForo 2, and provides a set of tools to convert strings to different character encodings.]]></phrase>
+  <phrase title="th_uix_pro_rating_hint.php_json" version_id="1000170" version_string="1.0.1"><![CDATA[The PHP JSON extension is a requirement for XenForo 2, and provides a set of tools handle the JSON file format.]]></phrase>
+  <phrase title="th_uix_pro_rating_hint.php_mysqli" version_id="1000170" version_string="1.0.1"><![CDATA[The PHP MySQLi extension is a requirement for XenForo 2, and provides an access mechanism to your database. Not sure how you managed to see this message without having it installed.]]></phrase>
+  <phrase title="th_uix_pro_rating_hint.php_pcre" version_id="1000170" version_string="1.0.1"><![CDATA[The PHP PCRE extension is a requirement for XenForo 2, and provides a set of tools to handle regular expressions.]]></phrase>
+  <phrase title="th_uix_pro_rating_hint.php_simplexml" version_id="1000170" version_string="1.0.1"><![CDATA[The PHP SimpleXML extension is a requirement for XenForo 2, and provides a set of tools to manage the XML file format.]]></phrase>
+  <phrase title="th_uix_pro_rating_hint.php_spl" version_id="1000170" version_string="1.0.1"><![CDATA[The PHP SPL extension is a requirement for XenForo 2.]]></phrase>
+  <phrase title="th_uix_pro_rating_hint.php_zip" version_id="1000170" version_string="1.0.1"><![CDATA[The PHP Zip extension provides all necessary resources for your server to handle the creation and extraction of <a href="https://en.wikipedia.org/wiki/Zip_(file_format)">ZIP archives</a>. It is a requirement for Install and Upgrade.]]></phrase>
+  <phrase title="th_uix_pro_rating_hint.postcomments_installed" version_id="1000170" version_string="1.0.1"><![CDATA[Modernize your forum’s discussions with Post Comments. Like Reddit and Facebook, keep your post replies inline so the discussion is relative and easy to follow. With Post Comments, your users can comment on each other’s posts without disrupting the thread or having private conversations. Users are familiar with and expect this type of discussion format.]]></phrase>
+  <phrase title="th_uix_pro_rating_hint.reactplus_installed" version_id="1000151" version_string="1.0.1 Release Candidate 1"><![CDATA[If you want to get more out of reactions on your forum, than Reactions Plus is for you. Expand the type of reactions on your forum, choose who can use reactions, what nodes they can be used in, and set up auto moderation based on a set reaction score threshold so users can help moderate the forum. Reactions Plus provides more ways to use reactions.]]></phrase>
+  <phrase title="th_uix_pro_rating_hint.romanize_urls" version_id="1000170" version_string="1.0.1"><![CDATA[URL romanization replaces all special characters with their roman equivalents. This improves readability of URLs on browsers that do not support special characters in URLs and instead would display their HTML escaped equivalents.]]></phrase>
+  <phrase title="th_uix_pro_rating_hint.topic_count" version_id="1000170" version_string="1.0.1"><![CDATA[You currently have {count} topics. Keeping the topic count at a suitable level helps your users to more easily discover the content they're looking for. Consider abstracting overly specific topics into more general ones to improve content discoverability.]]></phrase>
+  <phrase title="th_uix_pro_rating_hint.trending_installed" version_id="1000170" version_string="1.0.1"><![CDATA[Showcase your most active and relevant content so your users can find current information and get involved fast. Trending is intricately calculated by several factors based on the content type. This will aid in increasing user involvement and improving user experience by helping them find the content they want to engage in quickly.]]></phrase>
+  <phrase title="th_uix_pro_rating_hint.uix_installed" version_id="1000170" version_string="1.0.1"><![CDATA[Based on its popular XenForo 1 predecessor, UI.X 2 is more than just a theme and continues to push the boundaries of intelligent, performant, perfected design. With modern tools that increase user interactions and a familiar user interface based on Google's ever popular Material design backed by a team well-versed in the XenForo software.]]></phrase>
+  <phrase title="th_uix_pro_rating_hint.uix_pro_style" version_id="1000033" version_string="1.0.0 Beta 3"><![CDATA[Import the UI.X Pro style as child style of the UI.X style.]]></phrase>
+  <phrase title="th_uix_pro_rating_hint.uix_style" version_id="1000033" version_string="1.0.0 Beta 3"><![CDATA[Import the UI.X style (or any other ThemeHouse style) as root style in your forum.]]></phrase>
+  <phrase title="th_uix_pro_rating_hint.user_groups" version_id="1000033" version_string="1.0.0 Beta 3"><![CDATA[Create all necessary user groups.]]></phrase>
+  <phrase title="th_uix_pro_rating_hint.widgets" version_id="1000033" version_string="1.0.0 Beta 3"><![CDATA[Customize your widget setup.]]></phrase>
+  <phrase title="th_uixpro" version_id="1000011" version_string="1.0.0 Alpha 1"><![CDATA[UI.X Pro]]></phrase>
+  <phrase title="th_uixpro_add_ons" version_id="1000011" version_string="1.0.0 Alpha 1"><![CDATA[Add-ons]]></phrase>
+  <phrase title="th_uixpro_auto_resolve" version_id="1000170" version_string="1.0.1"><![CDATA[Auto-resolve]]></phrase>
+  <phrase title="th_uixpro_auto_resolve_tooltip" version_id="1000033" version_string="1.0.0 Beta 3"><![CDATA[Clicking this button will automatically resolve this issue for you.]]></phrase>
+  <phrase title="th_uixpro_automated" version_id="1000011" version_string="1.0.0 Alpha 1"><![CDATA[Automated]]></phrase>
+  <phrase title="th_uixpro_automated_tooltip" version_id="1000011" version_string="1.0.0 Alpha 1"><![CDATA[This task will resolve automatically once the required steps are taken.]]></phrase>
+  <phrase title="th_uixpro_cannot_be_automatically_resolved" version_id="1000033" version_string="1.0.0 Beta 3"><![CDATA[This issue cannot be automatically resolved.]]></phrase>
+  <phrase title="th_uixpro_changelog" version_id="1000170" version_string="1.0.1"><![CDATA[UI.X Pro changelog]]></phrase>
+  <phrase title="th_uixpro_confirm_restoring_of_dismissed_items" version_id="1000033" version_string="1.0.0 Beta 3"><![CDATA[Continuing will restore all previously dismissed items.]]></phrase>
+  <phrase title="th_uixpro_content_discovery" version_id="1000011" version_string="1.0.0 Alpha 1"><![CDATA[Content discovery]]></phrase>
+  <phrase title="th_uixpro_create_ticket" version_id="1000011" version_string="1.0.0 Alpha 1"><![CDATA[Create a ticket]]></phrase>
+  <phrase title="th_uixpro_customization" version_id="1000011" version_string="1.0.0 Alpha 1"><![CDATA[Customization]]></phrase>
+  <phrase title="th_uixpro_dashboard" version_id="1000170" version_string="1.0.1"><![CDATA[ThemeHouse dashboard]]></phrase>
+  <phrase title="th_uixpro_dismiss" version_id="1000011" version_string="1.0.0 Alpha 1"><![CDATA[Dismiss]]></phrase>
+  <phrase title="th_uixpro_dismiss_issue" version_id="1000033" version_string="1.0.0 Beta 3"><![CDATA[Dismiss issue]]></phrase>
+  <phrase title="th_uixpro_dismiss_tooltip" version_id="1000033" version_string="1.0.0 Beta 3"><![CDATA[Clicking this will dismiss the item from the list. We do recommend to resolve it however.]]></phrase>
+  <phrase title="th_uixpro_documentation" version_id="1000170" version_string="1.0.1"><![CDATA[UI.X Pro documentation]]></phrase>
+  <phrase title="th_uixpro_errors" version_id="1000033" version_string="1.0.0 Beta 3"><![CDATA[Errors]]></phrase>
+  <phrase title="th_uixpro_general" version_id="1000033" version_string="1.0.0 Beta 3"><![CDATA[General]]></phrase>
+  <phrase title="th_uixpro_get_help" version_id="1000033" version_string="1.0.0 Beta 3"><![CDATA[Get help]]></phrase>
+  <phrase title="th_uixpro_handyplan" version_id="1000011" version_string="1.0.0 Alpha 1"><![CDATA[The Handyplan for XenForo]]></phrase>
+  <phrase title="th_uixpro_handyplan_desc" version_id="1000011" version_string="1.0.0 Alpha 1"><![CDATA[Keep your XenForo maintained, upgraded and secure.]]></phrase>
+  <phrase title="th_uixpro_handyplan_learn_more" version_id="1000011" version_string="1.0.0 Alpha 1"><![CDATA[Learn more]]></phrase>
+  <phrase title="th_uixpro_item_cannot_be_dismissed" version_id="1000033" version_string="1.0.0 Beta 3"><![CDATA[Issue cannot be dismissed.]]></phrase>
+  <phrase title="th_uixpro_item_cannot_be_manually_resolved" version_id="1000033" version_string="1.0.0 Beta 3"><![CDATA[Item cannot be manually resolved.]]></phrase>
+  <phrase title="th_uixpro_last_update_x" version_id="1000033" version_string="1.0.0 Beta 3"><![CDATA[Last update: {time}]]></phrase>
+  <phrase title="th_uixpro_lgd.A" version_id="1000033" version_string="1.0.0 Beta 3"><![CDATA[You are providing one of the best experiences for your users. Great work!]]></phrase>
+  <phrase title="th_uixpro_lgd.B" version_id="1000033" version_string="1.0.0 Beta 3"><![CDATA[You are providing a very good experience for your users. There are a few minor issues that could be resolved in the list below, but the overall experience is very good.]]></phrase>
+  <phrase title="th_uixpro_lgd.C" version_id="1000033" version_string="1.0.0 Beta 3"><![CDATA[There are a few more items we recommend considering, but you're providing an overall solid experience.]]></phrase>
+  <phrase title="th_uixpro_lgd.D" version_id="1000033" version_string="1.0.0 Beta 3"><![CDATA[You're running a decent installation, but there is room for improvement. Try resolving open issues from the list below.]]></phrase>
+  <phrase title="th_uixpro_lgd.F" version_id="1000033" version_string="1.0.0 Beta 3"><![CDATA[Your installation has at least a few critical issues. It is recommended to resolve them as soon as possible.]]></phrase>
+  <phrase title="th_uixpro_lgd.S" version_id="1000033" version_string="1.0.0 Beta 3"><![CDATA[You are now running an extremely organized, intuitive, and ideal forum experience for your users. Bravo!]]></phrase>
+  <phrase title="th_uixpro_lgh.A" version_id="1000033" version_string="1.0.0 Beta 3"><![CDATA[Excellent]]></phrase>
+  <phrase title="th_uixpro_lgh.B" version_id="1000033" version_string="1.0.0 Beta 3"><![CDATA[Very good]]></phrase>
+  <phrase title="th_uixpro_lgh.C" version_id="1000033" version_string="1.0.0 Beta 3"><![CDATA[Good]]></phrase>
+  <phrase title="th_uixpro_lgh.D" version_id="1000033" version_string="1.0.0 Beta 3"><![CDATA[Requires improvement]]></phrase>
+  <phrase title="th_uixpro_lgh.F" version_id="1000033" version_string="1.0.0 Beta 3"><![CDATA[Critical]]></phrase>
+  <phrase title="th_uixpro_lgh.S" version_id="1000170" version_string="1.0.1"><![CDATA[Outstanding]]></phrase>
+  <phrase title="th_uixpro_options" version_id="1000011" version_string="1.0.0 Alpha 1"><![CDATA[Board options]]></phrase>
+  <phrase title="th_uixpro_report_for_x" version_id="1000033" version_string="1.0.0 Beta 3"><![CDATA[Report for {name}]]></phrase>
+  <phrase title="th_uixpro_resolve" version_id="1000011" version_string="1.0.0 Alpha 1"><![CDATA[Resolve]]></phrase>
+  <phrase title="th_uixpro_resolve_issue" version_id="1000033" version_string="1.0.0 Beta 3"><![CDATA[Resolve issue]]></phrase>
+  <phrase title="th_uixpro_resolved" version_id="1000011" version_string="1.0.0 Alpha 1"><![CDATA[Resolved]]></phrase>
+  <phrase title="th_uixpro_resolved_tooltip" version_id="1000011" version_string="1.0.0 Alpha 1"><![CDATA[This item has been resolved.]]></phrase>
+  <phrase title="th_uixpro_resolved_x" version_id="1000033" version_string="1.0.0 Beta 3"><![CDATA[Resolved on {date}]]></phrase>
+  <phrase title="th_uixpro_restore_dismissed" version_id="1000033" version_string="1.0.0 Beta 3"><![CDATA[Restore dismissed]]></phrase>
+  <phrase title="th_uixpro_score" version_id="1000033" version_string="1.0.0 Beta 3"><![CDATA[Score]]></phrase>
+  <phrase title="th_uixpro_server_config" version_id="1000011" version_string="1.0.0 Alpha 1"><![CDATA[Server configuration]]></phrase>
+  <phrase title="th_uixpro_sure_you_want_to_dismiss_this_task" version_id="1000033" version_string="1.0.0 Beta 3"><![CDATA[Continuing will dismiss this task. We strongly recommend resolving it instead.]]></phrase>
+  <phrase title="th_uixpro_sure_you_want_to_resolve_this_task" version_id="1000033" version_string="1.0.0 Beta 3"><![CDATA[Continuing will mark this task as resolved.]]></phrase>
+  <phrase title="th_uixpro_warnings" version_id="1000033" version_string="1.0.0 Beta 3"><![CDATA[Warnings]]></phrase>
+  <phrase title="th_uixpro_your_report" version_id="1000011" version_string="1.0.0 Alpha 1"><![CDATA[Your report]]></phrase>
+  <phrase title="th_uixpro_your_score" version_id="1000170" version_string="1.0.1"><![CDATA[Your score]]></phrase>
+</phrases>

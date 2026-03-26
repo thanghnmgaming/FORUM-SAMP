@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<phrases>
+  <phrase title="admin_navigation.th_nodeLayout_nodes" version_id="1000010" version_string="1.0.0 Alpha"><![CDATA[Node layout and styling]]></phrase>
+  <phrase title="admin_permission.th_manageNodeLayout_nodes" version_id="1000010" version_string="1.0.0 Alpha"><![CDATA[Manage node layout]]></phrase>
+  <phrase title="node_type.LayoutSeparator" version_id="1000010" version_string="1.0.0 Alpha"><![CDATA[Node layout separator]]></phrase>
+  <phrase title="option.thnodes_customColors" version_id="1000570" version_string="1.0.5"><![CDATA[Number of custom colors]]></phrase>
+  <phrase title="option.thnodes_openPostThreadInOverlay" version_id="1000631" version_string="1.0.6 Beta 1"><![CDATA[Open 'Post thread' in overlay]]></phrase>
+  <phrase title="option_explain.thnodes_customColors" version_id="1000570" version_string="1.0.5"><![CDATA[For advanced styling, you can add one or more custom colors to your nodes, which are accessible as CSS variables.]]></phrase>
+  <phrase title="option_explain.thnodes_openPostThreadInOverlay" version_id="1000631" version_string="1.0.6 Beta 1"><![CDATA[If enabled, when a user clicks the 'Post thread' icon in the node grid footer, it will open in an overlay. Otherwise, the user will be redirected to the appropriate page.]]></phrase>
+  <phrase title="option_group.thnodes" version_id="1000570" version_string="1.0.5"><![CDATA[[TH] Nodes]]></phrase>
+  <phrase title="option_group_description.thnodes" version_id="1000570" version_string="1.0.5"><![CDATA[Options for the [TH] Nodes add-on.]]></phrase>
+  <phrase title="style_prop.th_backgroundSelector_nodes" version_id="1000010" version_string="1.0.0 Alpha"><![CDATA[Background selector]]></phrase>
+  <phrase title="style_prop.th_enableGrid_nodes" version_id="1000010" version_string="1.0.0 Alpha"><![CDATA[Enable node grid]]></phrase>
+  <phrase title="style_prop.th_enableNodeFooter_nodes" version_id="1000010" version_string="1.0.0 Alpha"><![CDATA[Enable node footer]]></phrase>
+  <phrase title="style_prop.th_enableStyling_nodes" version_id="1000010" version_string="1.0.0 Alpha"><![CDATA[Enable node styling]]></phrase>
+  <phrase title="style_prop.th_imageOverlay" version_id="1000010" version_string="1.0.0 Alpha"><![CDATA[Image overlay]]></phrase>
+  <phrase title="style_prop.th_nodeBody" version_id="1000010" version_string="1.0.0 Alpha"><![CDATA[Node body]]></phrase>
+  <phrase title="style_prop.th_nodeGutter" version_id="1000010" version_string="1.0.0 Alpha"><![CDATA[Node gutter]]></phrase>
+  <phrase title="style_prop.th_textSelector_nodes" version_id="1000010" version_string="1.0.0 Alpha"><![CDATA[Text selector]]></phrase>
+  <phrase title="style_prop.thnodes_enable_header_styling_categoryView" version_id="1000471" version_string="1.0.4 Patch Level 1"><![CDATA[Enable header styling on category view]]></phrase>
+  <phrase title="style_prop.thnodes_enable_header_styling_forumView" version_id="1000370" version_string="1.0.3"><![CDATA[Enable header styling on forum view]]></phrase>
+  <phrase title="style_prop.thnodes_enable_header_styling_threadView" version_id="1000471" version_string="1.0.4 Patch Level 1"><![CDATA[Enable header styling on thread view]]></phrase>
+  <phrase title="style_prop.thnodes_enable_icons" version_id="1000731" version_string="1.0.7 Beta 1"><![CDATA[Enable node icons]]></phrase>
+  <phrase title="style_prop.thnodes_show_header_icon" version_id="1000591" version_string="1.0.5 Patch Level 1"><![CDATA[Show icon in header]]></phrase>
+  <phrase title="style_prop_desc.th_backgroundSelector_nodes" version_id="1000010" version_string="1.0.0 Alpha"><![CDATA[This is the selector that should be used to place the background image and color on a node, if selected.]]></phrase>
+  <phrase title="style_prop_desc.th_enableGrid_nodes" version_id="1000010" version_string="1.0.0 Alpha"><![CDATA[]]></phrase>
+  <phrase title="style_prop_desc.th_enableNodeFooter_nodes" version_id="1000731" version_string="1.0.7 Beta 1"><![CDATA[]]></phrase>
+  <phrase title="style_prop_desc.th_enableStyling_nodes" version_id="1000010" version_string="1.0.0 Alpha"><![CDATA[]]></phrase>
+  <phrase title="style_prop_desc.th_imageOverlay" version_id="1000010" version_string="1.0.0 Alpha"><![CDATA[]]></phrase>
+  <phrase title="style_prop_desc.th_nodeBody" version_id="1000010" version_string="1.0.0 Alpha"><![CDATA[]]></phrase>
+  <phrase title="style_prop_desc.th_nodeGutter" version_id="1000010" version_string="1.0.0 Alpha"><![CDATA[Adds a gutter space in between nodes]]></phrase>
+  <phrase title="style_prop_desc.th_textSelector_nodes" version_id="1000010" version_string="1.0.0 Alpha"><![CDATA[]]></phrase>
+  <phrase title="style_prop_desc.thnodes_enable_header_styling_categoryView" version_id="1000471" version_string="1.0.4 Patch Level 1"><![CDATA[If enabled, node background image, background & font color will be applied to the titlebar in category view of the respective category.]]></phrase>
+  <phrase title="style_prop_desc.thnodes_enable_header_styling_forumView" version_id="1000370" version_string="1.0.3"><![CDATA[If enabled, node background image, background & font color will be applied to the titlebar in forum view of the respective forum.]]></phrase>
+  <phrase title="style_prop_desc.thnodes_enable_header_styling_threadView" version_id="1000370" version_string="1.0.3"><![CDATA[If enabled, node background image, background & font color will be applied to the titlebar in thread view of the respective forum.]]></phrase>
+  <phrase title="style_prop_desc.thnodes_enable_icons" version_id="1000731" version_string="1.0.7 Beta 1"><![CDATA[]]></phrase>
+  <phrase title="style_prop_desc.thnodes_show_header_icon" version_id="1000591" version_string="1.0.5 Patch Level 1"><![CDATA[If any of the above header options are enabled, this will additionally show the respective icon, if set.]]></phrase>
+  <phrase title="style_prop_group.thnodes_grid" version_id="1000731" version_string="1.0.7 Beta 1"><![CDATA[[TH] Nodes: Grid]]></phrase>
+  <phrase title="style_prop_group.thnodes_icons" version_id="1000731" version_string="1.0.7 Beta 1"><![CDATA[[TH] Nodes: Icons]]></phrase>
+  <phrase title="style_prop_group.thnodes_styling" version_id="1000731" version_string="1.0.7 Beta 1"><![CDATA[[TH] Nodes: Styling]]></phrase>
+  <phrase title="style_prop_group_desc.thnodes_grid" version_id="1000731" version_string="1.0.7 Beta 1"><![CDATA[]]></phrase>
+  <phrase title="style_prop_group_desc.thnodes_icons" version_id="1000731" version_string="1.0.7 Beta 1"><![CDATA[]]></phrase>
+  <phrase title="style_prop_group_desc.thnodes_styling" version_id="1000731" version_string="1.0.7 Beta 1"><![CDATA[]]></phrase>
+  <phrase title="th_add_layout_separator_nodes" version_id="1000010" version_string="1.0.0 Alpha"><![CDATA[Add layout separator]]></phrase>
+  <phrase title="th_background_color_nodes" version_id="1000010" version_string="1.0.0 Alpha"><![CDATA[Background color]]></phrase>
+  <phrase title="th_background_image_url_nodes" version_id="1000471" version_string="1.0.4 Patch Level 1"><![CDATA[Background image]]></phrase>
+  <phrase title="th_category_icon_class_nodes" version_id="1000010" version_string="1.0.0 Alpha"><![CDATA[Category icon class]]></phrase>
+  <phrase title="th_category_icon_class_unread_nodes" version_id="1000010" version_string="1.0.0 Alpha"><![CDATA[Category icon class (unread)]]></phrase>
+  <phrase title="th_collapse_nodes" version_id="1000010" version_string="1.0.0 Alpha"><![CDATA[Collapse]]></phrase>
+  <phrase title="th_default_styling_nodes" version_id="1000010" version_string="1.0.0 Alpha"><![CDATA[Default styling]]></phrase>
+  <phrase title="th_divide_last_row_into_equal_widths_nodes" version_id="1000010" version_string="1.0.0 Alpha"><![CDATA[Divide last row into equal widths]]></phrase>
+  <phrase title="th_dont_fill_nodes" version_id="1000010" version_string="1.0.0 Alpha"><![CDATA[Don't Fill (Will leave empty spaces)]]></phrase>
+  <phrase title="th_edit_layout_separator_nodes" version_id="1000010" version_string="1.0.0 Alpha"><![CDATA[Edit layout separator]]></phrase>
+  <phrase title="th_edit_node_layout_styling_nodes" version_id="1000010" version_string="1.0.0 Alpha"><![CDATA[Edit node layout and styling]]></phrase>
+  <phrase title="th_fill_last_row_nodes" version_id="1000010" version_string="1.0.0 Alpha"><![CDATA[Fill last row]]></phrase>
+  <phrase title="th_forum_icon_class_nodes" version_id="1000010" version_string="1.0.0 Alpha"><![CDATA[Forum icon class]]></phrase>
+  <phrase title="th_forum_icon_class_unread_nodes" version_id="1000010" version_string="1.0.0 Alpha"><![CDATA[Forum icon class (unread)]]></phrase>
+  <phrase title="th_grid_layout_nodes" version_id="1000010" version_string="1.0.0 Alpha"><![CDATA[Grid layout]]></phrase>
+  <phrase title="th_grid_options_nodes" version_id="1000010" version_string="1.0.0 Alpha"><![CDATA[Grid options]]></phrase>
+  <phrase title="th_inherit_grid_options_nodes" version_id="1000010" version_string="1.0.0 Alpha"><![CDATA[Inherit grid options]]></phrase>
+  <phrase title="th_inherit_styling_nodes" version_id="1000010" version_string="1.0.0 Alpha"><![CDATA[Inherit styling]]></phrase>
+  <phrase title="th_inherited_value_nodes" version_id="1000010" version_string="1.0.0 Alpha"><![CDATA[Inherited value]]></phrase>
+  <phrase title="th_layout_separator_grid_hint" version_id="1000010" version_string="1.0.0 Alpha"><![CDATA[The following will set the default styling for this node, if you'd like to edit the per-style options for it you will need to do so from the <a href="admin.php?node-layout">Node layout and styling</a> section.]]></phrase>
+  <phrase title="th_link_forum_icon_class_nodes" version_id="1000010" version_string="1.0.0 Alpha"><![CDATA[Link forum icon class]]></phrase>
+  <phrase title="th_make_remaining_nodes_full_width_on_own_row_nodes" version_id="1000331" version_string="1.0.3 Beta 1"><![CDATA[Make remaining nodes full width on their own rows]]></phrase>
+  <phrase title="th_maximum_columns_nodes" version_id="1000010" version_string="1.0.0 Alpha"><![CDATA[Maximum columns]]></phrase>
+  <phrase title="th_minimum_column_width_nodes" version_id="1000010" version_string="1.0.0 Alpha"><![CDATA[Minimum column widths]]></phrase>
+  <phrase title="th_node_class_explain_nodes" version_id="1000010" version_string="1.0.0 Alpha"><![CDATA[The class you select here will be added alongside the "node" class on each node. If this class is inherited to children each child node will have a className--inherited class added as well.<br>
+For example: if you set "orange" as a class on a category, each forum within that category that is set to inherit styling from the category will have "orange orange--inherited" added to its classes.]]></phrase>
+  <phrase title="th_node_class_nodes" version_id="1000010" version_string="1.0.0 Alpha"><![CDATA[Node class]]></phrase>
+  <phrase title="th_node_grid_nodes" version_id="1000010" version_string="1.0.0 Alpha"><![CDATA[Node grid]]></phrase>
+  <phrase title="th_node_icons_nodes" version_id="1000010" version_string="1.0.0 Alpha"><![CDATA[Node icons]]></phrase>
+  <phrase title="th_node_layout_styling_nodes" version_id="1000010" version_string="1.0.0 Alpha"><![CDATA[Node layout and styling]]></phrase>
+  <phrase title="th_node_styling_nodes" version_id="1000010" version_string="1.0.0 Alpha"><![CDATA[Node styling]]></phrase>
+  <phrase title="th_page_icon_class_nodes" version_id="1000010" version_string="1.0.0 Alpha"><![CDATA[Page icon class]]></phrase>
+  <phrase title="th_rebuild_cache_nodes" version_id="1000010" version_string="1.0.0 Alpha"><![CDATA[Rebuild cache]]></phrase>
+  <phrase title="th_retain_text_styling_nodes" version_id="1000211" version_string="1.0.2 Alpha 1"><![CDATA[Retain text styling]]></phrase>
+  <phrase title="th_separator_max_width_nodes" version_id="1000010" version_string="1.0.0 Alpha"><![CDATA[Separator max width]]></phrase>
+  <phrase title="th_separator_type_nodes" version_id="1000010" version_string="1.0.0 Alpha"><![CDATA[Separator type]]></phrase>
+  <phrase title="th_styling_nodes" version_id="1000010" version_string="1.0.0 Alpha"><![CDATA[Styling]]></phrase>
+  <phrase title="th_use_custom_value_nodes" version_id="1000010" version_string="1.0.0 Alpha"><![CDATA[Use custom value]]></phrase>
+  <phrase title="thnodes_background_color_description" version_id="1000291" version_string="1.0.2 Patch Level 1"><![CDATA[This option allows you to define a background color that will be applied to the node container.]]></phrase>
+  <phrase title="thnodes_background_image_url_description" version_id="1000291" version_string="1.0.2 Patch Level 1"><![CDATA[This option allows you to define a background image that will be applied to the node container.]]></phrase>
+  <phrase title="thnodes_category_icon_class_explain" version_id="1000291" version_string="1.0.2 Patch Level 1"><![CDATA[These classes will be added to the icon element of the node, if it is a category.]]></phrase>
+  <phrase title="thnodes_category_icon_class_unread_explain" version_id="1000291" version_string="1.0.2 Patch Level 1"><![CDATA[These classes will be applied to the icon element of the node, if it is an unread category.]]></phrase>
+  <phrase title="thnodes_copy" version_id="1000631" version_string="1.0.6 Beta 1"><![CDATA[Copy]]></phrase>
+  <phrase title="thnodes_copy_node_layout" version_id="1000631" version_string="1.0.6 Beta 1"><![CDATA[Copy node layout]]></phrase>
+  <phrase title="thnodes_copying" version_id="1000631" version_string="1.0.6 Beta 1"><![CDATA[Copying]]></phrase>
+  <phrase title="thnodes_custom_color_description" version_id="1000570" version_string="1.0.5"><![CDATA[This option allows you to define a custom color that will be accessible as a CSS variable for advanced styling.]]></phrase>
+  <phrase title="thnodes_custom_color_x" version_id="1000570" version_string="1.0.5"><![CDATA[Custom color {key}]]></phrase>
+  <phrase title="thnodes_default_layout_and_styling" version_id="1000670" version_string="1.0.6"><![CDATA[Default layout and styling]]></phrase>
+  <phrase title="thnodes_disable_styling_for_style" version_id="1000391" version_string="1.0.3 Patch Level 1"><![CDATA[Disable styling for style]]></phrase>
+  <phrase title="thnodes_enable_styling_for_style" version_id="1000391" version_string="1.0.3 Patch Level 1"><![CDATA[Enable styling for style]]></phrase>
+  <phrase title="thnodes_fill_last_row_explain" version_id="1000291" version_string="1.0.2 Patch Level 1"><![CDATA[This option determines, how the node container will behave, if it is the last element in a set of insufficient elements to fill a row.]]></phrase>
+  <phrase title="thnodes_forum_icon_class_explain" version_id="1000291" version_string="1.0.2 Patch Level 1"><![CDATA[These classes will be applied to the icon element of the node, if it is a forum.]]></phrase>
+  <phrase title="thnodes_forum_icon_class_unread_explain" version_id="1000291" version_string="1.0.2 Patch Level 1"><![CDATA[These classes will be applied to the icon element of the node, if it is an unread forum.]]></phrase>
+  <phrase title="thnodes_link_forum_icon_class_explain" version_id="1000291" version_string="1.0.2 Patch Level 1"><![CDATA[These classes will be added to the icon element of the node, if it is a link forum.]]></phrase>
+  <phrase title="thnodes_maximum_columns_explain" version_id="1000291" version_string="1.0.2 Patch Level 1"><![CDATA[The maximum number of columns per row.]]></phrase>
+  <phrase title="thnodes_minimum_column_width_explain" version_id="1000291" version_string="1.0.2 Patch Level 1"><![CDATA[The minimum width the column of this node must have in order to be displayed in the grid instead of a single row. Value in Pixel.]]></phrase>
+  <phrase title="thnodes_node_class_description" version_id="1000291" version_string="1.0.2 Patch Level 1"><![CDATA[This option allows you to add additional classes to the node that can be used for styling via CSS rules.]]></phrase>
+  <phrase title="thnodes_node_layout_revert_warning" version_id="1000770" version_string="1.0.7"><![CDATA[Please confirm that you wish to delete all styling and customization options that were performed on this node and style and revert it to default.]]></phrase>
+  <phrase title="thnodes_page_icon_class_explain" version_id="1000291" version_string="1.0.2 Patch Level 1"><![CDATA[These classes will be added to the icon element of the node, if it is a page.]]></phrase>
+  <phrase title="thnodes_random_material_color" version_id="1000370" version_string="1.0.3"><![CDATA[Random material color]]></phrase>
+  <phrase title="thnodes_retain_text_styling_description" version_id="1000291" version_string="1.0.2 Patch Level 1"><![CDATA[If this option is enabled, externally applied text styling will not be overridden by the above set text color.]]></phrase>
+  <phrase title="thnodes_revert" version_id="1000770" version_string="1.0.7"><![CDATA[Revert]]></phrase>
+  <phrase title="thnodes_revert_styling" version_id="1000770" version_string="1.0.7"><![CDATA[Revert styling]]></phrase>
+  <phrase title="thnodes_text_color_description" version_id="1000291" version_string="1.0.2 Patch Level 1"><![CDATA[This option allows you to define a text color that will be applied to the node container.]]></phrase>
+</phrases>

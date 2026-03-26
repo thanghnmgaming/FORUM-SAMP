@@ -1,0 +1,21 @@
+{
+    "src/addons/XenGenTr/Xenistatistik/addon.json": "ea7120442d956724126b840856295482a34e66fa2d43a9f8ef353bde76864253",
+    "src/addons/XenGenTr/Xenistatistik/EventListener/MakroOlustur.php": "4e68afdd5ed5743d0169394ec75a956a5d984e6208a3a988d30e38d30b1a9c17",
+    "src/addons/XenGenTr/Xenistatistik/Setup.php": "8ddfec4a54673848e83d77f3bb1040d5572b12322b45dc41c6091c751b4c5d8d",
+    "src/addons/XenGenTr/Xenistatistik/Widget/EnCokGrnKonular.php": "76e135dbfa62ec7516a8225298515a0ebecf95bc2f14d6502ea49d9940bc4e5f",
+    "src/addons/XenGenTr/Xenistatistik/Widget/Kullanicilar.php": "08e497ea2a3faa19c06f14e5e816c61b8bf5eabf8ec3fb24bf2ba3ed0c5bc103",
+    "src/addons/XenGenTr/Xenistatistik/Widget/YeniKonular.php": "c12e5b93c84279585fc2f48dd850e09f40744a049aaccf84bb5bb1f33d1e3a2c",
+    "src/addons/XenGenTr/Xenistatistik/Widget/YeniMesajlar.php": "8d6decd8f9e2e3ea644376290c726917bdb1d177804c8cdfa221e175dbf8d0a4",
+    "src/addons/XenGenTr/Xenistatistik/XenGenTr.png": "5df3d002f2f49ec8c5a40694b33e706ddab657bdae6de93f48f9d59559c31000",
+    "src/addons/XenGenTr/Xenistatistik/_data/code_event_listeners.xml": "07a854f420c56ead39467f4e0a687c90837a7f76ab1b558f8f3abac3915ff5e4",
+    "src/addons/XenGenTr/Xenistatistik/_data/options.xml": "53c601f9ad085913d6e7bc371eadec81d8953c0045c6d2897831fd69ec1b79c6",
+    "src/addons/XenGenTr/Xenistatistik/_data/option_groups.xml": "593846c03deabc9d9f11d9057819aa4440ee8e12f5a2165f446513d3202a72f5",
+    "src/addons/XenGenTr/Xenistatistik/_data/permissions.xml": "9e42fc98a55367aa74d4729a0cef7945cfdbc20d9a871f898d543bad49c28e1f",
+    "src/addons/XenGenTr/Xenistatistik/_data/permission_interface_groups.xml": "dccdf2f1f218e8aa33c4ff3ae7bcbf8e4e5f725c77a56d6d0b08e4067f84210a",
+    "src/addons/XenGenTr/Xenistatistik/_data/phrases.xml": "a8833789da841de7c9bd4065881497cb2daa9cb9bd5b2366693498c5e116772a",
+    "src/addons/XenGenTr/Xenistatistik/_data/style_properties.xml": "7c5054bf557e47145fd98e9ae0c4cbd8d1295e8ab2100f63f50efc9dc3e6be1f",
+    "src/addons/XenGenTr/Xenistatistik/_data/style_property_groups.xml": "a0fea78d034b641bf875ad17108169a789cf89b564af65196f61aa6fc4955c9e",
+    "src/addons/XenGenTr/Xenistatistik/_data/templates.xml": "b3976f90a4547aedca8754456d6f2c8bb29c3f100eb7e5501857b5621bc78d3b",
+    "src/addons/XenGenTr/Xenistatistik/_data/template_modifications.xml": "f1ead80c2da9c250d67add466614a7deb928e5a968f198b7983938b4dfb13277",
+    "src/addons/XenGenTr/Xenistatistik/_data/widget_definitions.xml": "bb33ac2536e72f37fee7ee5bd831bf209b863d29537681229b50a652087c9ab3"
+}

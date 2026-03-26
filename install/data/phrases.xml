@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<phrases>
+  <phrase title="ml_character_length" version_id="6" version_string="1.0.3"><![CDATA[Character length]]></phrase>
+  <phrase title="ml_character_length_explain" version_id="6" version_string="1.0.3"><![CDATA[The maximum number of characters that can be in a post in the expanded view. This includes BB code. Use 0 to disable the limit.]]></phrase>
+  <phrase title="ml_most_liked_last_x_custom_option" version_id="2" version_string="1.0.1"><![CDATA[Custom]]></phrase>
+  <phrase title="ml_most_liked_last_x_custom_option_explain" version_id="2" version_string="1.0.1"><![CDATA[Show the most liked posts in the selected days interval]]></phrase>
+  <phrase title="ml_most_liked_last_x_custom_option_threads_explain" version_id="2" version_string="1.0.1"><![CDATA[Show the most liked threads in the selected days interval]]></phrase>
+  <phrase title="ml_most_liked_posts" version_id="1" version_string="1.0.0"><![CDATA[Most liked posts]]></phrase>
+  <phrase title="ml_most_liked_posts_all_time" version_id="1" version_string="1.0.0" global_cache="1"><![CDATA[Most liked posts of all time]]></phrase>
+  <phrase title="ml_most_liked_posts_last_x_days" version_id="2" version_string="1.0.1" global_cache="1"><![CDATA[Most liked post in the last {days} days]]></phrase>
+  <phrase title="ml_most_liked_posts_month" version_id="2" version_string="1.0.1" global_cache="1"><![CDATA[Most liked posts of {month}]]></phrase>
+  <phrase title="ml_most_liked_posts_today" version_id="1" version_string="1.0.0" global_cache="1"><![CDATA[Most liked posts today]]></phrase>
+  <phrase title="ml_most_liked_posts_week" version_id="1" version_string="1.0.0" global_cache="1"><![CDATA[Most liked posts of the week]]></phrase>
+  <phrase title="ml_most_liked_posts_year" version_id="2" version_string="1.0.1" global_cache="1"><![CDATA[Most liked posts of {year}]]></phrase>
+  <phrase title="ml_most_liked_threads" version_id="1" version_string="1.0.0"><![CDATA[Most liked threads]]></phrase>
+  <phrase title="ml_most_liked_threads_all_time" version_id="1" version_string="1.0.0" global_cache="1"><![CDATA[Most liked threads of all time]]></phrase>
+  <phrase title="ml_most_liked_threads_last_x_days" version_id="6" version_string="1.0.3" global_cache="1"><![CDATA[Most liked threads in the last {days} days]]></phrase>
+  <phrase title="ml_most_liked_threads_month" version_id="2" version_string="1.0.1" global_cache="1"><![CDATA[Most liked threads of {month}]]></phrase>
+  <phrase title="ml_most_liked_threads_today" version_id="1" version_string="1.0.0" global_cache="1"><![CDATA[Most liked threads today]]></phrase>
+  <phrase title="ml_most_liked_threads_week" version_id="1" version_string="1.0.0" global_cache="1"><![CDATA[Most liked threads of the week]]></phrase>
+  <phrase title="ml_most_liked_threads_year" version_id="2" version_string="1.0.1" global_cache="1"><![CDATA[Most liked threads of {year}]]></phrase>
+  <phrase title="ml_most_replied_last_x_custom_option_threads_explain" version_id="6" version_string="1.0.3"><![CDATA[Show threads with more replies in the selected days interval]]></phrase>
+  <phrase title="ml_most_replied_threads" version_id="6" version_string="1.0.3"><![CDATA[Threads with more replies]]></phrase>
+  <phrase title="ml_most_replied_threads_all_time" version_id="6" version_string="1.0.3" global_cache="1"><![CDATA[Threads with more replies of all time]]></phrase>
+  <phrase title="ml_most_replied_threads_last_x_days" version_id="6" version_string="1.0.3" global_cache="1"><![CDATA[Threads with more replies in the last {days} days]]></phrase>
+  <phrase title="ml_most_replied_threads_month" version_id="6" version_string="1.0.3" global_cache="1"><![CDATA[Threads with more replies of {month}]]></phrase>
+  <phrase title="ml_most_replied_threads_today" version_id="6" version_string="1.0.3" global_cache="1"><![CDATA[Threads with more replies today]]></phrase>
+  <phrase title="ml_most_replied_threads_week" version_id="6" version_string="1.0.3" global_cache="1"><![CDATA[Threads with more replies of the week]]></phrase>
+  <phrase title="ml_most_replied_threads_year" version_id="6" version_string="1.0.3" global_cache="1"><![CDATA[Threads with more replies of {year}]]></phrase>
+  <phrase title="ml_most_viewed_last_x_custom_option_threads_explain" version_id="6" version_string="1.0.3"><![CDATA[Show the most viewed threads in the selected days interval]]></phrase>
+  <phrase title="ml_most_viewed_threads" version_id="6" version_string="1.0.3" global_cache="1"><![CDATA[Most viewed threads]]></phrase>
+  <phrase title="ml_most_viewed_threads_all_time" version_id="6" version_string="1.0.3" global_cache="1"><![CDATA[Most viewed threads of all time]]></phrase>
+  <phrase title="ml_most_viewed_threads_last_x_days" version_id="6" version_string="1.0.3" global_cache="1"><![CDATA[Most viewed threads in the last {days} days]]></phrase>
+  <phrase title="ml_most_viewed_threads_month" version_id="6" version_string="1.0.3" global_cache="1"><![CDATA[Most viewed threads of {month}]]></phrase>
+  <phrase title="ml_most_viewed_threads_today" version_id="6" version_string="1.0.3" global_cache="1"><![CDATA[Most viewed threads today]]></phrase>
+  <phrase title="ml_most_viewed_threads_week" version_id="6" version_string="1.0.3" global_cache="1"><![CDATA[Most viewed threads of the week]]></phrase>
+  <phrase title="ml_most_viewed_threads_year" version_id="6" version_string="1.0.3" global_cache="1"><![CDATA[Most viewed threads of {year}]]></phrase>
+  <phrase title="ml_of_all_time" version_id="1" version_string="1.0.0"><![CDATA[of all time]]></phrase>
+  <phrase title="ml_of_all_time_explain" version_id="1" version_string="1.0.0"><![CDATA[Show the most liked posts of all time.]]></phrase>
+  <phrase title="ml_of_the_day" version_id="1" version_string="1.0.0"><![CDATA[of the day]]></phrase>
+  <phrase title="ml_of_the_day_explain" version_id="1" version_string="1.0.0"><![CDATA[Show the most liked posts of the day.]]></phrase>
+  <phrase title="ml_of_the_month" version_id="1" version_string="1.0.0"><![CDATA[of the month]]></phrase>
+  <phrase title="ml_of_the_month_explain" version_id="1" version_string="1.0.0"><![CDATA[Show the most liked posts of the month.]]></phrase>
+  <phrase title="ml_of_the_week" version_id="1" version_string="1.0.0"><![CDATA[of the week]]></phrase>
+  <phrase title="ml_of_the_week_explain" version_id="1" version_string="1.0.0"><![CDATA[Show the most liked posts of the week.]]></phrase>
+  <phrase title="ml_of_the_year" version_id="1" version_string="1.0.0"><![CDATA[of the year]]></phrase>
+  <phrase title="ml_of_the_year_explain" version_id="1" version_string="1.0.0"><![CDATA[Show the most liked posts of the year.]]></phrase>
+  <phrase title="ml_posts_display_style_expanded_explain" version_id="1" version_string="1.0.0"><![CDATA[An expanded view, displaying as a list of rendered post content.]]></phrase>
+  <phrase title="ml_threads_of_all_time_explain" version_id="1" version_string="1.0.0"><![CDATA[Show the most liked threads of all time.]]></phrase>
+  <phrase title="ml_threads_of_all_time_explain_replied" version_id="6" version_string="1.0.3"><![CDATA[Show threads with more replies of all time.]]></phrase>
+  <phrase title="ml_threads_of_all_time_explain_viewed" version_id="6" version_string="1.0.3"><![CDATA[Show the most viewed threads of all time.]]></phrase>
+  <phrase title="ml_threads_of_the_day_explain" version_id="1" version_string="1.0.0"><![CDATA[Show the most liked threads of the day.]]></phrase>
+  <phrase title="ml_threads_of_the_day_explain_replied" version_id="6" version_string="1.0.3"><![CDATA[Show threads with more replies of the day.]]></phrase>
+  <phrase title="ml_threads_of_the_day_explain_viewed" version_id="6" version_string="1.0.3"><![CDATA[Show the most viewed threads of the day.]]></phrase>
+  <phrase title="ml_threads_of_the_month_explain" version_id="1" version_string="1.0.0"><![CDATA[Show the most liked threads of the month.]]></phrase>
+  <phrase title="ml_threads_of_the_month_explain_replied" version_id="6" version_string="1.0.3"><![CDATA[Show threads with more replies of the month.]]></phrase>
+  <phrase title="ml_threads_of_the_month_explain_viewed" version_id="6" version_string="1.0.3"><![CDATA[Show the most viewed threads of the month.]]></phrase>
+  <phrase title="ml_threads_of_the_week_explain" version_id="1" version_string="1.0.0"><![CDATA[Show the most liked threads of the week.]]></phrase>
+  <phrase title="ml_threads_of_the_week_explain_replied" version_id="6" version_string="1.0.3"><![CDATA[Show threads with more replies of the week.]]></phrase>
+  <phrase title="ml_threads_of_the_week_explain_viewed" version_id="6" version_string="1.0.3"><![CDATA[Show the most viewed threads of the week.]]></phrase>
+  <phrase title="ml_threads_of_the_year_explain" version_id="1" version_string="1.0.0"><![CDATA[Show the most liked threads of the year.]]></phrase>
+  <phrase title="ml_threads_of_the_year_explain_replied" version_id="6" version_string="1.0.3"><![CDATA[Show threads with more replies of the year.]]></phrase>
+  <phrase title="ml_threads_of_the_year_explain_viewed" version_id="6" version_string="1.0.3"><![CDATA[Show the most viewed threads of the year.]]></phrase>
+  <phrase title="ml_url_path" version_id="6" version_string="1.0.3"><![CDATA[URL Path]]></phrase>
+  <phrase title="ml_url_path_explain" version_id="6" version_string="1.0.3"><![CDATA[Adds a url path for the header]]></phrase>
+  <phrase title="ml_widged_display_minimal" version_id="2" version_string="1.0.1"><![CDATA[Show only the user avatar and thread title.]]></phrase>
+  <phrase title="widget_def.dl6_most_liked_posts" version_id="1" version_string="1.0.0"><![CDATA[Most liked posts]]></phrase>
+  <phrase title="widget_def.dl6_most_liked_threads" version_id="1" version_string="1.0.0"><![CDATA[Most liked threads]]></phrase>
+  <phrase title="widget_def.dl6_most_replied_threads" version_id="6" version_string="1.0.3"><![CDATA[Threads with more replies]]></phrase>
+  <phrase title="widget_def.dl6_most_viewed_threads" version_id="6" version_string="1.0.3"><![CDATA[Most viewed threads]]></phrase>
+  <phrase title="widget_def_desc.dl6_most_liked_posts" version_id="1" version_string="1.0.0"><![CDATA[Displays a block containing a list of most liked posts.]]></phrase>
+  <phrase title="widget_def_desc.dl6_most_liked_threads" version_id="1" version_string="1.0.0"><![CDATA[Displays a block containing a list of most liked threads.]]></phrase>
+  <phrase title="widget_def_desc.dl6_most_replied_threads" version_id="6" version_string="1.0.3"><![CDATA[Displays a block containing a list of threads with more replies.]]></phrase>
+  <phrase title="widget_def_desc.dl6_most_viewed_threads" version_id="6" version_string="1.0.3"><![CDATA[Displays a block containing a list of most viewed threads.]]></phrase>
+</phrases>

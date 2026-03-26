@@ -1,0 +1,27 @@
+{
+    "legacy_addon_id": "",
+    "title": "[XenGenTr] Kullanici Banner Sistemi",
+    "description": "XenForo 2 Kullanici bannerlarinizi less kodlari ile ugrasmadan kolayca ozellestirin",
+    "version_id": 1000013,
+    "version_string": "1.0.1",
+    "dev": "eTiKeT",
+    "dev_url": "https://xenforo.gen.tr/kullanicilar/etiket-tm.1/",
+    "faq_url": "",
+    "support_url": "https://xenforo.gen.tr/",
+    "extra_urls": {
+        "[XenGenTr] Kullanici Banner Sistemi": "https://xenforo.gen.tr/xenforo-kaynaklari/xengentr-kullanici-banner-sistemi.682/",
+        "Degerlendir": "https://xenforo.gen.tr/xenforo-kaynaklari/xengentr-kullanici-banner-sistemi.682/rate",
+        "Yorumlar": "https://xenforo.gen.tr/konular/xengentr-kullanici-banner-sistemi.3747/"
+    },
+    "require": {
+        "XF": [
+            2010032,
+            "XenForo 2.1.0+"
+        ],
+        "php": [
+            "5.6.0",
+            "PHP 5.6.0+"
+        ]
+    },
+    "icon": "XenGenTr.png"
+}

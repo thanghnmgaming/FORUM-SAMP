@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<templates>
+  <template type="public" title="cinvin_home_view" version_id="1000070" version_string="1.0.0"><![CDATA[<xf:if is="$xf.options.cinvinHome_BoardDescription">
+	<xf:set var="$homeDescription" value="{$xf.options.cinvinHome_BoardDescription}" />
+<xf:else />
+	<xf:set var="$homeDescription" value="{$xf.options.boardDescription}" />
+</xf:if>
+<xf:macro template="metadata_macros" name="metadata"
+	arg-description="{$homeDescription}"
+	arg-shareUrl="{$xf.options.boardUrl}"
+	arg-canonicalUrl="{$xf.options.boardUrl}" />
+
+<xf:if is="!$xf.options.cinvinHome_DisplayBreadcrumbs">
+	<xf:css>
+		.p-breadcrumbs {
+			display: none;
+		}
+	</xf:css>
+</xf:if>
+
+<xf:if is="$xf.options.cinvinHome_DisplayBoardTitle">
+	<xf:h1>{$xf.options.boardTitle}</xf:h1>
+<xf:else />
+	<xf:h1 hidden="true" />
+</xf:if>	
+
+<xf:if is="$xf.options.cinvinHome_DisplayBoardDescription">
+	<xf:description>{$homeDescription}</xf:description>
+</xf:if>	
+
+<xf:pageaction>
+	<xf:if is="$xf.options.cinvinHome_DisplayButtonNewPosts ">	
+		<xf:button href="{{ $xf.options.forumsDefaultPage == 'new_posts' ? link('forums/new-posts') : link('whats-new/posts') }}" icon="bolt">
+			{{ phrase('new_posts') }}
+		</xf:button>
+	</xf:if>
+	<xf:if is="$xf.options.cinvinHome_DisplayButtonPostThread">			
+		<xf:if is="$xf.visitor.canCreateThread()">
+			<xf:button href="{{ link('forums/create-thread') }}" class="button--cta" icon="write" overlay="true">
+				{{ phrase('post_thread...') }}
+			</xf:button>
+		</xf:if>
+	</xf:if>
+</xf:pageaction>
+
+<xf:widgetpos id="cinvin_home_sidebar" position="sidebar" />
+
+<xf:ad position="cinvin_home_above" />
+<xf:widgetpos id="cinvin_home_content_above" />
+<xf:ad position="cinvin_home_content_above" />
+<xf:widgetpos id="cinvin_home_content" />
+<xf:ad position="cinvin_home_content_below" />
+<xf:widgetpos id="cinvin_home_content_below" />
+<xf:ad position="cinvin_home_below" />]]></template>
+</templates>

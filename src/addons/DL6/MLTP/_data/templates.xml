@@ -1,0 +1,1184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<templates>
+  <template type="public" title="dl6_widget_posts_list" version_id="2" version_string="1.0.1"><![CDATA[<div class="contentRow">
+	<div class="contentRow-figure">
+		<xf:avatar user="$post.User" size="xxs" defaultname="{$post.username}" />
+	</div>
+	<div class="contentRow-main contentRow-main--close">
+			<a href="{{ link('threads/post', $post.Thread, {'post_id': $post.post_id}) }}">{{ prefix('thread', $post.Thread) }}{$post.Thread.title}</a>
+		<xf:if is="!$minimal">
+			<div class="contentRow-minor contentRow-minor--hideLinks">
+				<ul class="listInline listInline--bullet">
+					<li>{{ phrase('by_user_x', {'name': $post.username}) }}</li>
+					<li><xf:date time="{$post.post_date}" /></li>
+					<li>{{ phrase('likes:') }} {$post.likes|number}</li>
+				</ul>
+			</div>
+			<div class="contentRow-minor contentRow-minor--hideLinks">
+				<a href="{{ link('forums', $post.Thread.Forum) }}">{$post.Thread.Forum.title}</a>
+			</div>
+		</xf:if>
+	</div>
+</div>]]></template>
+  <template type="public" title="dl6_widget_posts_list_full" version_id="1" version_string="1.0.0"><![CDATA[<xf:css src="structured_list.less" />
+
+<div class="structItem structItem--thread{{ $post.Thread.prefix_id ? ' is-prefix' . $post.Thread.prefix_id : '' }}{{ $post.Thread.isIgnored() ? ' is-ignored' : '' }}{{ ($post.Thread.isUnread() AND !$forceRead) ? ' is-unread' : '' }}{{ $post.Thread.discussion_state == 'moderated' ? ' is-moderated' : '' }}{{ $post.Thread.discussion_state == 'deleted' ? ' is-deleted' : '' }} js-inlineModContainer js-threadListItem-{$post.Thread.thread_id}" data-author="{{ $post.Thread.User.username ?: $post.Thread.username }}">
+	<div class="structItem-cell structItem-cell--icon">
+		<div class="structItem-iconContainer">
+				<xf:avatar user="$post.User" size="s" defaultname="{$post.username}" />
+		</div>
+	</div>
+	<div class="structItem-cell structItem-cell--main" data-xf-init="touch-proxy">
+		<xf:if contentcheck="true">
+			<ul class="structItem-statuses">
+			<xf:contentcheck>
+				<xf:if is="$post.Thread.sticky">
+					<li>
+						<i class="structItem-status structItem-status--sticky" aria-hidden="true" title="{{ phrase('sticky') }}"></i>
+						<span class="u-srOnly">{{ phrase('sticky') }}</span>
+					</li>
+				</xf:if>
+				<xf:if is="!$post.Thread.discussion_open">
+					<li>
+						<i class="structItem-status structItem-status--locked" aria-hidden="true" title="{{ phrase('locked') }}"></i>
+						<span class="u-srOnly">{{ phrase('locked') }}</span>
+					</li>
+				</xf:if>
+				<xf:if is="$post.Thread.discussion_type == 'poll'" >
+					<li>
+						<i class="structItem-status structItem-status--poll" aria-hidden="true" title="{{ phrase('poll') }}"></i>
+						<span class="u-srOnly">{{ phrase('poll') }}</span>
+					</li>
+				</xf:if>
+				<xf:if is="{$showWatched} AND {$xf.visitor.user_id}">
+					<xf:if is="{$post.Thread.Watch.{$xf.visitor.user_id}}">
+						<li>
+							<i class="structItem-status structItem-status--watched" aria-hidden="true" title="{{ phrase('thread_watched') }}"></i>
+							<span class="u-srOnly">{{ phrase('thread_watched') }}</span>
+						</li>
+					<xf:elseif is="!$post.Thread.Forum AND {$post.Thread.Forum.Watch.{$xf.visitor.user_id}}" />
+						<li>
+							<i class="structItem-status structItem-status--watched" aria-hidden="true" title="{{ phrase('forum_watched') }}"></i>
+							<span class="u-srOnly">{{ phrase('forum_watched') }}</span>
+						</li>
+					</xf:if>
+				</xf:if>
+			</xf:contentcheck>
+			</ul>
+		</xf:if>
+
+		<div class="structItem-title">
+			<xf:set var="$canPreview" value="{{ $post.Thread.canPreview() }}" />
+			<xf:if is="$post.Thread.prefix_id">
+				<xf:if is="$post.Thread.Forum">
+					<a href="{{ link('forums', $post.Thread.Forum, {'prefix_id': $post.Thread.prefix_id}) }}" class="labelLink">{{ prefix('thread', $post.Thread, 'html', '') }}</a>
+				<xf:else />
+					{{ prefix('thread', $post.Thread, 'html', '') }}
+				</xf:if>
+			</xf:if>
+			<a href="{{ link('threads/post', $post.Thread, {'post_id': $post.post_id}) }}" >{$post.Thread.title}</a>
+		</div>
+	</div>
+	<div class="structItem-cell structItem-cell--meta">
+		<dl class="pairs pairs--justified">
+			<dt>{{ phrase('likes') }}</dt>
+			<dd>{$post.likes|number}</dd>
+		</dl>
+		<dl class="pairs pairs--justified structItem-minor">
+			<dt>{{ phrase('views') }}</dt>
+			<dd>{{ $post.Thread.discussion_type == 'redirect' ? '&ndash;' : ($post.Thread.view_count > $post.Thread.reply_count ? $post.Thread.view_count|number : number($post.Thread.reply_count+1)) }}</dd>
+		</dl>
+	</div>
+	<div class="structItem-cell structItem-cell--latest">
+		<xf:if is="$post.Thread.discussion_type == 'redirect'">
+			{{ phrase('n_a') }}
+		<xf:else />
+			<a href="{{ link('threads/post', $post.Thread, {'post_id': $post.post_id}) }}" rel="nofollow"><xf:date time="{$post.post_date}" class="structItem-latestDate" /></a>
+			<div class="structItem-minor">{$post.username}</div>
+		</xf:if>
+	</div>
+</div>]]></template>
+  <template type="public" title="dl6_widget_threads_list" version_id="2" version_string="1.0.1"><![CDATA[<div class="contentRow">
+	<div class="contentRow-figure">
+		<xf:avatar user="$thread.User" size="xxs" defaultname="{$thread.username}" />
+	</div>
+	<div class="contentRow-main contentRow-main--close">
+		<a href="{{ link('threads', $thread) }}">{{ prefix('thread', $thread) }}{$thread.title}</a>
+		<xf:if is="!$minimal">
+			<div class="contentRow-minor contentRow-minor--hideLinks">
+				<ul class="listInline listInline--bullet">
+					<li>{{ phrase('started_by_x', {'name': $thread.username}) }}</li>
+					<li><xf:date time="{$thread.post_date}" /></li>
+					<li>{{ phrase('replies:') }} {$thread.reply_count|number}</li>
+					<li>{{ phrase('likes:') }} {$thread.first_post_likes|number}</li>
+				</ul>
+			</div>
+			<div class="contentRow-minor contentRow-minor--hideLinks">
+				<a href="{{ link('forums', $thread.Forum) }}">{$thread.Forum.title}</a>
+			</div>
+		</xf:if>
+	</div>
+</div>]]></template>
+  <template type="public" title="dl6_widget_threads_list_full" version_id="1" version_string="1.0.0"><![CDATA[<xf:css src="structured_list.less" />
+
+<div class="structItem structItem--thread{{ $thread.prefix_id ? ' is-prefix' . $thread.prefix_id : '' }}{{ $thread.isIgnored() ? ' is-ignored' : '' }}{{ ($thread.isUnread() AND !$forceRead) ? ' is-unread' : '' }}{{ $thread.discussion_state == 'moderated' ? ' is-moderated' : '' }}{{ $thread.discussion_state == 'deleted' ? ' is-deleted' : '' }} js-inlineModContainer js-threadListItem-{$thread.thread_id}" data-author="{{ $thread.User.username ?: $thread.username }}">
+	<div class="structItem-cell structItem-cell--icon">
+		<div class="structItem-iconContainer">
+			<xf:avatar user="$thread.User" size="s" defaultname="{$thread.username}" />
+			<xf:if is="$thread.getUserPostCount()">
+				<xf:avatar user="$xf.visitor" size="s"
+					href=""
+					class="avatar--separated structItem-secondaryIcon"
+					title="{{ phrase('you_have_posted_x_messages_in_this_thread', {'count': $thread.getUserPostCount() }) }}" />
+			</xf:if>
+		</div>
+	</div>
+	<div class="structItem-cell structItem-cell--main" data-xf-init="touch-proxy">
+		<xf:if contentcheck="true">
+			<ul class="structItem-statuses">
+			<xf:contentcheck>
+				<xf:if is="$thread.sticky">
+					<li>
+						<i class="structItem-status structItem-status--sticky" aria-hidden="true" title="{{ phrase('sticky') }}"></i>
+						<span class="u-srOnly">{{ phrase('sticky') }}</span>
+					</li>
+				</xf:if>
+				<xf:if is="!$thread.discussion_open">
+					<li>
+						<i class="structItem-status structItem-status--locked" aria-hidden="true" title="{{ phrase('locked') }}"></i>
+						<span class="u-srOnly">{{ phrase('locked') }}</span>
+					</li>
+				</xf:if>
+				<xf:if is="$thread.discussion_type == 'poll'">
+					<li>
+						<i class="structItem-status structItem-status--poll" aria-hidden="true" title="{{ phrase('poll') }}"></i>
+						<span class="u-srOnly">{{ phrase('poll') }}</span>
+					</li>
+				</xf:if>
+				<xf:if is="{$showWatched} AND {$xf.visitor.user_id}">
+					<xf:if is="{$thread.Watch.{$xf.visitor.user_id}}">
+						<li>
+							<i class="structItem-status structItem-status--watched" aria-hidden="true" title="{{ phrase('thread_watched') }}"></i>
+							<span class="u-srOnly">{{ phrase('thread_watched') }}</span>
+						</li>
+					<xf:elseif is="!$forum AND {$thread.Forum.Watch.{$xf.visitor.user_id}}" />
+						<li>
+							<i class="structItem-status structItem-status--watched" aria-hidden="true" title="{{ phrase('forum_watched') }}"></i>
+							<span class="u-srOnly">{{ phrase('forum_watched') }}</span>
+						</li>
+					</xf:if>
+				</xf:if>
+			</xf:contentcheck>
+			</ul>
+		</xf:if>
+
+		<div class="structItem-title">
+			<xf:set var="$canPreview" value="{{ $thread.canPreview() }}" />
+			<xf:if is="$thread.prefix_id">
+				<xf:if is="$forum">
+					<a href="{{ link('forums', $forum, {'prefix_id': $thread.prefix_id}) }}" class="labelLink">{{ prefix('thread', $thread, 'html', '') }}</a>
+				<xf:else />
+						{{ prefix('thread', $thread, 'html', '') }}
+				</xf:if>
+			</xf:if>
+			<a href="{{ link('threads', $thread) }}" class="" data-tp-primary="on" data-xf-init="{{ $canPreview ? 'preview-tooltip' : '' }}" data-preview-url="{{ $canPreview ? link('threads/preview', $thread) : '' }}">{$thread.title}</a>
+		</div>
+	</div>
+	<div class="structItem-cell structItem-cell--meta" title="{{ phrase('first_message_likes:') }} {$thread.first_post_likes|number}">
+		<dl class="pairs pairs--justified">
+			<dt>{{ phrase('replies') }}</dt>
+			<dd>{{ $thread.discussion_type == 'redirect' ? '&ndash;' : $thread.reply_count|number }}</dd>
+		</dl>
+		<dl class="pairs pairs--justified structItem-minor">
+			<dt>{{ phrase('likes') }}</dt>
+			<dd>{{ $thread.first_post_likes|number }}</dd>
+		</dl>
+		<dl class="pairs pairs--justified structItem-minor">
+			<dt>{{ phrase('views') }}</dt>
+			<dd>{{ $thread.discussion_type == 'redirect' ? '&ndash;' : ($thread.view_count > $thread.reply_count ? $thread.view_count|number : number($thread.reply_count+1)) }}</dd>
+		</dl>
+	</div>
+	<div class="structItem-cell structItem-cell--latest">
+			<a href="{{ link('threads/latest', $thread) }}" rel="nofollow"><xf:date time="{$thread.last_post_date}" class="structItem-latestDate" /></a>
+			<div class="structItem-minor">
+				<xf:if is="$xf.visitor.isIgnoring($thread.last_post_user_id)">
+					{{ phrase('ignored_member') }}
+				<xf:else />
+					<xf:username user="{$thread.last_post_cache}" />
+				</xf:if>
+			</div>
+	</div>
+</div>]]></template>
+  <template type="public" title="dl6_widget_threads_list_full_replied" version_id="6" version_string="1.0.3"><![CDATA[<xf:css src="structured_list.less" />
+
+<div class="structItem structItem--thread{{ $thread.prefix_id ? ' is-prefix' . $thread.prefix_id : '' }}{{ $thread.isIgnored() ? ' is-ignored' : '' }}{{ ($thread.isUnread() AND !$forceRead) ? ' is-unread' : '' }}{{ $thread.discussion_state == 'moderated' ? ' is-moderated' : '' }}{{ $thread.discussion_state == 'deleted' ? ' is-deleted' : '' }} js-inlineModContainer js-threadListItem-{$thread.thread_id}" data-author="{{ $thread.User.username ?: $thread.username }}">
+	<div class="structItem-cell structItem-cell--icon">
+		<div class="structItem-iconContainer">
+			<xf:avatar user="$thread.User" size="s" defaultname="{$thread.username}" />
+			<xf:if is="$thread.getUserPostCount()">
+				<xf:avatar user="$xf.visitor" size="s"
+					href=""
+					class="avatar--separated structItem-secondaryIcon"
+					title="{{ phrase('you_have_posted_x_messages_in_this_thread', {'count': $thread.getUserPostCount() }) }}" />
+			</xf:if>
+		</div>
+	</div>
+	<div class="structItem-cell structItem-cell--main" data-xf-init="touch-proxy">
+		<xf:if contentcheck="true">
+			<ul class="structItem-statuses">
+			<xf:contentcheck>
+				<xf:if is="$thread.sticky">
+					<li>
+						<i class="structItem-status structItem-status--sticky" aria-hidden="true" title="{{ phrase('sticky') }}"></i>
+						<span class="u-srOnly">{{ phrase('sticky') }}</span>
+					</li>
+				</xf:if>
+				<xf:if is="!$thread.discussion_open">
+					<li>
+						<i class="structItem-status structItem-status--locked" aria-hidden="true" title="{{ phrase('locked') }}"></i>
+						<span class="u-srOnly">{{ phrase('locked') }}</span>
+					</li>
+				</xf:if>
+				<xf:if is="$thread.discussion_type == 'poll'">
+					<li>
+						<i class="structItem-status structItem-status--poll" aria-hidden="true" title="{{ phrase('poll') }}"></i>
+						<span class="u-srOnly">{{ phrase('poll') }}</span>
+					</li>
+				</xf:if>
+				<xf:if is="{$showWatched} AND {$xf.visitor.user_id}">
+					<xf:if is="{$thread.Watch.{$xf.visitor.user_id}}">
+						<li>
+							<i class="structItem-status structItem-status--watched" aria-hidden="true" title="{{ phrase('thread_watched') }}"></i>
+							<span class="u-srOnly">{{ phrase('thread_watched') }}</span>
+						</li>
+					<xf:elseif is="!$forum AND {$thread.Forum.Watch.{$xf.visitor.user_id}}" />
+						<li>
+							<i class="structItem-status structItem-status--watched" aria-hidden="true" title="{{ phrase('forum_watched') }}"></i>
+							<span class="u-srOnly">{{ phrase('forum_watched') }}</span>
+						</li>
+					</xf:if>
+				</xf:if>
+			</xf:contentcheck>
+			</ul>
+		</xf:if>
+
+		<div class="structItem-title">
+			<xf:set var="$canPreview" value="{{ $thread.canPreview() }}" />
+			<xf:if is="$thread.prefix_id">
+				<xf:if is="$forum">
+					<a href="{{ link('forums', $forum, {'prefix_id': $thread.prefix_id}) }}" class="labelLink">{{ prefix('thread', $thread, 'html', '') }}</a>
+				<xf:else />
+						{{ prefix('thread', $thread, 'html', '') }}
+				</xf:if>
+			</xf:if>
+			<a href="{{ link('threads', $thread) }}" class="" data-tp-primary="on" data-xf-init="{{ $canPreview ? 'preview-tooltip' : '' }}" data-preview-url="{{ $canPreview ? link('threads/preview', $thread) : '' }}">{$thread.title}</a>
+		</div>
+	</div>
+	<div class="structItem-cell structItem-cell--meta" title="{{ phrase('first_message_likes:') }} {$thread.first_post_likes|number}">
+		<dl class="pairs pairs--justified">
+			<dt>{{ phrase('replies') }}</dt>
+			<dd>{{ $thread.discussion_type == 'redirect' ? '&ndash;' : $thread.reply_count|number }}</dd>
+		</dl>
+		<dl class="pairs pairs--justified structItem-minor">
+			<dt>{{ phrase('views') }}</dt>
+			<dd>{{ $thread.discussion_type == 'redirect' ? '&ndash;' : ($thread.view_count > $thread.reply_count ? $thread.view_count|number : number($thread.reply_count+1)) }}</dd>
+		</dl>
+	</div>
+	<div class="structItem-cell structItem-cell--latest">
+			<a href="{{ link('threads/latest', $thread) }}" rel="nofollow"><xf:date time="{$thread.last_post_date}" class="structItem-latestDate" /></a>
+			<div class="structItem-minor">
+				<xf:if is="$xf.visitor.isIgnoring($thread.last_post_user_id)">
+					{{ phrase('ignored_member') }}
+				<xf:else />
+					<xf:username user="{$thread.last_post_cache}" />
+				</xf:if>
+			</div>
+	</div>
+</div>]]></template>
+  <template type="public" title="dl6_widget_threads_list_full_viewed" version_id="6" version_string="1.0.3"><![CDATA[<xf:css src="structured_list.less" />
+
+<div class="structItem structItem--thread{{ $thread.prefix_id ? ' is-prefix' . $thread.prefix_id : '' }}{{ $thread.isIgnored() ? ' is-ignored' : '' }}{{ ($thread.isUnread() AND !$forceRead) ? ' is-unread' : '' }}{{ $thread.discussion_state == 'moderated' ? ' is-moderated' : '' }}{{ $thread.discussion_state == 'deleted' ? ' is-deleted' : '' }} js-inlineModContainer js-threadListItem-{$thread.thread_id}" data-author="{{ $thread.User.username ?: $thread.username }}">
+	<div class="structItem-cell structItem-cell--icon">
+		<div class="structItem-iconContainer">
+			<xf:avatar user="$thread.User" size="s" defaultname="{$thread.username}" />
+			<xf:if is="$thread.getUserPostCount()">
+				<xf:avatar user="$xf.visitor" size="s"
+					href=""
+					class="avatar--separated structItem-secondaryIcon"
+					title="{{ phrase('you_have_posted_x_messages_in_this_thread', {'count': $thread.getUserPostCount() }) }}" />
+			</xf:if>
+		</div>
+	</div>
+	<div class="structItem-cell structItem-cell--main" data-xf-init="touch-proxy">
+		<xf:if contentcheck="true">
+			<ul class="structItem-statuses">
+			<xf:contentcheck>
+				<xf:if is="$thread.sticky">
+					<li>
+						<i class="structItem-status structItem-status--sticky" aria-hidden="true" title="{{ phrase('sticky') }}"></i>
+						<span class="u-srOnly">{{ phrase('sticky') }}</span>
+					</li>
+				</xf:if>
+				<xf:if is="!$thread.discussion_open">
+					<li>
+						<i class="structItem-status structItem-status--locked" aria-hidden="true" title="{{ phrase('locked') }}"></i>
+						<span class="u-srOnly">{{ phrase('locked') }}</span>
+					</li>
+				</xf:if>
+				<xf:if is="$thread.discussion_type == 'poll'">
+					<li>
+						<i class="structItem-status structItem-status--poll" aria-hidden="true" title="{{ phrase('poll') }}"></i>
+						<span class="u-srOnly">{{ phrase('poll') }}</span>
+					</li>
+				</xf:if>
+				<xf:if is="{$showWatched} AND {$xf.visitor.user_id}">
+					<xf:if is="{$thread.Watch.{$xf.visitor.user_id}}">
+						<li>
+							<i class="structItem-status structItem-status--watched" aria-hidden="true" title="{{ phrase('thread_watched') }}"></i>
+							<span class="u-srOnly">{{ phrase('thread_watched') }}</span>
+						</li>
+					<xf:elseif is="!$forum AND {$thread.Forum.Watch.{$xf.visitor.user_id}}" />
+						<li>
+							<i class="structItem-status structItem-status--watched" aria-hidden="true" title="{{ phrase('forum_watched') }}"></i>
+							<span class="u-srOnly">{{ phrase('forum_watched') }}</span>
+						</li>
+					</xf:if>
+				</xf:if>
+			</xf:contentcheck>
+			</ul>
+		</xf:if>
+
+		<div class="structItem-title">
+			<xf:set var="$canPreview" value="{{ $thread.canPreview() }}" />
+			<xf:if is="$thread.prefix_id">
+				<xf:if is="$forum">
+					<a href="{{ link('forums', $forum, {'prefix_id': $thread.prefix_id}) }}" class="labelLink">{{ prefix('thread', $thread, 'html', '') }}</a>
+				<xf:else />
+						{{ prefix('thread', $thread, 'html', '') }}
+				</xf:if>
+			</xf:if>
+			<a href="{{ link('threads', $thread) }}" class="" data-tp-primary="on" data-xf-init="{{ $canPreview ? 'preview-tooltip' : '' }}" data-preview-url="{{ $canPreview ? link('threads/preview', $thread) : '' }}">{$thread.title}</a>
+		</div>
+	</div>
+	<div class="structItem-cell structItem-cell--meta" title="{{ phrase('first_message_likes:') }} {$thread.first_post_likes|number}">
+		<dl class="pairs pairs--justified">
+			<dt>{{ phrase('replies') }}</dt>
+			<dd>{{ $thread.discussion_type == 'redirect' ? '&ndash;' : $thread.reply_count|number }}</dd>
+		</dl>
+		<dl class="pairs pairs--justified structItem-minor">
+			<dt>{{ phrase('views') }}</dt>
+			<dd>{{ $thread.discussion_type == 'redirect' ? '&ndash;' : ($thread.view_count > $thread.reply_count ? $thread.view_count|number : number($thread.reply_count+1)) }}</dd>
+		</dl>
+	</div>
+	<div class="structItem-cell structItem-cell--latest">
+			<a href="{{ link('threads/latest', $thread) }}" rel="nofollow"><xf:date time="{$thread.last_post_date}" class="structItem-latestDate" /></a>
+			<div class="structItem-minor">
+				<xf:if is="$xf.visitor.isIgnoring($thread.last_post_user_id)">
+					{{ phrase('ignored_member') }}
+				<xf:else />
+					<xf:username user="{$thread.last_post_cache}" />
+				</xf:if>
+			</div>
+	</div>
+</div>]]></template>
+  <template type="public" title="dl6_widget_threads_list_replied" version_id="6" version_string="1.0.3"><![CDATA[<div class="contentRow">
+	<div class="contentRow-figure">
+		<xf:avatar user="$thread.User" size="xxs" defaultname="{$thread.username}" />
+	</div>
+	<div class="contentRow-main contentRow-main--close">
+		<a href="{{ link('threads', $thread) }}">{{ prefix('thread', $thread) }}{$thread.title}</a>
+		<xf:if is="!$minimal">
+			<div class="contentRow-minor contentRow-minor--hideLinks">
+				<ul class="listInline listInline--bullet">
+					<li>{{ phrase('started_by_x', {'name': $thread.username}) }}</li>
+					<li><xf:date time="{$thread.post_date}" /></li>
+					<li>{{ phrase('replies:') }} {$thread.reply_count|number}</li>
+				</ul>
+			</div>
+			<div class="contentRow-minor contentRow-minor--hideLinks">
+				<a href="{{ link('forums', $thread.Forum) }}">{$thread.Forum.title}</a>
+			</div>
+		</xf:if>
+	</div>
+</div>]]></template>
+  <template type="public" title="dl6_widget_threads_list_viewed" version_id="10" version_string="1.1.0"><![CDATA[<div class="contentRow">
+	<div class="contentRow-figure">
+		<xf:avatar user="$thread.User" size="xxs" defaultname="{$thread.username}" />
+	</div>
+	<div class="contentRow-main contentRow-main--close">
+		<a href="{{ link('threads', $thread) }}">{{ prefix('thread', $thread) }}{$thread.title}</a>
+		<xf:if is="!$minimal">
+			<div class="contentRow-minor contentRow-minor--hideLinks">
+				<ul class="listInline listInline--bullet">
+					<li>{{ phrase('started_by_x', {'name': $thread.username}) }}</li>
+					<li><xf:date time="{$thread.post_date}" /></li>
+					<li>{{ phrase('views:') }} {{ $thread.discussion_type == 'redirect' ? '&ndash;' : ($thread.view_count > $thread.reply_count ? $thread.view_count|number : number($thread.reply_count+1)) }}</li>
+				</ul>
+			</div>
+			<div class="contentRow-minor contentRow-minor--hideLinks">
+				<a href="{{ link('forums', $thread.Forum) }}">{$thread.Forum.title}</a>
+			</div>
+		</xf:if>
+	</div>
+</div>]]></template>
+  <template type="admin" title="widget_def_options_dl6_most_liked_posts" version_id="6" version_string="1.0.3"><![CDATA[<hr class="formRowSep" />
+
+<xf:numberboxrow name="options[limit]" value="{$options.limit}" min="1"
+	label="{{ phrase('maximum_entries') }}" />
+
+<xf:radiorow name="options[time_lap]" value="{{ $options.time_lap }}"
+	label="{{ phrase('ml_most_liked_posts') }}">
+
+	<xf:option value="today"
+		label="{{ phrase('ml_of_the_day') }}"
+		hint="{{ phrase('ml_of_the_day_explain') }}" />
+	<xf:option value="week"
+		label="{{ phrase('ml_of_the_week') }}"
+		hint="{{ phrase('ml_of_the_week_explain') }}" />
+	<xf:option value="month"
+		label="{{ phrase('ml_of_the_month') }}"
+		hint="{{ phrase('ml_of_the_month_explain') }}" />
+	<xf:option value="year"
+		label="{{ phrase('ml_of_the_year') }}"
+		hint="{{ phrase('ml_of_the_year_explain') }}" />
+	<xf:option value="alltime"
+		label="{{ phrase('ml_of_all_time') }}"
+		hint="{{ phrase('ml_of_all_time_explain') }}" />
+	<xf:option value="custom"
+		label="{{ phrase('ml_most_liked_last_x_custom_option') }}"
+		hint="{{ phrase('ml_most_liked_last_x_custom_option_explain') }}">
+		<xf:numberbox name="options[custom_time_frame_days]" value="{{ $options.custom_time_frame_days|default(1) }}" min="1" />
+	</xf:option>
+</xf:radiorow>
+
+<xf:radiorow name="options[style]" value="{{ $options.style ?: 'simple' }}"
+	label="{{ phrase('display_style') }}">
+
+	<xf:option value="simple"
+		label="{{ phrase('simple') }}"
+		hint="{{ phrase('widget_display_simple_explain') }}">
+
+		<xf:checkbox>
+			<xf:option name="options[minimal]" selected="$options.minimal">
+				{{ phrase('ml_widged_display_minimal') }}
+			</xf:option>
+		</xf:checkbox>
+	</xf:option>
+
+	<xf:option value="full"
+		label="{{ phrase('full') }}"
+		hint="{{ phrase('new_threads_display_style_full_explain') }}" />
+	<xf:option value="expanded"
+		label="{{ phrase('expanded') }}"
+		hint="{{ phrase('ml_posts_display_style_expanded_explain') }}">
+
+		<xf:checkbox>
+			<xf:option name="options[show_expanded_title]" selected="$options.show_expanded_title">
+				{{ phrase('display_widget_title_above_list_of_threads') }}
+			</xf:option>
+		</xf:checkbox>
+	</xf:option>
+</xf:radiorow>
+
+<xf:numberboxrow name="options[limit_char]" value="{$options.limit_char}"
+	label="{{ phrase('ml_character_length') }}"
+	hint="{{ phrase('optional') }}"
+	explain="{{ phrase('ml_character_length_explain') }}" />
+
+<xf:textboxrow name="options[header_url]" type="text" value="{$options.header_url}"
+		label="{{ phrase('ml_url_path') }}"
+		hint="{{ phrase('optional') }}"
+		explain="{{ phrase('ml_url_path_explain') }}" />
+
+<xf:selectrow name="options[node_ids][]" value="{{ $options.node_ids ?: '' }}" multiple="multiple" size="7"
+	label="{{ phrase('forum_limit') }}"
+	explain="{{ phrase('only_include_threads_in_selected_forums') }}">
+
+	<xf:option value="">{{ phrase('all_forums') }}</xf:option>
+	<xf:foreach loop="$nodeTree.getFlattened(0)" value="$treeEntry">
+		<xf:option value="{$treeEntry.record.node_id}" disabled="{{ $treeEntry.record.node_type_id != 'Forum' }}">
+			{{ repeat('&nbsp;&nbsp;', $treeEntry.depth)|raw }} {$treeEntry.record.title}
+		</xf:option>
+	</xf:foreach>
+</xf:selectrow>]]></template>
+  <template type="admin" title="widget_def_options_dl6_most_liked_threads" version_id="6" version_string="1.0.3"><![CDATA[<hr class="formRowSep" />
+
+<xf:numberboxrow name="options[limit]" value="{$options.limit}" min="1"
+	label="{{ phrase('maximum_entries') }}" />
+
+<xf:radiorow name="options[time_lap]" value="{{ $options.time_lap }}"
+	label="{{ phrase('ml_most_liked_threads') }}">
+
+	<xf:option value="today"
+		label="{{ phrase('ml_of_the_day') }}"
+		hint="{{ phrase('ml_threads_of_the_day_explain') }}" />
+	<xf:option value="week"
+		label="{{ phrase('ml_of_the_week') }}"
+		hint="{{ phrase('ml_threads_of_the_week_explain') }}" />
+	<xf:option value="month"
+		label="{{ phrase('ml_of_the_month') }}"
+		hint="{{ phrase('ml_threads_of_the_month_explain') }}" />
+	<xf:option value="year"
+		label="{{ phrase('ml_of_the_year') }}"
+		hint="{{ phrase('ml_threads_of_the_year_explain') }}" />
+	<xf:option value="alltime"
+		label="{{ phrase('ml_of_all_time') }}"
+		hint="{{ phrase('ml_threads_of_all_time_explain') }}" />
+	<xf:option value="custom"
+		label="{{ phrase('ml_most_liked_last_x_custom_option') }}">
+
+		<xf:numberbox name="options[custom_time_frame_days]" value="{{ $options.custom_time_frame_days|default(1) }}" min="1" />
+	</xf:option>
+	<xf:explain>{{ phrase('ml_most_liked_last_x_custom_option_threads_explain') }}</xf:explain>
+</xf:radiorow>
+
+<xf:radiorow name="options[style]" value="{{ $options.style ?: 'simple' }}"
+	label="{{ phrase('display_style') }}">
+
+	<xf:option value="simple"
+		label="{{ phrase('simple') }}"
+		hint="{{ phrase('widget_display_simple_explain') }}">
+
+		<xf:checkbox>
+			<xf:option name="options[minimal]" selected="$options.minimal">
+				{{ phrase('ml_widged_display_minimal') }}
+			</xf:option>
+		</xf:checkbox>
+	</xf:option>
+
+	<xf:option value="full"
+		label="{{ phrase('full') }}"
+		hint="{{ phrase('new_threads_display_style_full_explain') }}" />
+	<xf:option value="expanded"
+		label="{{ phrase('expanded') }}"
+		hint="{{ phrase('new_threads_display_style_expanded_explain') }}">
+
+		<xf:checkbox>
+			<xf:option name="options[show_expanded_title]" selected="$options.show_expanded_title">
+				{{ phrase('display_widget_title_above_list_of_threads') }}
+			</xf:option>
+		</xf:checkbox>
+	</xf:option>
+</xf:radiorow>
+
+<xf:numberboxrow name="options[limit_char]" value="{$options.limit_char}"
+	label="{{ phrase('ml_character_length') }}"
+	hint="{{ phrase('optional') }}"
+	explain="{{ phrase('ml_character_length_explain') }}" />
+
+<xf:textboxrow name="options[header_url]" type="text" value="{$options.header_url}"
+		label="{{ phrase('ml_url_path') }}"
+		hint="{{ phrase('optional') }}"
+		explain="{{ phrase('ml_url_path_explain') }}" />
+
+<xf:selectrow name="options[node_ids][]" value="{{ $options.node_ids ?: '' }}" multiple="multiple" size="7"
+	label="{{ phrase('forum_limit') }}"
+	explain="{{ phrase('only_include_threads_in_selected_forums') }}">
+
+	<xf:option value="">{{ phrase('all_forums') }}</xf:option>
+	<xf:foreach loop="$nodeTree.getFlattened(0)" value="$treeEntry">
+		<xf:option value="{$treeEntry.record.node_id}" disabled="{{ $treeEntry.record.node_type_id != 'Forum' }}">
+			{{ repeat('&nbsp;&nbsp;', $treeEntry.depth)|raw }} {$treeEntry.record.title}
+		</xf:option>
+	</xf:foreach>
+</xf:selectrow>]]></template>
+  <template type="admin" title="widget_def_options_dl6_most_replied_threads" version_id="6" version_string="1.0.3"><![CDATA[<hr class="formRowSep" />
+
+<xf:numberboxrow name="options[limit]" value="{$options.limit}" min="1"
+	label="{{ phrase('maximum_entries') }}" />
+
+<xf:radiorow name="options[time_lap]" value="{{ $options.time_lap }}"
+	label="{{ phrase('ml_most_replied_threads') }}">
+
+	<xf:option value="today"
+		label="{{ phrase('ml_of_the_day') }}"
+		hint="{{ phrase('ml_threads_of_the_day_explain_replied') }}" />
+	<xf:option value="week"
+		label="{{ phrase('ml_of_the_week') }}"
+		hint="{{ phrase('ml_threads_of_the_week_explain_replied') }}" />
+	<xf:option value="month"
+		label="{{ phrase('ml_of_the_month') }}"
+		hint="{{ phrase('ml_threads_of_the_month_explain_replied') }}" />
+	<xf:option value="year"
+		label="{{ phrase('ml_of_the_year') }}"
+		hint="{{ phrase('ml_threads_of_the_year_explain_replied') }}" />
+	<xf:option value="alltime"
+		label="{{ phrase('ml_of_all_time') }}"
+		hint="{{ phrase('ml_threads_of_all_time_explain_replied') }}" />
+	<xf:option value="custom"
+		label="{{ phrase('ml_most_liked_last_x_custom_option') }}">
+
+		<xf:numberbox name="options[custom_time_frame_days]" value="{{ $options.custom_time_frame_days|default(1) }}" min="1" />
+	</xf:option>
+	<xf:explain>{{ phrase('ml_most_replied_last_x_custom_option_threads_explain') }}</xf:explain>
+</xf:radiorow>
+
+<xf:radiorow name="options[style]" value="{{ $options.style ?: 'simple' }}"
+	label="{{ phrase('display_style') }}">
+
+	<xf:option value="simple"
+		label="{{ phrase('simple') }}"
+		hint="{{ phrase('widget_display_simple_explain') }}">
+
+		<xf:checkbox>
+			<xf:option name="options[minimal]" selected="$options.minimal">
+				{{ phrase('ml_widged_display_minimal') }}
+			</xf:option>
+		</xf:checkbox>
+	</xf:option>
+
+	<xf:option value="full"
+		label="{{ phrase('full') }}"
+		hint="{{ phrase('new_threads_display_style_full_explain') }}" />
+	<xf:option value="expanded"
+		label="{{ phrase('expanded') }}"
+		hint="{{ phrase('new_threads_display_style_expanded_explain') }}">
+
+		<xf:checkbox>
+			<xf:option name="options[show_expanded_title]" selected="$options.show_expanded_title">
+				{{ phrase('display_widget_title_above_list_of_threads') }}
+			</xf:option>
+		</xf:checkbox>
+	</xf:option>
+</xf:radiorow>
+
+<xf:numberboxrow name="options[limit_char]" value="{$options.limit_char}"
+	label="{{ phrase('ml_character_length') }}"
+	hint="{{ phrase('optional') }}"
+	explain="{{ phrase('ml_character_length_explain') }}" />
+
+<xf:textboxrow name="options[header_url]" type="text" value="{$options.header_url}"
+		label="{{ phrase('ml_url_path') }}"
+		hint="{{ phrase('optional') }}"
+		explain="{{ phrase('ml_url_path_explain') }}" />
+
+<xf:selectrow name="options[node_ids][]" value="{{ $options.node_ids ?: '' }}" multiple="multiple" size="7"
+	label="{{ phrase('forum_limit') }}"
+	explain="{{ phrase('only_include_threads_in_selected_forums') }}">
+
+	<xf:option value="">{{ phrase('all_forums') }}</xf:option>
+	<xf:foreach loop="$nodeTree.getFlattened(0)" value="$treeEntry">
+		<xf:option value="{$treeEntry.record.node_id}" disabled="{{ $treeEntry.record.node_type_id != 'Forum' }}">
+			{{ repeat('&nbsp;&nbsp;', $treeEntry.depth)|raw }} {$treeEntry.record.title}
+		</xf:option>
+	</xf:foreach>
+</xf:selectrow>]]></template>
+  <template type="admin" title="widget_def_options_dl6_most_viewed_threads" version_id="6" version_string="1.0.3"><![CDATA[<hr class="formRowSep" />
+
+<xf:numberboxrow name="options[limit]" value="{$options.limit}" min="1"
+	label="{{ phrase('maximum_entries') }}" />
+
+<xf:radiorow name="options[time_lap]" value="{{ $options.time_lap }}"
+	label="{{ phrase('ml_most_viewed_threads') }}">
+
+	<xf:option value="today"
+		label="{{ phrase('ml_of_the_day') }}"
+		hint="{{ phrase('ml_threads_of_the_day_explain_viewed') }}" />
+	<xf:option value="week"
+		label="{{ phrase('ml_of_the_week') }}"
+		hint="{{ phrase('ml_threads_of_the_week_explain_viewed') }}" />
+	<xf:option value="month"
+		label="{{ phrase('ml_of_the_month') }}"
+		hint="{{ phrase('ml_threads_of_the_month_explain_viewed') }}" />
+	<xf:option value="year"
+		label="{{ phrase('ml_of_the_year') }}"
+		hint="{{ phrase('ml_threads_of_the_year_explain_viewed') }}" />
+	<xf:option value="alltime"
+		label="{{ phrase('ml_of_all_time') }}"
+		hint="{{ phrase('ml_threads_of_all_time_explain_viewed') }}" />
+	<xf:option value="custom"
+		label="{{ phrase('ml_most_liked_last_x_custom_option') }}">
+
+		<xf:numberbox name="options[custom_time_frame_days]" value="{{ $options.custom_time_frame_days|default(1) }}" min="1" />
+	</xf:option>
+	<xf:explain>{{ phrase('ml_most_viewed_last_x_custom_option_threads_explain') }}</xf:explain>
+</xf:radiorow>
+
+<xf:radiorow name="options[style]" value="{{ $options.style ?: 'simple' }}"
+	label="{{ phrase('display_style') }}">
+
+	<xf:option value="simple"
+		label="{{ phrase('simple') }}"
+		hint="{{ phrase('widget_display_simple_explain') }}">
+
+		<xf:checkbox>
+			<xf:option name="options[minimal]" selected="$options.minimal">
+				{{ phrase('ml_widged_display_minimal') }}
+			</xf:option>
+		</xf:checkbox>
+	</xf:option>
+
+	<xf:option value="full"
+		label="{{ phrase('full') }}"
+		hint="{{ phrase('new_threads_display_style_full_explain') }}" />
+	<xf:option value="expanded"
+		label="{{ phrase('expanded') }}"
+		hint="{{ phrase('new_threads_display_style_expanded_explain') }}">
+
+		<xf:checkbox>
+			<xf:option name="options[show_expanded_title]" selected="$options.show_expanded_title">
+				{{ phrase('display_widget_title_above_list_of_threads') }}
+			</xf:option>
+		</xf:checkbox>
+	</xf:option>
+</xf:radiorow>
+
+<xf:numberboxrow name="options[limit_char]" value="{$options.limit_char}"
+	label="{{ phrase('ml_character_length') }}"
+	hint="{{ phrase('optional') }}"
+	explain="{{ phrase('ml_character_length_explain') }}" />
+
+<xf:textboxrow name="options[header_url]" type="text" value="{$options.header_url}"
+		label="{{ phrase('ml_url_path') }}"
+		hint="{{ phrase('optional') }}"
+		explain="{{ phrase('ml_url_path_explain') }}" />
+
+<xf:selectrow name="options[node_ids][]" value="{{ $options.node_ids ?: '' }}" multiple="multiple" size="7"
+	label="{{ phrase('forum_limit') }}"
+	explain="{{ phrase('only_include_threads_in_selected_forums') }}">
+
+	<xf:option value="">{{ phrase('all_forums') }}</xf:option>
+	<xf:foreach loop="$nodeTree.getFlattened(0)" value="$treeEntry">
+		<xf:option value="{$treeEntry.record.node_id}" disabled="{{ $treeEntry.record.node_type_id != 'Forum' }}">
+			{{ repeat('&nbsp;&nbsp;', $treeEntry.depth)|raw }} {$treeEntry.record.title}
+		</xf:option>
+	</xf:foreach>
+</xf:selectrow>]]></template>
+  <template type="public" title="widget_dl6_most_liked_posts" version_id="6" version_string="1.0.3"><![CDATA[<xf:if is="$posts is not empty">
+	<xf:if is="$title">
+		<xf:set var="$wTitle" value="{{ $title }}" />
+	<xf:else />
+		<xf:set var="$wTitle" value="{{ phrase('ml_most_liked_posts_month', {'month': time($xf.time, 'F')}) }}" />
+	</xf:if>
+	<xf:if is="$style != 'expanded'">
+		<div class="block"{{ widget_data($widget) }}>
+			<div class="block-container">
+				<xf:if is="$style == 'full'">
+					<h3 class="block-header">
+						<xf:if is="$link">
+							<a href="{$link}" rel="nofollow">{$wTitle}</a>
+						<xf:else />
+							{$wTitle}
+						</xf:if>
+					</h3>
+					<div class="block-body">
+						<div class="structItemContainer">
+							<xf:foreach loop="$posts" value="$post">
+								<xf:include template="dl6_widget_posts_list_full" />
+							</xf:foreach>
+						</div>
+					</div>
+				<xf:else />
+					<h3 class="block-minorHeader">
+						<xf:if is="$link">
+							<a href="{$link}" rel="nofollow">{$wTitle}</a>
+						<xf:else />
+							{$wTitle}
+						</xf:if>
+					</h3>
+					<ul class="block-body">
+						<xf:if is="$posts is not empty">
+							<xf:foreach loop="$posts" value="$post">
+								<li class="block-row">
+									<xf:include template="dl6_widget_posts_list" />
+								</li>
+							</xf:foreach>
+						<xf:else />
+							<li class="block-row block-row--minor">
+								{{ phrase('no_results_found') }}
+							</li>
+						</xf:if>
+					</ul>
+				</xf:if>
+			</div>
+		</div>
+	<xf:else />
+		<xf:css src="message.less" />
+
+		<div class="blocks">
+			<xf:if is="$showExpandedTitle">
+				<h2 class="blocks-header">
+					{$wTitle}
+				</h2>
+			</xf:if>
+
+		<xf:foreach loop="$posts" value="$post">
+
+			<div class="block">
+				<div class="block-container recent_news"
+					data-xf-init="lightbox">
+
+					<h4 class="block-header">
+						<a href="{{ link('threads/post', $post.Thread, {'post_id': $post.post_id}) }}">{$post.Thread.title}</a>
+					</h4>
+					<div class="block-body">
+						<div class="message message--post">
+							<div class="message-inner">
+								<div class="message-cell message-cell--main">
+									<div class="message-content js-messageContent">
+										<header class="message-attribution">
+											<ul class="listInline listInline--bullet u-muted">
+												<xf:avatar user="$post.User" size="xxs" defaultname="{$post.username}" />
+												<li><xf:username user="{$post.User}" rich="true" /></li>
+												<li><xf:date time="{$post.post_date}" /></li>
+												<li><a href="{{ link('forums', $post.Thread.Forum) }}">{$post.Thread.Forum.title}</a></li>
+											</ul>
+										</header>
+										<div class="message-userContent lbContainer js-lbContainer"
+											data-lb-id="post-{$post.post_id}"
+											data-lb-caption-desc="{{ $post.User ? $post.User.username : $post.username }} &middot; {{ date_time($post.post_date) }}">
+
+											<article class="message-body">
+												<xf:if is="$options.limit_char > 0">
+													<xf:set var="$snippetPost" value="{{ snippet($post.message, {$options.limit_char}) }}" />
+												    {{ bb_code($snippetPost, 'post', $post) }}
+													<div><a href="{{ link('threads/post', $post.Thread, {'post_id': $post.post_id}) }}">{{ phrase('continue_reading') }}</a></div>
+												<xf:else />
+												    {{ bb_code($post.message, 'post', $post) }}
+												</xf:if>
+												<footer class="message-footer">
+													<div class="likesBar js-likeList {{ $post.likes ? 'is-active' : '' }}">
+														<xf:likes content="{$post}" url="{{ link('posts/likes', $post) }}" />
+													</div>
+												</footer>
+											</article>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</xf:foreach>
+		</div>
+	</xf:if>
+</xf:if>]]></template>
+  <template type="public" title="widget_dl6_most_liked_threads" version_id="6" version_string="1.0.3"><![CDATA[<xf:if is="$threads is not empty">
+	<xf:if is="$title">
+		<xf:set var="$wTitle" value="{{ $title }}" />
+	<xf:else />
+		<xf:set var="$wTitle" value="{{ phrase('ml_most_liked_threads_month', {'month': time($xf.time, 'F')}) }}" />
+	</xf:if>
+	<xf:if is="$style != 'expanded'">
+		<div class="block"{{ widget_data($widget) }}>
+			<div class="block-container">
+				<xf:if is="$style == 'full'">
+					<h3 class="block-header">
+						<xf:if is="$link">
+							<a href="{$link}" rel="nofollow">{$wTitle}</a>
+						<xf:else />
+							{$wTitle}
+						</xf:if>
+					</h3>
+					<div class="block-body">
+						<div class="structItemContainer">
+							<xf:foreach loop="$threads" value="$thread">
+								<xf:include template="dl6_widget_threads_list_full" />
+							</xf:foreach>
+						</div>
+					</div>
+					<xf:if is="$hasMore">
+						<div class="block-footer">
+							<span class="block-footer-controls">
+								<xf:button href="{$link}" rel="nofollow">{{ phrase('view_more...') }}</xf:button>
+							</span>
+						</div>
+					</xf:if>
+				<xf:else />
+					<h3 class="block-minorHeader">
+						<xf:if is="$link">
+							<a href="{$link}" rel="nofollow">{$wTitle}</a>
+						<xf:else />
+							{$wTitle}
+						</xf:if>
+					</h3>
+					<ul class="block-body">
+						<xf:foreach loop="$threads" value="$thread">
+							<li class="block-row">
+								<xf:include template="dl6_widget_threads_list" />
+							</li>
+						</xf:foreach>
+					</ul>
+				</xf:if>
+			</div>
+		</div>
+	<xf:else />
+		<xf:css src="message.less" />
+
+		<div class="blocks">
+			<xf:if is="$showExpandedTitle">
+				<h2 class="blocks-header">
+					{$wTitle}
+				</h2>
+			</xf:if>
+
+		<xf:foreach loop="$threads" value="$thread">
+			<xf:set var="$post" value="{$thread.FirstPost}" />
+
+			<div class="block">
+				<div class="block-container"
+					data-xf-init="lightbox">
+
+					<h4 class="block-header">
+						<a href="{{ link('threads', $thread) }}">{$thread.title}</a>
+					</h4>
+					<div class="block-body">
+						<div class="message message--post">
+							<div class="message-inner">
+								<div class="message-cell message-cell--main">
+									<div class="message-content js-messageContent">
+										<header class="message-attribution">
+											<ul class="listInline listInline--bullet u-muted">
+												<li><xf:username user="{$thread.User}" /></li>
+												<li><xf:date time="{$post.post_date}" /></li>
+												<li><a href="{{ link('forums', $thread.Forum) }}">{$thread.Forum.title}</a></li>
+												<li>{{ phrase('replies:') }} {$thread.reply_count|number}</li>
+											</ul>
+										</header>
+										<div class="message-userContent lbContainer js-lbContainer"
+											data-lb-id="post-{$post.post_id}"
+											data-lb-caption-desc="{{ $post.User ? $post.User.username : $post.username }} &middot; {{ date_time($post.post_date) }}">
+
+											<article class="message-body">
+												<xf:if is="$options.limit_char > 0">
+													<xf:set var="$snippetPost" value="{{ snippet($post.message, {$options.limit_char}) }}" />
+												    {{ bb_code($snippetPost, 'post', $post) }}
+													<div><a href="{{ link('threads/post', $thread, {'post_id': $post.post_id}) }}">{{ phrase('continue_reading') }}</a></div>
+												<xf:else />
+												    {{ bb_code($post.message, 'post', $post) }}
+												</xf:if>
+												<footer class="message-footer">
+													<div class="likesBar js-likeList {{ $post.likes ? 'is-active' : '' }}">
+														<xf:likes content="{$post}" url="{{ link('posts/likes', $post) }}" />
+													</div>
+												</footer>
+											</article>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</xf:foreach>
+		</div>
+	</xf:if>
+</xf:if>]]></template>
+  <template type="public" title="widget_dl6_most_replied_threads" version_id="6" version_string="1.0.3"><![CDATA[<xf:if is="$threads is not empty">
+	<xf:if is="$title">
+		<xf:set var="$wTitle" value="{{ $title }}" />
+	<xf:else />
+		<xf:set var="$wTitle" value="{{ phrase('ml_most_replied_threads_month', {'month': time($xf.time, 'F')}) }}" />
+	</xf:if>
+	<xf:if is="$style != 'expanded'">
+		<div class="block"{{ widget_data($widget) }}>
+			<div class="block-container">
+				<xf:if is="$style == 'full'">
+					<h3 class="block-header">
+						<xf:if is="$link">
+							<a href="{$link}" rel="nofollow">{$wTitle}</a>
+						<xf:else />
+							{$wTitle}
+						</xf:if>
+					</h3>
+					<div class="block-body">
+						<div class="structItemContainer">
+							<xf:foreach loop="$threads" value="$thread">
+								<xf:include template="dl6_widget_threads_list_full_replied" />
+							</xf:foreach>
+						</div>
+					</div>
+					<xf:if is="$hasMore">
+						<div class="block-footer">
+							<span class="block-footer-controls">
+								<xf:button href="{$link}" rel="nofollow">{{ phrase('view_more...') }}</xf:button>
+							</span>
+						</div>
+					</xf:if>
+				<xf:else />
+					<h3 class="block-minorHeader">
+						<xf:if is="$link">
+							<a href="{$link}" rel="nofollow">{$wTitle}</a>
+						<xf:else />
+							{$wTitle}
+						</xf:if>
+					</h3>
+					<ul class="block-body">
+						<xf:foreach loop="$threads" value="$thread">
+							<li class="block-row">
+								<xf:include template="dl6_widget_threads_list_replied" />
+							</li>
+						</xf:foreach>
+					</ul>
+				</xf:if>
+			</div>
+		</div>
+	<xf:else />
+		<xf:css src="message.less" />
+
+		<div class="blocks">
+			<xf:if is="$showExpandedTitle">
+				<h2 class="blocks-header">
+					{$wTitle}
+				</h2>
+			</xf:if>
+
+		<xf:foreach loop="$threads" value="$thread">
+			<xf:set var="$post" value="{$thread.FirstPost}" />
+
+			<div class="block">
+				<div class="block-container"
+					data-xf-init="lightbox">
+
+					<h4 class="block-header">
+						<a href="{{ link('threads', $thread) }}">{$thread.title}</a>
+					</h4>
+					<div class="block-body">
+						<div class="message message--post">
+							<div class="message-inner">
+								<div class="message-cell message-cell--main">
+									<div class="message-content js-messageContent">
+										<header class="message-attribution">
+											<ul class="listInline listInline--bullet u-muted">
+												<li><xf:username user="{$thread.User}" /></li>
+												<li><xf:date time="{$post.post_date}" /></li>
+												<li><a href="{{ link('forums', $thread.Forum) }}">{$thread.Forum.title}</a></li>
+												<li>{{ phrase('replies:') }} {$thread.reply_count|number}</li>
+											</ul>
+										</header>
+										<div class="message-userContent lbContainer js-lbContainer"
+											data-lb-id="post-{$post.post_id}"
+											data-lb-caption-desc="{{ $post.User ? $post.User.username : $post.username }} &middot; {{ date_time($post.post_date) }}">
+
+											<article class="message-body">
+												<xf:if is="$options.limit_char > 0">
+													<xf:set var="$snippetPost" value="{{ snippet($post.message, {$options.limit_char}) }}" />
+												    {{ bb_code($snippetPost, 'post', $post) }}
+													<div><a href="{{ link('threads/post', $thread, {'post_id': $post.post_id}) }}">{{ phrase('continue_reading') }}</a></div>
+												<xf:else />
+												    {{ bb_code($post.message, 'post', $post) }}
+												</xf:if>
+											</article>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</xf:foreach>
+		</div>
+	</xf:if>
+</xf:if>]]></template>
+  <template type="public" title="widget_dl6_most_viewed_threads" version_id="6" version_string="1.0.3"><![CDATA[<xf:if is="$threads is not empty">
+	<xf:if is="$title">
+		<xf:set var="$wTitle" value="{{ $title }}" />
+	<xf:else />
+		<xf:set var="$wTitle" value="{{ phrase('ml_most_viewed_threads_month', {'month': time($xf.time, 'F')}) }}" />
+	</xf:if>
+	<xf:if is="$style != 'expanded'">
+		<div class="block"{{ widget_data($widget) }}>
+			<div class="block-container">
+				<xf:if is="$style == 'full'">
+					<h3 class="block-header">
+						<xf:if is="$link">
+							<a href="{$link}" rel="nofollow">{$wTitle}</a>
+						<xf:else />
+							{$wTitle}
+						</xf:if>
+					</h3>
+					<div class="block-body">
+						<div class="structItemContainer">
+							<xf:foreach loop="$threads" value="$thread">
+								<xf:include template="dl6_widget_threads_list_full_viewed" />
+							</xf:foreach>
+						</div>
+					</div>
+					<xf:if is="$hasMore">
+						<div class="block-footer">
+							<span class="block-footer-controls">
+								<xf:button href="{$link}" rel="nofollow">{{ phrase('view_more...') }}</xf:button>
+							</span>
+						</div>
+					</xf:if>
+				<xf:else />
+					<h3 class="block-minorHeader">
+						<xf:if is="$link">
+							<a href="{$link}" rel="nofollow">{$wTitle}</a>
+						<xf:else />
+							{$wTitle}
+						</xf:if>
+					</h3>
+					<ul class="block-body">
+						<xf:foreach loop="$threads" value="$thread">
+							<li class="block-row">
+								<xf:include template="dl6_widget_threads_list_viewed" />
+							</li>
+						</xf:foreach>
+					</ul>
+				</xf:if>
+			</div>
+		</div>
+	<xf:else />
+		<xf:css src="message.less" />
+
+		<div class="blocks">
+			<xf:if is="$showExpandedTitle">
+				<h2 class="blocks-header">
+					{$wTitle}
+				</h2>
+			</xf:if>
+
+		<xf:foreach loop="$threads" value="$thread">
+			<xf:set var="$post" value="{$thread.FirstPost}" />
+
+			<div class="block">
+				<div class="block-container"
+					data-xf-init="lightbox">
+
+					<h4 class="block-header">
+						<a href="{{ link('threads', $thread) }}">{$thread.title}</a>
+					</h4>
+					<div class="block-body">
+						<div class="message message--post">
+							<div class="message-inner">
+								<div class="message-cell message-cell--main">
+									<div class="message-content js-messageContent">
+										<header class="message-attribution">
+											<ul class="listInline listInline--bullet u-muted">
+												<li><xf:username user="{$thread.User}" /></li>
+												<li><xf:date time="{$post.post_date}" /></li>
+												<li><a href="{{ link('forums', $thread.Forum) }}">{$thread.Forum.title}</a></li>
+												<li>{{ phrase('replies:') }} {$thread.reply_count|number}</li>
+												<li>{{ phrase('views:') }} {{ $thread.discussion_type == 'redirect' ? '&ndash;' : ($thread.view_count > $thread.reply_count ? $thread.view_count|number : number($thread.reply_count+1)) }}</li>
+											</ul>
+										</header>
+										<div class="message-userContent lbContainer js-lbContainer"
+											data-lb-id="post-{$post.post_id}"
+											data-lb-caption-desc="{{ $post.User ? $post.User.username : $post.username }} &middot; {{ date_time($post.post_date) }}">
+
+											<article class="message-body">
+												<xf:if is="$options.limit_char > 0">
+													<xf:set var="$snippetPost" value="{{ snippet($post.message, {$options.limit_char}) }}" />
+												    {{ bb_code($snippetPost, 'post', $post) }}
+													<div><a href="{{ link('threads/post', $thread, {'post_id': $post.post_id}) }}">{{ phrase('continue_reading') }}</a></div>
+												<xf:else />
+												    {{ bb_code($post.message, 'post', $post) }}
+												</xf:if>
+											</article>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</xf:foreach>
+		</div>
+	</xf:if>
+</xf:if>]]></template>
+</templates>

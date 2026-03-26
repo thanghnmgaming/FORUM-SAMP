@@ -1,0 +1,14 @@
+{
+    "legacy_addon_id": "",
+    "title": "[MPL] - Loading Page",
+    "description": "[MPL] - Loading Page ile A\u00e7\u0131l\u0131\u015f Ekran\u0131n\u0131 D\u00fczenle ",
+    "version_id": 2000090,
+    "version_string": "2.0.5",
+    "dev": "MusaPekel",
+    "dev_url": "https://xenforo.gen.tr/kullanicilar/musapekel.946/",
+    "faq_url": "https://xenforo.gen.tr/kullanicilar/musapekel.946/",
+    "support_url": "https://xenforo.gen.tr/kullanicilar/musapekel.946/",
+    "extra_urls": [],
+    "require": [],
+    "icon": "mpl.png"
+}

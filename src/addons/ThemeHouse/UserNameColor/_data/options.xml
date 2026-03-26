@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<options>
+  <option option_id="thusernamecolor_disallowedColors" edit_format="textbox" data_type="string">
+    <default_value></default_value>
+    <edit_format_params>rows=5</edit_format_params>
+    <relation group_id="thusernamecolor" display_order="1000"/>
+  </option>
+</options>

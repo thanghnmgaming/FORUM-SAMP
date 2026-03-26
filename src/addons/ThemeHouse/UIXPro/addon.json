@@ -1,0 +1,19 @@
+{
+    "legacy_addon_id": "",
+    "title": "[TH] UI.X Pro",
+    "description": "Efficiently monitor your UI.X performance.",
+    "version_id": 1000370,
+    "version_string": "1.0.3",
+    "dev": "ThemeHouse",
+    "dev_url": "https://www.themehouse.com",
+    "faq_url": "https://www.themehouse.com/help/documentation/uixpro/faqs",
+    "support_url": "https://www.themehouse.com/help",
+    "extra_urls": [],
+    "require": {
+        "XF": [
+            2010010,
+            "XenForo 2.1.0+"
+        ]
+    },
+    "icon": "icon.png"
+}

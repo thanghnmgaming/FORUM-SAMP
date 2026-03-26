@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<permissions>
+  <permission permission_group_id="th_unco" permission_id="bypassCustomColorRestrict" permission_type="flag" interface_group_id="th_unco" display_order="125"/>
+  <permission permission_group_id="th_unco" permission_id="use" permission_type="flag" interface_group_id="th_unco" display_order="100"/>
+  <permission permission_group_id="th_unco" permission_id="useCustom" permission_type="flag" interface_group_id="th_unco" display_order="120"/>
+</permissions>

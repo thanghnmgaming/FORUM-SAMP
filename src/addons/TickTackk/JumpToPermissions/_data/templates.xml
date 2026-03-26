@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<templates>
+  <template type="admin" title="tckJumpToPermissions_permission_macros" version_id="2000170" version_string="2.0.1"><![CDATA[<xf:macro name="jump_to_menu_global" arg-interfaceGroups="!">
+	<div class="menu" data-menu="menu" aria-hidden="true">
+		<div class="menu-content">
+			<h3 class="menu-header">{{ phrase('jumpToPermissions_jump_to...') }}</h3>
+			<xf:foreach loop="$interfaceGroups" key="$interfaceGroupId" value="$interfaceGroup">
+				<a class="menu-linkRow" href="{$xf.request.getRequestUri()}#permGroup-{$interfaceGroupId}" tabindex="0" data-menu-closer="true">
+					{$interfaceGroup.title}
+				</a>
+			</xf:foreach>
+		</div>
+	</div>
+</xf:macro>
+
+<xf:macro name="jump_to_menu_content" arg-interfaceGroups="!" arg-interfaceGroupId="!" arg-permissionsGrouped="!">
+	<div class="menu" data-menu="menu" aria-hidden="true">
+		<div class="menu-content">
+			<xf:if is="{$permissionsGrouped.{$interfaceGroupId}} is not empty">
+				<h3 class="menu-header">{{ phrase('jumpToPermissions_jump_to...') }}</h3>
+				<xf:foreach loop="$interfaceGroups" key="$_interfaceGroupId" value="$interfaceGroup">
+					<xf:if is="{$permissionsGrouped.{$_interfaceGroupId}} is not empty">
+						<a class="menu-linkRow" href="{$xf.request.getRequestUri()}#permGroup-{$_interfaceGroupId}" tabindex="0" data-menu-closer="true">
+							{$interfaceGroup.title}
+						</a>
+					</xf:if>
+				</xf:foreach>
+			</xf:if>
+		</div>
+	</div>
+</xf:macro>]]></template>
+</templates>

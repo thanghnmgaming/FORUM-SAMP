@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<permissions>
+  <permission permission_group_id="xenistatistik_encokgrnkon" permission_id="encokgrnkonu_gor" permission_type="flag" interface_group_id="XenistatistikizinGrubu" display_order="1"/>
+  <permission permission_group_id="xenistatistik_kullanici" permission_id="kullancilari_gor" permission_type="flag" interface_group_id="XenistatistikizinGrubu" display_order="30"/>
+  <permission permission_group_id="xenistatistik_sonkonu" permission_id="sonikonular_gor" permission_type="flag" interface_group_id="XenistatistikizinGrubu" display_order="10"/>
+  <permission permission_group_id="xenistatistik_sonmesajlar" permission_id="sonmesajlari_gor" permission_type="flag" interface_group_id="XenistatistikizinGrubu" display_order="20"/>
+</permissions>

@@ -1,0 +1,23 @@
+{
+    "legacy_addon_id": "",
+    "title": "[XFA] Forum List Tabs",
+    "description": "Bring tabbed forum list layout to your forum!",
+    "version_id": 901000391,
+    "version_string": "1.0.3",
+    "dev": "XFA",
+    "dev_url": "http://www.xen-factory.com",
+    "faq_url": "http://xen-factory.com/index.php?forums/add-ons-support.123/",
+    "support_url": "http://www.xen-factory.com/index.php?forums/",
+    "extra_urls": [],
+    "require": {
+        "XF": [
+            2000010,
+            "XenForo 2.0.0+"
+        ],
+        "php": [
+            "5.4.0",
+            "PHP 5.4.0+"
+        ]
+    },
+    "icon": "icon.png"
+}

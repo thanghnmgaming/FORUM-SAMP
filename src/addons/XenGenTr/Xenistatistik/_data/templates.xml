@@ -1,0 +1,659 @@
+<?xml version="1.0" encoding="utf-8"?>
+<templates>
+  <template type="public" title="Xenistatistik.less" version_id="1020050" version_string="1.2.2 Beta3"><![CDATA[/********************************************
+* XenForo.Gen.TR                            *
+* Xenistatistik CSS                         *
+* eTiKeT 2018                               *
+********************************************/
+
+.XenistatikGovde {
+	 .xf-xenist_govde()
+	 margin-bottom: 10px;
+	
+@media (max-width:@xf-responsiveMedium) {
+	 .XenistatikBlok {display: initial;}
+	 .XenOrtaKolon, .Xenistatistik--altheader { display: none; }
+	 }
+@media (min-width:@xf-responsiveMedium) {
+	 .XenistatikBlok {	display: flex;} 
+	.Xenistatistik--altheader { display: table;}
+	 }	
+@media (max-width:@xf-responsiveMedium) {
+	 .XenistatikBlok {display: initial;}
+	 .XenOrtaKolon  { display: none; }
+	.Xenistatistik--altheader { display: none;}
+	 }
+	
+	.Xenistatistik--altheader {
+		 background-color:  @xf-xenistatistik_alt_header; 
+		 color: @xf-xenistatistik_alt_header_metin;
+         table-layout: fixed;
+         border-collapse: collapse;
+         list-style: none;
+         margin: 0;
+         padding: 0;
+         width: 100%;
+		 line-height: 10px;
+				
+		    .structItem-cell--icon, 
+		    .structItem-cell--main,
+		    .structItem-cell--meta,
+		    .structItem-cell--latest {
+			   background-color:  @xf-xenistatistik_alt_header; 
+		       color: @xf-xenistatistik_alt_header_metin;	  
+               }
+		 
+			.structItem-cell {
+				padding: 5px 2px;
+				font-size: 12px;
+			    }
+		
+		    .Xenistatistik--altheader--sag {
+			    text-align: right;
+                color: @xf-xenistatistik_alt_header_metin;
+		         }
+	     }
+	
+	.XenistatikBlok {
+		 margin: 0 auto;
+
+		.XenKolon {
+			flex: 1 1 0;
+			overflow: hidden;
+			}
+	
+       .block-tabHeader {
+           background: @xf-xenistatistik_header_renk;
+           color: @xf-xenistatistik_header_metin_renk;
+           border: none;
+
+        .tabs-tab.is-active {
+           background: @xf-xenistatistik_header_aktif_tab_renk;
+           color: @xf-xenistatistik_header_aktif_tab_metin_renk;
+           border-color: @xf-xenistatistik_header_aktif_tab_sinir_renk;
+           }
+        }
+		
+		.XenSolKolon {
+			padding-right: 5px;
+			
+			 .structItem-cell.structItem-cell--icon {
+	               width: 35px;
+                   }
+						 
+			 .block-tabHeader {
+				   border-bottom:none; 
+			       }
+			
+			 .XenSolAvatarGizle { 
+				  .structItem-cell.structItem-cell--icon { display:none;}
+			      }
+			
+			.Xenistatistik--altheader--text { 
+				  color: @xf-xenistatistik_alt_header_metin;
+				  text-align: left;
+			      }
+		  }
+		
+		.XenOrtaKolon {
+			max-width: 250px;	
+			
+			.block {
+				 margin-bottom: 5px;
+				 }
+			
+			.block-row {
+            	/* border-top: 1px solid #e7e7e7;*/
+                 }
+
+            .contentRow-main { 
+              .contentRow-title {
+	                  text-overflow: ellipsis;
+	                  white-space: nowrap;
+	                 overflow: hidden;
+                    } 
+               }
+
+			.XenistatistikHeader {
+			      .xf-xenist_header()
+
+			     a { 
+				   color: inherit;
+			       }	
+            } 		
+	     }
+	}
+ }
+
+.XenistatikGovde { 
+
+	.XenSolKolonGizle {
+		
+			.XenOrtaKolon {
+
+			  	    .avatar--xs {
+	                     font-size: 15px;
+	                     height: 25px;
+	                     width: 25px;
+                         }		
+
+				    .contentRow--alignMiddle {
+	                     height: 22.9px;
+                         }
+
+				    .block-row {
+	                     padding: 6px 2px;
+                         }	  
+	        }
+			  
+
+			.XenSolKolon {
+
+                .structItem-title {
+		            font-size: 14px;
+		            height: 25px;
+		            overflow: hidden;
+		            line-height: 25px;   
+					
+					> span { 
+						height: 15px;
+                        line-height: 15px;
+					    }
+		         }	
+	
+	            .block-body {
+
+			        li { 
+					  border-bottom:1px solid rgba(231, 231, 231, 0.1); 
+					  }
+
+			        .contentRow-extra--large { 
+					     color: rgba(255, 255, 255, 0.5);
+				         }
+		        }
+				
+	            .structItem-cell { 
+	                padding: 5px;
+	                }
+
+	            .u-dt[title] {
+		            float: left;
+		            height: 20px;
+		            overflow: hidden;
+		            text-decoration: none;
+		            text-overflow: ellipsis;
+                    white-space: nowrap;
+		            width: 90px;
+		            }
+
+	            .structItem-cell .structItem-cell--icon {
+		            width: 35px;
+		            }
+
+	            .structItem-iconContainer .avatar {
+		            font-size: 15px;
+		            height: 25px;
+		            width: 25px;
+		            }	
+
+	            .structItem-iconContainer .structItem-secondaryIcon {
+		            bottom: -5px;
+		            font-size: 12px;
+		            height: 15px;
+		            position: absolute;
+		            right: -5px;
+		            width: 15px;
+		            }
+		
+	            .block-footer:not(.block-footer--split) 
+				.block-footer-controls {
+		            display: none;
+		            }
+
+				.XenYeniMesajlar, .XenYeniKonular {
+
+	                  .structItem-minor .structItem-parts, 
+	                  .structItem-pageJump,
+	                  .structItem-statuses .structItem-status,
+	                  .structItem-minor .structItem-extraInfoMinor,
+	                  .structItem-cell .structItem-minor dd,
+	                  .structItem-cell .structItem-minor dt,
+                      .lastPostAv { 
+				             display: none; 
+				             }
+				}
+
+	            .structItem-cell.structItem-cell--meta {
+				     width: 100px;
+			         }
+
+	            .structItem-cell .structItem-minor {
+					  float: right;
+                      width: 80px;
+                      overflow: hidden;
+                      text-overflow: ellipsis;
+                      white-space: nowrap;
+			          }
+
+	            .structItem-title {
+		            font-size: 14px;
+		            height: 25px;
+		            overflow: hidden;
+		            line-height: 25px;    
+		            }
+		
+	            .pairs.pairs--justified > dt, .structItem-cell {
+		            font-size: 12px;
+		            }
+
+	            .pairs.pairs--justified > dd { 
+		            float: none;
+	                text-align: left;
+	                }
+	
+	            .p-body-sidebar .block-body .block-row  {
+		            padding: 5px;
+		            }
+	
+                .p-body-sidebar .block-body .block-row .avatar.avatar--xs  {
+		            font-size: 15px;
+		            height: 25px;
+		            width: 25px;
+		            }
+    
+	         @media (max-width:900px) {	
+		        .u-dt[title] { display:none;}	
+	            }
+	
+	         @media (max-width: @xf-responsiveMedium) {
+		        .structItem-cell.structItem-cell--meta ,
+		        .structItem-cell.structItem-cell--latest:before ,
+		        .structItem-cell.structItem-cell--latest a,
+		        .structItem-statuses > li, 
+		        .structItem-extraInfo > li,
+		        .p-body-sidebar .block-container { display:none;}	
+	            .XenistatikGovde .structItem-cell { display: inline-block;}			 
+               }
+	
+	         @media (min-width: @xf-responsiveMedium)  {
+	            .structItem-cell  { display: table-cell;  }
+                 }
+
+          }
+     }
+}]]></template>
+  <template type="public" title="XenistatistikBlok" version_id="1020040" version_string="1.2.2 Beta2"><![CDATA[<xf:if is="{{ $xf.visitor.hasPermission('xenistatistik_sonmesajlar','sonmesajlari_gor') or 
+			  $xf.visitor.hasPermission('xenistatistik_sonkonu','sonikonular_gor') or
+			  $xf.visitor.hasPermission('xenistatistik_kullanici','kullancilari_gor') or
+		      $xf.visitor.hasPermission('xenistatistik_encokgrnkon','sonikonular_gor')
+		    }} is not empty">	
+<xf:css src="Xenistatistik.less" /> 
+    <div class="XenistatikGovde">
+        <div class="XenistatikBlok XenSolKolonGizle"> 
+            <div class="XenKolon XenSolKolon"> 
+			   <h2 class="block-tabHeader tabs hScroller" data-xf-init="tabs" role="tablist">
+			        <xf:if is="{{ $xf.visitor.hasPermission('xenistatistik_sonmesajlar','sonmesajlari_gor') 
+							      && $xf.options.xenistatistik_yenimesajkapat }}">	
+                        <a href=""
+                             class="tabs-tab is-active"
+						     tabindex="0" 
+                             role="tab"
+                             aria-controls="XenYeniMesaj_Widget">
+							{{ $xf.options.xenistatistik_yenimesajlar_baslik }}
+					    </a>
+			        </xf:if>
+				   
+				    <xf:if is="{{ $xf.visitor.hasPermission('xenistatistik_sonkonu','sonikonular_gor') 
+							    &&  $xf.options.xenistatistik_yenikonukapat }}">
+                         <a href=""
+                            class="tabs-tab"
+						    tabindex="0" 
+                            id="XenYeniKonu_Widget"
+                            role="tab">
+					        {{ $xf.options.xenistatistik_sonkonu_baslik }}
+						</a>
+				    </xf:if>
+				   
+				   <xf:if is="{{ $xf.visitor.hasPermission('xenistatistik_encokgrnkon','encokgrnkonu_gor')   
+							  &&  $xf.options.xenistatistik_encokgrnkonukapat }}">
+                         <a href=""
+                            class="tabs-tab"
+						    tabindex="0" 
+                            id="XenEncokGrnKonular_Widget"
+                            role="tab">
+					         {{ $xf.options.Xenistatistik_encokgrn_baslik }}
+						</a>
+		            </xf:if>
+                </h2>
+              <ul class="tabPanes">
+				  <xf:if is="{{ $xf.visitor.hasPermission('xenistatistik_sonmesajlar','sonmesajlari_gor') 
+							 &&  $xf.options.xenistatistik_yenimesajkapat }}">
+                    <li class="is-active" role="tabpanel" id="XenYeniMesaj_Widget">
+                        <xf:widget key="XenYeniMesaj_Widget" />
+                    </li> 
+                  </xf:if>
+				  
+				<xf:if is="{{ $xf.visitor.hasPermission('xenistatistik_sonkonu','sonikonular_gor') 
+						    &&  $xf.options.xenistatistik_yenikonukapat }}">
+                    <li role="tabpanel" aria-labelledby="XenYeniKonu_Widget">
+                        <xf:widget key="XenYeniKonu_Widget" />
+                    </li>
+				 </xf:if> 
+				  
+				 <xf:if is="{{ $xf.visitor.hasPermission('xenistatistik_encokgrnkon','encokgrnkonu_gor')
+							 &&  $xf.options.xenistatistik_encokgrnkonukapat }}">
+				   <li role="tabpanel" aria-labelledby="XenEncokGrnKonular_Widget">
+                        <xf:widget key="XenEncokGrnKonular_Widget" />
+                    </li> 
+				 </xf:if> 	 
+                </ul>
+	         </div>	 
+			    <xf:if is="{{ $xf.visitor.hasPermission('xenistatistik_kullanici','kullancilari_gor')  
+						   && $xf.options.xenistatistik_kullanicikapat }}
+						   && $xf.visitor.user_id "> 
+				   <div class="XenKolon XenOrtaKolon">
+                     <xf:widget key="Xenuyeistatik_widget" />
+			       </div>
+		      </xf:if>
+        </div>	
+	</div>
+</xf:if>]]></template>
+  <template type="public" title="XenistatistikEnCokGrnKonular" version_id="1020030" version_string="1.2.2 Beta1"><![CDATA[<xf:if is="$threads is not empty && {{ $xf.visitor.hasPermission('xenistatistik_encokgrnkon','encokgrnkonu_gor') }}">
+  <xf:css src="structured_list.less" />
+	<div class="block XenEnCokGorüntülenen"{{ widget_data($widget) }}>
+		
+				<div class="Xenistatistik--altheader structItem--thread">
+					<div class="structItem-cell structItem-cell--icon Xenistatistik--altheader--text">
+					</div>
+					<div class="structItem-cell structItem-cell--main Xenistatistik--altheader--text">
+					  {{ phrase('xenistatistik_konu') }}
+					</div>
+					<div class="structItem-cell structItem-cell--meta Xenistatistik--altheader--text">
+					   {{ phrase('views') }}
+					</div>
+					<div class="structItem-cell structItem-cell--latest Xenistatistik--altheader--text">
+					  {{ phrase('xenistatistik_tarih') }}
+						<div class="structItem-minor Xenistatistik--altheader--sag">
+							{{ phrase('xenistatistik_kullanici') }}
+						</div>
+					 </div>
+				 </div>
+		
+		<div class="block-body">
+			<div class="structItemContainer">
+				<xf:foreach loop="$threads" value="$thread">											
+				    <div class="structItem structItem--thread{{ $thread.prefix_id ? ' is-prefix' . $thread.prefix_id : '' }}
+				                {{ $thread.isIgnored() ? ' is-ignored' : '' }}{{ ($thread.isUnread() AND !$forceRead) ? ' is-unread' : '' }}
+				                {{ $thread.discussion_state == 'moderated' ? ' is-moderated' : '' }}
+				                {{ $thread.discussion_state == 'deleted' ? ' is-deleted' : '' }} js-inlineModContainer js-threadListItem-{$thread.thread_id}" data-author="{{ $thread.User.username ?: $thread.username }}">
+						<div class="structItem-cell structItem-cell--icon">
+				    		<div class="structItem-iconContainer">
+				        		<xf:avatar user="$thread.User" size="s" defaultname="{$thread.username}" />
+				        		<xf:if is="$thread.getUserPostCount()">
+				            		<xf:avatar user="$xf.visitor" size="s"	href=""	class="avatar--separated structItem-secondaryIcon"	title="{{ phrase('you_have_posted_x_messages_in_this_thread', {'count': $thread.getUserPostCount() }) }}" />
+				        		</xf:if>
+				    		</div>
+						</div>
+						<div class="structItem-cell structItem-cell--main" data-xf-init="touch-proxy">
+				    		<xf:if contentcheck="true">
+			          			<ul class="structItem-statuses">
+				            		<xf:contentcheck>
+				                		<xf:if is="$thread.sticky">
+				                    		<li>
+				                        		<i class="structItem-status structItem-status--sticky" aria-hidden="true" title="{{ phrase('sticky') }}"></i>
+				                        		<span class="u-srOnly">{{ phrase('sticky') }}</span>
+				                    		</li>
+				                		</xf:if>
+				                		<xf:if is="!$thread.discussion_open">
+				                    		<li>
+				                        		<i class="structItem-status structItem-status--locked" aria-hidden="true" title="{{ phrase('locked') }}"></i>
+				                        		<span class="u-srOnly">{{ phrase('locked') }}</span>
+				                    		</li>
+				                		</xf:if>
+				                		<xf:if is="$thread.discussion_type == 'poll'">
+				                    		<li>
+				                        		<i class="structItem-status structItem-status--poll" aria-hidden="true" title="{{ phrase('poll') }}"></i>
+				                        		<span class="u-srOnly">{{ phrase('poll') }}</span>
+				                    		</li>
+				                		</xf:if>
+				                		<xf:if is="{$showWatched} AND {$xf.visitor.user_id}">
+				                    		<xf:if is="{$thread.Watch.{$xf.visitor.user_id}}">
+				                        		<li>
+				                            		<i class="structItem-status structItem-status--watched" aria-hidden="true" title="{{ phrase('thread_watched') }}"></i>
+				                            		<span class="u-srOnly">{{ phrase('thread_watched') }}</span>
+				                        		</li>
+				                    		<xf:elseif is="!$forum AND {$thread.Forum.Watch.{$xf.visitor.user_id}}" />
+			                         			<li>
+				                            		<i class="structItem-status structItem-status--watched" aria-hidden="true" title="{{ phrase('forum_watched') }}"></i>
+				                            		<span class="u-srOnly">{{ phrase('forum_watched') }}</span>
+				                        		</li>
+				                    		</xf:if>
+				                		</xf:if>
+				            		</xf:contentcheck>
+				        		</ul>
+				    		</xf:if>
+
+				    		<div class="structItem-title">
+			            		<xf:set var="$canPreview" value="{{ $thread.canPreview() }}" />
+				            		<xf:if is="$thread.prefix_id">
+				                		<xf:if is="$forum">
+				                    		<a href="{{ link('forums', $forum, {'prefix_id': $thread.prefix_id}) }}" class="labelLink">{{ prefix('thread', $thread, 'html', '') }}</a>
+				                		<xf:else />
+				                    		{{ prefix('thread', $thread, 'html', '') }}
+				                		</xf:if>
+				            		</xf:if>
+				        		<a href="{{ link('threads', $thread) }}" class="" data-tp-primary="on" data-xf-init="{{ $canPreview ? 'preview-tooltip' : '' }}" data-preview-url="{{ $canPreview ? link('threads/preview', $thread) : '' }}">{$thread.title}</a>
+				    		</div>
+						</div>
+						<div class="structItem-cell structItem-cell--meta" title="{{ phrase('first_message_likes:') }} {$thread.first_post_likes|number}">
+			        		<dl class="pairs pairs--justified">
+				        		<dt><i class="fa fa-eye" aria-hidden="true"> </i>  </dt>
+				        		<dd>{{ $thread.discussion_type == 'redirect' ? '&ndash;' : ($thread.view_count > $thread.reply_count ? $thread.view_count|number : number($thread.reply_count+1)) }}</dd>
+				    		</dl>
+						</div>
+						
+			            <div class="structItem-cell structItem-cell--latest">
+			                <a href="{{ link('threads/latest', $thread) }}" rel="nofollow"><xf:date time="{$thread.last_post_date}" class="structItem-latestDate" /></a>
+			                  <div class="structItem-minor">
+				                   <xf:if is="$xf.visitor.isIgnoring($thread.last_post_user_id)">
+				                     	{{ phrase('ignored_member') }}
+				                   <xf:else />
+					                   <xf:username user="{$thread.last_post_cache}" />
+				                  </xf:if>
+			                 </div>
+	                     </div>
+				    </div>
+				</xf:foreach>
+			</div>
+		</div>
+	</div>	
+</xf:if>]]></template>
+  <template type="public" title="XenistatistikYeniMesaj" version_id="1020030" version_string="1.2.2 Beta1"><![CDATA[<xf:if is="{{ $xf.visitor.hasPermission('xenistatistik_sonmesajlar','sonmesajlari_gor') 
+		    &&  $xf.options.xenistatistik_yenimesajkapat }}">	
+    <xf:if is="$threads is not empty OR ($threads is empty AND $filter != 'latest')">
+		<xf:if is="$style == 'full'">
+		  <div class="block XenYeniMesajlar"{{ widget_data($widget) }}>
+				<div class="Xenistatistik--altheader structItem--thread">
+					<div class="structItem-cell structItem-cell--icon Xenistatistik--altheader--text">
+					</div>
+					<div class="structItem-cell structItem-cell--main Xenistatistik--altheader--text">
+					  {{ phrase('xenistatistik_konu') }}
+					</div>
+					<div class="structItem-cell structItem-cell--meta Xenistatistik--altheader--text">
+					   {{ phrase('xenistatistik_cevapsayisi') }}
+					</div>
+					<div class="structItem-cell structItem-cell--latest Xenistatistik--altheader--text">
+					  {{ phrase('xenistatistik_tarih') }}
+						<div class="structItem-minor Xenistatistik--altheader--sag">
+							{{ phrase('xenistatistik_kullanici') }}
+						</div>
+					 </div>
+				 </div>
+			  
+			<div class="structItemContainer <xf:if is="{{ !$xf.options.xenistatistik_avatar}}">XenSolAvatarGizle</xf:if>">
+				<xf:if is="$threads is not empty">
+					<xf:foreach loop="$threads" value="$thread">
+						<xf:macro template="thread_list_macros" name="item"
+									arg-allowInlineMod="{{ false }}"
+									arg-thread="{$thread}" />
+					    </xf:foreach>
+					<xf:elseif is="$filter == 'unread'" />
+						<div class="block-row">
+							{{ phrase('no_unread_posts_view_latest', {'link': link('whats-new/posts', null, {'skip': 1})}) }}
+						</div>
+					<xf:else />
+						<div class="block-row">
+							{{ phrase('no_results_found') }}
+						</div>
+					</xf:if>
+			</div>
+			  	</div>
+		</xf:if>
+    </xf:if>
+</xf:if>]]></template>
+  <template type="public" title="XenistatistikYenikonu" version_id="1020030" version_string="1.2.2 Beta1"><![CDATA[<xf:if is="$threads is not empty && {{ $xf.visitor.hasPermission('xenistatistik_sonkonu','sonikonular_gor') 
+		    &&  $xf.options.xenistatistik_yenikonukapat }}">
+	    <xf:if is="$style != 'expanded'">
+		    <div class="block XenYeniKonular"{{ widget_data($widget) }}>
+				<div class="Xenistatistik--altheader structItem--thread">
+					<div class="structItem-cell structItem-cell--icon Xenistatistik--altheader--text">
+					</div>
+					<div class="structItem-cell structItem-cell--main Xenistatistik--altheader--text">
+					  {{ phrase('xenistatistik_konu') }}
+					</div>
+					<div class="structItem-cell structItem-cell--meta Xenistatistik--altheader--text">
+					   {{ phrase('xenistatistik_cevapsayisi') }}
+					</div>
+					<div class="structItem-cell structItem-cell--latest Xenistatistik--altheader--text">
+					  {{ phrase('xenistatistik_tarih') }}
+						<div class="structItem-minor Xenistatistik--altheader--sag">
+							{{ phrase('xenistatistik_kullanici') }}
+						</div>
+					 </div>
+				 </div>
+				<xf:if is="$style == 'full'">
+				    <div class="structItemContainer <xf:if is="{{ !$xf.options.xenistatistik_avatar}}">XenSolAvatarGizle</xf:if>">
+					    <xf:foreach loop="$threads" value="$thread">
+							<xf:macro template="thread_list_macros" name="item"
+								arg-allowInlineMod="{{ false }}"
+								arg-thread="{$thread}" />
+						</xf:foreach>
+					</div>
+				</xf:if>
+		    </div>
+	    </xf:if>
+	</xf:if>]]></template>
+  <template type="admin" title="Xenistatistik_acp_tab_sistem" version_id="1020030" version_string="1.2.2 Beta1"><![CDATA[<xf:macro name="option_form_block" arg-group="" arg-options="!" arg-containerBeforeHtml="">
+    <xf:if is="$options is not empty">
+        <xf:form action="{{ link('options/update') }}" ajax="true" class="block">
+            {$containerBeforeHtml|raw}
+            <div class="block-container">
+                <h2 class="block-tabHeader tabs" data-xf-init="tabs" role="tablist">
+                    <a class="tabs-tab is-active" role="tab" tabindex="0" aria-controls="xenistatiksecenekler">{{ phrase('Xenistatistik_tab_secenekler') }}</a>
+                    <a class="tabs-tab" role="tab" tabindex="0" aria-controls="XenistatikTab1">{{ phrase('Xenistatistik_kullanici') }}</a>
+					<a class="tabs-tab" role="tab" tabindex="0" aria-controls="XenistatikTab1">{{ phrase('xenistatistik_YeniKonular') }}</a>
+					<a class="tabs-tab" role="tab" tabindex="0" aria-controls="XenistatikTab1">{{ phrase('xenistatistik_YeniMesajlar') }}</a>
+					<a class="tabs-tab" role="tab" tabindex="0" aria-controls="XenistatikTab1">{{ phrase('xenistatistik_EnCokGrnKonular') }}</a>
+                </h2>
+                <ul class="tabPanes">
+					
+					<h3 class="block-header">
+					[XenGenTr] www.xenforo.gen.TR
+					</h3>
+					
+	
+                    <li class="is-active" role="tabpanel" id="xenistatiksecenekler">
+                        <div class="block-body">
+                            <xf:foreach loop="$options" value="$option">
+                            <xf:if is="$option.Relations.Xenistatistik_secenekler.display_order < 100">
+                                <xf:macro template="option_macros" name="option_row" arg-group="{$group}" arg-option="{$option}" />
+                            </xf:if>
+                            </xf:foreach>
+                        </div>
+                    </li>
+                    <li role="tabpanel" id="XenistatikTab1">
+                        <div class="block-body">
+							
+							
+                            <xf:foreach loop="$options" value="$option">
+                            <xf:if is="$option.Relations.Xenistatistik_secenekler.display_order >= 100 AND $option.Relations.Xenistatistik_secenekler.display_order < 200">
+                                <xf:macro template="option_macros" name="option_row" arg-group="{$group}" arg-option="{$option}" />
+                            </xf:if>	
+                            </xf:foreach>	
+                        </div>
+                    </li>
+					<li role="tabpanel" id="XenistatikTab2">
+                        <div class="block-body">
+                            <xf:foreach loop="$options" value="$option">
+                            <xf:if is="$option.Relations.Xenistatistik_secenekler.display_order >= 200 AND $option.Relations.Xenistatistik_secenekler.display_order < 300">
+                                <xf:macro template="option_macros" name="option_row" arg-group="{$group}" arg-option="{$option}" />
+                            </xf:if>
+                            </xf:foreach>
+                        </div>
+                    </li>
+					<li role="tabpanel" id="XenistatikTab3">
+                        <div class="block-body">
+                            <xf:foreach loop="$options" value="$option">
+                            <xf:if is="$option.Relations.Xenistatistik_secenekler.display_order >= 300 AND $option.Relations.Xenistatistik_secenekler.display_order < 400">
+                                <xf:macro template="option_macros" name="option_row" arg-group="{$group}" arg-option="{$option}" />
+                            </xf:if>
+                            </xf:foreach>
+                        </div>
+                    </li>
+					<li role="tabpanel" id="XenistatikTab4">
+                        <div class="block-body">
+                            <xf:foreach loop="$options" value="$option">
+                            <xf:if is="$option.Relations.Xenistatistik_secenekler.display_order >= 400 AND $option.Relations.Xenistatistik_secenekler.display_order < 500">
+                                <xf:macro template="option_macros" name="option_row" arg-group="{$group}" arg-option="{$option}" />
+                            </xf:if>
+                            </xf:foreach>
+                        </div>
+                    </li>	
+                </ul>
+                <xf:submitrow sticky="true" icon="save" />
+            </div>
+        </xf:form>
+	</xf:if>
+</xf:macro>]]></template>
+  <template type="public" title="Xenistatistikuye" version_id="1010300" version_string="1.1.3"><![CDATA[<xf:if is="{{ $xf.visitor.hasPermission('xenistatistik_kullanici','kullancilari_gor') }}">
+<xf:css src="member.less" />
+    <xf:if contentcheck="true">
+	    <div class="block"{{ widget_data($widget) }}>
+			<h2 class="block-tabHeader tabs hScroller">
+				 <a href="{{ link('members', null, {'key': $memberStat.member_stat_key}) }}"
+                             class="tabs-tab"
+						     tabindex="0" 
+                             role="tab"
+                             aria-controls="XenYeniMesaj_Widget">{$title}
+				</a>
+			</h2>
+			<div class="Xenistatistik--altheader structItem--thread">
+					<div class="structItem-cell structItem-cell--main Xenistatistik--altheader--text">
+					  {{ phrase('xenistatistik_kullanici') }}
+					</div>
+					<div class="structItem-cell structItem-cell--meta Xenistatistik--altheader--sag ">
+					   {{ phrase('xenistatistik_mesaj') }}
+					</div>
+				 </div>
+			<ol class="block-body">
+				<xf:contentcheck>
+					<xf:foreach loop="$results" key="$userId" value="$data">
+					     <li class="block-row">
+							<xf:macro template="member_notable" name="overview_row" arg-data="{$data}" />
+						</li>
+					</xf:foreach>
+			    </xf:contentcheck>
+			</ol>
+		</div>
+    </xf:if>
+</xf:if>]]></template>
+  <template type="admin" title="widget_def_options_XenEncokGrnKonular_Widget" version_id="1010300" version_string="1.1.3"><![CDATA[]]></template>
+  <template type="admin" title="widget_def_options_XenYeniKonu_Widget" version_id="1000020" version_string="1.0.0"><![CDATA[]]></template>
+  <template type="admin" title="widget_def_options_XenYeniMesaj_Widget" version_id="1000020" version_string="1.0.0"><![CDATA[]]></template>
+  <template type="admin" title="widget_def_options_Xenuyeistatik_widget" version_id="1000020" version_string="1.0.0"><![CDATA[<hr class="formRowSep" />
+
+<xf:selectrow name="options[member_stat_key]" value="{$options.member_stat_key}"
+	label="{{ phrase('member_stat_to_display') }}">
+	<xf:options source="{$memberStats}" />
+</xf:selectrow>]]></template>
+</templates>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<phrases>
+  <phrase title="admin_navigation.th_unco_styles" version_id="1000010" version_string="1.0.0 Alpha"><![CDATA[[TH] User Name Styles]]></phrase>
+  <phrase title="cron_entry.th_unco_regular_check" version_id="1000010" version_string="1.0.0 Alpha"><![CDATA[Check user name styling validity]]></phrase>
+  <phrase title="option.thusernamecolor_disallowedColors" version_id="1000010" version_string="1.0.0 Alpha"><![CDATA[Disallowed custom colors]]></phrase>
+  <phrase title="option_explain.thusernamecolor_disallowedColors" version_id="1000010" version_string="1.0.0 Alpha"><![CDATA[Hexadecimal colors without leading # and named colors only. Color ranges are supported. Enter one item per line.]]></phrase>
+  <phrase title="option_group.thusernamecolor" version_id="1000010" version_string="1.0.0 Alpha"><![CDATA[[TH] User Name Color]]></phrase>
+  <phrase title="option_group_description.thusernamecolor" version_id="1000010" version_string="1.0.0 Alpha"><![CDATA[Options for the [TH] User Name Color add-on.]]></phrase>
+  <phrase title="permission.th_unco_bypassCustomColorRestrict" version_id="1000010" version_string="1.0.0 Alpha"><![CDATA[Bypass custom color restrictions]]></phrase>
+  <phrase title="permission.th_unco_use" version_id="1000010" version_string="1.0.0 Alpha"><![CDATA[Change user name style]]></phrase>
+  <phrase title="permission.th_unco_useCustom" version_id="1000010" version_string="1.0.0 Alpha"><![CDATA[Set custom user name color]]></phrase>
+  <phrase title="permission_interface.th_unco" version_id="1000010" version_string="1.0.0 Alpha"><![CDATA[[TH] User Name Color permissions]]></phrase>
+  <phrase title="th_unco_add_style" version_id="1000010" version_string="1.0.0 Alpha"><![CDATA[Add style]]></phrase>
+  <phrase title="th_unco_add_user_name_style" version_id="1000010" version_string="1.0.0 Alpha"><![CDATA[Add user name style]]></phrase>
+  <phrase title="th_unco_available_if" version_id="1000010" version_string="1.0.0 Alpha"><![CDATA[Available if]]></phrase>
+  <phrase title="th_unco_color_is_not_allowed_or_valid" version_id="1000010" version_string="1.0.0 Alpha"><![CDATA[Custom name color is not allowed or invalid.]]></phrase>
+  <phrase title="th_unco_custom_color" version_id="1000010" version_string="1.0.0 Alpha"><![CDATA[Custom color]]></phrase>
+  <phrase title="th_unco_custom_name_color_blue_value_at_least_x" version_id="1000070" version_string="1.0.0"><![CDATA[User name custom color blue share is at least X]]></phrase>
+  <phrase title="th_unco_custom_name_color_blue_value_no_more_than_x" version_id="1000070" version_string="1.0.0"><![CDATA[User name custom color blue share is no more than X]]></phrase>
+  <phrase title="th_unco_custom_name_color_green_value_at_least_x" version_id="1000070" version_string="1.0.0"><![CDATA[User name custom color green share is at least X]]></phrase>
+  <phrase title="th_unco_custom_name_color_green_value_no_more_than_x" version_id="1000070" version_string="1.0.0"><![CDATA[User name custom color green share is no more than X]]></phrase>
+  <phrase title="th_unco_custom_name_color_red_value_at_least_x" version_id="1000070" version_string="1.0.0"><![CDATA[User name custom color red share is at least X]]></phrase>
+  <phrase title="th_unco_custom_name_color_red_value_no_more_than_x" version_id="1000070" version_string="1.0.0"><![CDATA[User name custom color red share is no more than X]]></phrase>
+  <phrase title="th_unco_custom_name_style_invalid" version_id="1000010" version_string="1.0.0 Alpha"><![CDATA[Custom name style is invalid.]]></phrase>
+  <phrase title="th_unco_default_none" version_id="1000010" version_string="1.0.0 Alpha"><![CDATA[Default (none)]]></phrase>
+  <phrase title="th_unco_edit_user_name_style" version_id="1000010" version_string="1.0.0 Alpha"><![CDATA[Edit user name style]]></phrase>
+  <phrase title="th_unco_no_styles_have_been_created_yet" version_id="1000010" version_string="1.0.0 Alpha"><![CDATA[No styles have been created yet.]]></phrase>
+  <phrase title="th_unco_sort_user_name_styles" version_id="1000010" version_string="1.0.0 Alpha"><![CDATA[Sort user name styles]]></phrase>
+  <phrase title="th_unco_styling" version_id="1000010" version_string="1.0.0 Alpha"><![CDATA[Styling]]></phrase>
+  <phrase title="th_unco_user_has_color_preset" version_id="1000070" version_string="1.0.0"><![CDATA[User has a name style]]></phrase>
+  <phrase title="th_unco_user_has_custom_color" version_id="1000070" version_string="1.0.0"><![CDATA[User has a custom name color]]></phrase>
+  <phrase title="th_unco_user_has_no_user_name_color" version_id="1000070" version_string="1.0.0"><![CDATA[User does NOT have a name color]]></phrase>
+  <phrase title="th_unco_user_has_user_name_color" version_id="1000070" version_string="1.0.0"><![CDATA[User has a name color]]></phrase>
+  <phrase title="th_unco_user_name_color" version_id="1000070" version_string="1.0.0"><![CDATA[User name color]]></phrase>
+  <phrase title="th_unco_user_name_color_style_not_one_of" version_id="1000070" version_string="1.0.0"><![CDATA[User name style is NOT one of the following]]></phrase>
+  <phrase title="th_unco_user_name_color_style_one_of" version_id="1000070" version_string="1.0.0"><![CDATA[User name style is one of the following]]></phrase>
+  <phrase title="th_unco_user_name_style.2" version_id="1000010" version_string="1.0.0 Alpha"><![CDATA[Red]]></phrase>
+  <phrase title="th_unco_user_name_style.3" version_id="1000070" version_string="1.0.0"><![CDATA[Gold]]></phrase>
+  <phrase title="th_unco_user_name_style_options" version_id="1000010" version_string="1.0.0 Alpha"><![CDATA[User name style options]]></phrase>
+  <phrase title="th_unco_user_name_styles" version_id="1000010" version_string="1.0.0 Alpha"><![CDATA[User name styles]]></phrase>
+  <phrase title="th_unco_user_name_styling" version_id="1000010" version_string="1.0.0 Alpha"><![CDATA[User name styling]]></phrase>
+</phrases>

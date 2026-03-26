@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class_extensions>
+  <extension from_class="XF\Pub\Controller\Index" to_class="CinVin\Home\XF\Pub\Controller\Index" execute_order="88" active="0"/>
+</class_extensions>

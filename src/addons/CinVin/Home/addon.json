@@ -1,0 +1,20 @@
+{
+	"legacy_addon_id": "",
+	"title": "[CinVin] Home",
+	"description": "Instant 'Home' page for displaying XF widgets",
+	"version_id": 1000170,
+	"version_string": "1.0.1",
+	"dev": "CinVin",
+ 	"dev_url": "https://aliensoup.com/resources/",
+ 	"faq_url": "",
+ 	"support_url": "https://aliensoup.com/resources/cinvin-home.24/",
+ 	"extra_urls": [],
+	"require": {
+		"XF": [
+			2010010,
+			"XenForo 2.1.0+"
+		]
+	},
+	"icon": "fad fa-home"
+}
+

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<style_properties>
+  <style_property property_name="xenist_govde" group_name="xenistatistiktema" title="Xenistatistik Gövde" property_type="css" display_order="10" css_components="text,background,border,border_radius,border_width_simple,border_color_simple,border_radius_simple,padding">
+    <value>{
+    "background-color": "#FEFEFE",
+    "border-top-width": "1px",
+    "border-top-color": "#BCDEF5",
+    "border-top-left-radius": "3px",
+    "border-right-width": "1px",
+    "border-right-color": "#BCDEF5",
+    "border-top-right-radius": "3px",
+    "border-bottom-width": "5px",
+    "border-bottom-color": "#185886",
+    "border-bottom-right-radius": "3px",
+    "border-left-width": "1px",
+    "border-left-color": "#BCDEF5",
+    "border-bottom-left-radius": "3px",
+    "padding-top": "5px",
+    "padding-right": "5px",
+    "padding-bottom": "0px",
+    "padding-left": "5px"
+}</value>
+  </style_property>
+  <style_property property_name="xenistatistik_alt_header" group_name="xenistatistiktema" title="Alt header renk" property_type="value" value_type="color" display_order="900">
+    <value>"#BCDEF5"</value>
+  </style_property>
+  <style_property property_name="xenistatistik_alt_header_metin" group_name="xenistatistiktema" title="Alt header metin rengi" property_type="value" value_type="color" display_order="1000">
+    <value>"#2577B1"</value>
+  </style_property>
+  <style_property property_name="xenistatistik_header_aktif_tab_metin_renk" group_name="xenistatistiktema" title="Aktif tab buton metin renk" property_type="value" value_type="color" value_group="sira1" display_order="820">
+    <value>"#BCDEF5"</value>
+  </style_property>
+  <style_property property_name="xenistatistik_header_aktif_tab_renk" group_name="xenistatistiktema" title="Aktif tab buton rengi" property_type="value" value_type="color" value_group="sira1" display_order="810">
+    <value>"#185886"</value>
+  </style_property>
+  <style_property property_name="xenistatistik_header_aktif_tab_sinir_renk" group_name="xenistatistiktema" title="Aktif tab buton alt sınır renk" property_type="value" value_type="color" value_group="sira1" display_order="834">
+    <value>"#BCDEF5"</value>
+  </style_property>
+  <style_property property_name="xenistatistik_header_metin_renk" group_name="xenistatistiktema" title="Header metin renk" property_type="value" value_type="color" display_order="800">
+    <value>"#BCDEF5"</value>
+  </style_property>
+  <style_property property_name="xenistatistik_header_renk" group_name="xenistatistiktema" title="Header renk" property_type="value" value_type="color" display_order="700">
+    <value>"#2577B1"</value>
+  </style_property>
+</style_properties>

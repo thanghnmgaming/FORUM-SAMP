@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<phrases>
+  <phrase title="small" version_id="2000271" version_string="2.0.2.1"><![CDATA[Small]]></phrase>
+  <phrase title="style_prop.svg_forumLogo" version_id="2000271" version_string="2.0.2.1"><![CDATA[Text Logo style]]></phrase>
+  <phrase title="style_prop.svg_forumSlogan" version_id="2000271" version_string="2.0.2.1"><![CDATA[Forum slogan style]]></phrase>
+  <phrase title="style_prop.svg_header_disable" version_id="2000271" version_string="2.0.2.1"><![CDATA[Disable header]]></phrase>
+  <phrase title="style_prop.svg_smallLogoText" version_id="2010771" version_string="2.1.7.1"><![CDATA[Small Logo Text]]></phrase>
+  <phrase title="style_prop.svg_smallLogoUrl" version_id="2000271" version_string="2.0.2.1"><![CDATA[Small Logo URL]]></phrase>
+  <phrase title="style_prop.svg_smallLogo_style" version_id="2010471" version_string="2.1.4.1"><![CDATA[Small Logo Style]]></phrase>
+  <phrase title="style_prop.svg_smallLogo_type" version_id="2000271" version_string="2.0.2.1"><![CDATA[Small Logo Type]]></phrase>
+  <phrase title="style_prop.svg_textLogo" version_id="2000271" version_string="2.0.2.1"><![CDATA[Text Logo]]></phrase>
+  <phrase title="style_prop.svg_textLogo_align" version_id="2000972" version_string="2.0.9.2"><![CDATA[Logo align]]></phrase>
+  <phrase title="style_prop.svg_textLogo_googleFont" version_id="2010770" version_string="2.1.7"><![CDATA[Google Fonts]]></phrase>
+  <phrase title="style_prop.svg_textLogo_webFont" version_id="2010770" version_string="2.1.7"><![CDATA[Web Fonts]]></phrase>
+  <phrase title="style_prop.svg_textSlogan" version_id="2000271" version_string="2.0.2.1"><![CDATA[Text Slogan]]></phrase>
+  <phrase title="style_prop.svg_textSlogan_location" version_id="2000972" version_string="2.0.9.2"><![CDATA[Slogan location]]></phrase>
+  <phrase title="style_prop_desc.svg_forumLogo" version_id="2000271" version_string="2.0.2.1"><![CDATA[Style text logo.]]></phrase>
+  <phrase title="style_prop_desc.svg_forumSlogan" version_id="2000271" version_string="2.0.2.1"><![CDATA[Style forum clogan.]]></phrase>
+  <phrase title="style_prop_desc.svg_header_disable" version_id="2000271" version_string="2.0.2.1"><![CDATA[Disable display of header]]></phrase>
+  <phrase title="style_prop_desc.svg_smallLogoText" version_id="2010771" version_string="2.1.7.1"><![CDATA[Change small logo text]]></phrase>
+  <phrase title="style_prop_desc.svg_smallLogoUrl" version_id="2000271" version_string="2.0.2.1"><![CDATA[The web path to a small image logo. When you use a text logo.]]></phrase>
+  <phrase title="style_prop_desc.svg_smallLogo_style" version_id="2010471" version_string="2.1.4.1"><![CDATA[Change style text small logo]]></phrase>
+  <phrase title="style_prop_desc.svg_smallLogo_type" version_id="2000271" version_string="2.0.2.1"><![CDATA[The choice of a small logo.]]></phrase>
+  <phrase title="style_prop_desc.svg_textLogo" version_id="2000271" version_string="2.0.2.1"><![CDATA[Text logo. If specified, the image will not be displayed.]]></phrase>
+  <phrase title="style_prop_desc.svg_textLogo_align" version_id="2000972" version_string="2.0.9.2"><![CDATA[Align logo in header.]]></phrase>
+  <phrase title="style_prop_desc.svg_textLogo_googleFont" version_id="2010770" version_string="2.1.7"><![CDATA[Google font connection.]]></phrase>
+  <phrase title="style_prop_desc.svg_textLogo_webFont" version_id="2010770" version_string="2.1.7"><![CDATA[Cuctom web font connection. Two types of font, woff and woff2, are enough. <a href="https://transfonter.org/" target="_blank">Generator</a>.]]></phrase>
+  <phrase title="style_prop_desc.svg_textSlogan" version_id="2000271" version_string="2.0.2.1"><![CDATA[The text of the slogan. If specified, will be displayed with an image and a text logo.]]></phrase>
+  <phrase title="style_prop_desc.svg_textSlogan_location" version_id="2010470" version_string="2.1.4"><![CDATA[The location of the tagline relative to the logo.]]></phrase>
+  <phrase title="style_prop_vgroup.svg_forum_logo" version_id="2010770" version_string="2.1.7"><![CDATA[Advanced Logo]]></phrase>
+  <phrase title="svg_slogan_above_logo" version_id="2000972" version_string="2.0.9.2"><![CDATA[Above logo]]></phrase>
+  <phrase title="svg_slogan_below_logo" version_id="2000972" version_string="2.0.9.2"><![CDATA[Below logo]]></phrase>
+  <phrase title="svg_textLogo_googleFont_example" version_id="2010770" version_string="2.1.7"><![CDATA[Sample code for connecting Google Fonts:]]></phrase>
+  <phrase title="svg_textLogo_googleFont_locally" version_id="2010770" version_string="2.1.7"><![CDATA[Сonnect locally <a href="https://google-webfonts-helper.herokuapp.com/fonts" target="_blank">Google Webfonts Helper</a>.]]></phrase>
+  <phrase title="svg_textLogo_webFont_example" version_id="2010770" version_string="2.1.7"><![CDATA[Sample code for connecting web font:]]></phrase>
+</phrases>

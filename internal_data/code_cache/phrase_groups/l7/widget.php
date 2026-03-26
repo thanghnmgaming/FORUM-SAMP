@@ -1,0 +1,23 @@
+<?php
+return array (
+  'widget.YHBS_forumList_newPosts' => 'Bài Viết Mới',
+  'widget.YHBS_forumList_newThreads_YHBS_forumList_newPost' => 'Bài viết mới',
+  'widget.forum_overview_forum_statistics' => '',
+  'widget.forum_statistics' => '',
+  'widget.latest_followed_profile_posts' => 'Latest profile posts by followers',
+  'widget.latest_posts' => 'Bài mới nhất',
+  'widget.latest_profile_posts' => 'Bài viết hồ sơ mới nhất',
+  'widget.latest_watched' => 'Latest watched',
+  'widget.online_list' => '',
+  'widget.show_post_new' => '',
+  'widget.thuix_footer_aboutUsWidget' => 'About us',
+  'widget.thuix_footer_quickNavWidget' => 'Quick navigation',
+  'widget.thuix_footer_userNavWidget' => 'User menu',
+  'widget.unread_posts' => 'Bài viết chưa đọc',
+  'widget.xfrm_forum_overview_new_resources' => '',
+  'widget.xfrm_list_top_resources' => '',
+  'widget.xfrm_overview_latest_reviews' => '',
+  'widget.xfrm_overview_top_authors' => '',
+  'widget.xfrm_whats_new_overview_new_resources' => '',
+  'widget.xgtForumIstatistik_encok_mesaj_kullanici' => '',
+);

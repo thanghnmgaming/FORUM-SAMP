@@ -1,0 +1,14 @@
+{
+    "legacy_addon_id": "",
+    "title": "[Widget] Popular threads and posts",
+    "description": "Adds 4 new widgets that show the most liked, viewed and replied threads",
+    "version_id": 10,
+    "version_string": "1.1.0",
+    "dev": "DL6",
+    "dev_url": "",
+    "faq_url": "",
+    "support_url": "https://xenforo.com/community/threads/dl6-widget-most-liked-threads-and-posts.135262/",
+    "extra_urls": [],
+    "require": [],
+    "icon": "icon.jpg"
+}

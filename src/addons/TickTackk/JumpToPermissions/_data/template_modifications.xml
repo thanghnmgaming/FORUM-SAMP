@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<template_modifications>
+  <modification type="admin" template="permission_macros" modification_key="jumpToPermissions_permission_macros_content" description="Add &quot;Jump to&quot; menu for content permission editing page" execution_order="10" enabled="1" action="str_replace">
+    <find><![CDATA[<xf:macro name="quick_set_menu" arg-type="content" arg-target="#permGroup-{$interfaceGroupId}" />]]></find>
+    <replace><![CDATA[$0
+						<xf:button class="button--link menuTrigger" data-xf-click="menu" aria-expanded="false" aria-haspopup="true">{{ phrase('jumpToPermissions_jump_to...') }}</xf:button>
+						<xf:macro template="tckJumpToPermissions_permission_macros" name="jump_to_menu_content" arg-interfaceGroups="{$interfaceGroups}" arg-interfaceGroupId="{$interfaceGroupId}" arg-permissionsGrouped="{$permissionsGrouped}" />]]></replace>
+  </modification>
+  <modification type="admin" template="permission_macros" modification_key="jumpToPermissions_permission_macros_global" description="Add &quot;Jump to&quot; menu for global permission editing page" execution_order="10" enabled="1" action="str_replace">
+    <find><![CDATA[<xf:macro name="quick_set_menu" arg-type="global" arg-target="#permGroup-{$interfaceGroupId}" />]]></find>
+    <replace><![CDATA[$0
+						<xf:button class="button--link menuTrigger" data-xf-click="menu" aria-expanded="false" aria-haspopup="true">{{ phrase('jumpToPermissions_jump_to...') }}</xf:button>
+						<xf:macro template="tckJumpToPermissions_permission_macros" name="jump_to_menu_global" arg-interfaceGroups="{$interfaceGroups}" />]]></replace>
+  </modification>
+</template_modifications>

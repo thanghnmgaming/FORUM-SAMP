@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<template_modifications>
+  <modification type="admin" template="dbtech_ecommerce_category_edit" modification_key="sv_multiprefix_dbtech_ecommerce_category_edit" execution_order="6281" enabled="1" action="str_replace">
+    <find><![CDATA[<xf:checkboxrow name="require_prefix" value="{$category.require_prefix}">
+					<xf:option value="1"
+						label="{{ phrase('require_users_to_select_prefix') }}"
+						hint="{{ phrase('dbtech_ecommerce_if_selected_users_required_select_prefix_when_creating_editing') }}" />
+				</xf:checkboxrow>]]></find>
+    <replace><![CDATA[<xf:numberboxrow label="{{ phrase('sv_multiprefix_min_prefixes') }}" name="sv_multiprefix_min_prefixes" value="{$category.sv_min_prefixes}" />
+				<xf:numberboxrow label="{{ phrase('sv_multiprefix_max_prefixes') }}" name="sv_multiprefix_max_prefixes" value="{$category.sv_max_prefixes}" />]]></replace>
+  </modification>
+  <modification type="admin" template="dbtech_ecommerce_category_edit" modification_key="sv_multiprefix_dbtech_ecommerce_category_edit2" execution_order="6281" enabled="1" action="str_replace">
+    <find><![CDATA[arg-href="{{ link('forums/prefixes') }}"]]></find>
+    <replace><![CDATA[arg-href="{{ link('forums/prefixes', '', {'force_limit_prefix': 1}) }}"]]></replace>
+  </modification>
+  <modification type="public" template="dbtech_ecommerce_filters" modification_key="sv_multiprefix_dbtech_ecommerce_filters" description="Enable multi prefixes in filtering dropdown" execution_order="6281" enabled="1" action="str_replace">
+    <find><![CDATA[arg-type="dbtechEcommerceProduct"]]></find>
+    <replace><![CDATA[$0
+					arg-multiple="{{ true }}"]]></replace>
+  </modification>
+  <modification type="public" template="dbtech_ecommerce_overview_macros" modification_key="sv_multiprefix_ecommerce_list_filter_bar" description="Add multiprefix filters" execution_order="6281" enabled="1" action="preg_replace">
+    <find><![CDATA[#(<xf:if is="\$filters.prefix_id">)(.*?prefix_title.*?)(\s*</xf:if>)#si]]></find>
+    <replace><![CDATA[$1
+<xf:include template="sv_multiprefix_filter">
+	<xf:set var="$prefixType" value="dbtechEcommerceProduct" />
+	<xf:set var="$baseLinkPath" value="{$baseLinkPath}" />
+	<xf:set var="$container" value="{$category}" />
+</xf:include>
+$3]]></replace>
+  </modification>
+  <modification type="public" template="dbtech_ecommerce_product_edit_macros" modification_key="sv_multiprefix_dbtech_ecommerce_product_edit_macro" description="Render multiple prefixes in product title" execution_order="6281" enabled="1" action="str_replace">
+    <find><![CDATA[prefix-value="{$product.prefix_id}"]]></find>
+    <replace><![CDATA[$0
+		multi-prefix-value="{{ $product.sv_prefix_ids }}" multi-prefix-content-parent="{{ $product.Category }}" multi-prefix-content="{{ $product }}" full-row="{{ true }}"]]></replace>
+  </modification>
+  <modification type="public" template="dbtech_ecommerce_product_list_macros" modification_key="sv_multiprefix_dbtech_ecommerce_product_list_macro" description="css tagging of prefixed items" execution_order="6281" enabled="1" action="str_replace">
+    <find><![CDATA[{{ $product.prefix_id ? 'is-prefix' . $product.prefix_id : '' }}]]></find>
+    <replace><![CDATA[{{ $product.sv_prefix_ids ? 'is-prefix' . $product.sv_prefix_ids|join(' is-prefix') : '' }}]]></replace>
+  </modification>
+  <modification type="public" template="dbtech_ecommerce_product_list_macros" modification_key="sv_multiprefix_ecommerce_product_list_macros2" description="UI for filtering by multiple prefixes" execution_order="6281" enabled="1" action="preg_replace">
+    <find><![CDATA[#<a href="{{ link\(('dbtech\-ecommerce'|'dbtech\-ecommerce/categories'), (\$category|null), {'prefix_id'.*?>{{ prefix.*? }}</a>#si]]></find>
+    <replace><![CDATA[{{ prefix_filters('dbtechEcommerceProduct', $1, $2, $product, $__globals.filters, '') }}]]></replace>
+  </modification>
+  <modification type="public" template="dbtech_ecommerce_product_move" modification_key="sv_multiprefix_dbtech_ecommerce_product_move" description="Enable multi prefixes when moving a product" execution_order="6281" enabled="1" action="str_replace">
+    <find><![CDATA[prefix-value="{$product.prefix_id}"]]></find>
+    <replace><![CDATA[$0
+				multi-prefix-value="{{ $product.sv_prefix_ids }}" multi-prefix-content-parent="{{ $product.Category }}" multi-prefix-content="{{ $product }}" full-row="{{ true }}"]]></replace>
+  </modification>
+  <modification type="public" template="dbtech_ecommerce_product_view" modification_key="dbtech_ecommerce_product_vie_multiprefix_clickable" description="Make prefixes clickable" execution_order="6281" enabled="1" action="str_replace">
+    <find><![CDATA[{{ prefix('dbtechEcommerceProduct', $product) }}]]></find>
+    <replace><![CDATA[{{ prefix('dbtechEcommerceProduct', $product, 'html-clicky') }}]]></replace>
+  </modification>
+  <modification type="admin" template="dbtech_shop_category_edit" modification_key="sv_multiprefix_dbtech_shop_category_edit" execution_order="6281" enabled="1" action="str_replace">
+    <find><![CDATA[<xf:checkboxrow name="require_prefix" value="{$category.require_prefix}">
+					<xf:option value="1"
+						label="{{ phrase('require_users_to_select_prefix') }}"
+						hint="{{ phrase('dbtech_shop_if_selected_users_required_select_prefix_when_creating_editing') }}" />
+				</xf:checkboxrow>]]></find>
+    <replace><![CDATA[<xf:numberboxrow label="{{ phrase('sv_multiprefix_min_prefixes') }}" name="sv_multiprefix_min_prefixes" value="{$category.sv_min_prefixes}" />
+				<xf:numberboxrow label="{{ phrase('sv_multiprefix_max_prefixes') }}" name="sv_multiprefix_max_prefixes" value="{$category.sv_max_prefixes}" />]]></replace>
+  </modification>
+  <modification type="admin" template="dbtech_shop_category_edit" modification_key="sv_multiprefix_dbtech_shop_category_edit2" execution_order="6281" enabled="1" action="str_replace">
+    <find><![CDATA[arg-href="{{ link('forums/prefixes') }}"]]></find>
+    <replace><![CDATA[arg-href="{{ link('forums/prefixes', '', {'force_limit_prefix': 1}) }}"]]></replace>
+  </modification>
+  <modification type="public" template="dbtech_shop_filters" modification_key="sv_multiprefix_dbtech_shop_filters" description="Enable multi prefixes in filtering dropdown" execution_order="6281" enabled="1" action="str_replace">
+    <find><![CDATA[arg-type="dbtechShopItem"]]></find>
+    <replace><![CDATA[$0
+					arg-multiple="{{ true }}"]]></replace>
+  </modification>
+  <modification type="public" template="dbtech_shop_item_edit_macros" modification_key="sv_multiprefix_dbtech_shop_product_edit_macro" description="Render multiple prefixes in item title" execution_order="6281" enabled="1" action="str_replace">
+    <find><![CDATA[prefix-value="{$item.prefix_id}"]]></find>
+    <replace><![CDATA[$0
+		multi-prefix-value="{{ $item.sv_prefix_ids }}" multi-prefix-content-parent="{{ $item.Category }}" multi-prefix-content="{{ $item }}" full-row="{{ true }}"]]></replace>
+  </modification>
+  <modification type="public" template="dbtech_shop_item_list_macros" modification_key="sv_multiprefix_dbtech_shop_product_list_macro" description="css tagging of prefixed items" execution_order="6281" enabled="1" action="str_replace">
+    <find><![CDATA[{{ $item.prefix_id ? 'is-prefix' . $item.prefix_id : '' }}]]></find>
+    <replace><![CDATA[{{ $item.sv_prefix_ids ? 'is-prefix' . $item.sv_prefix_ids|join(' is-prefix') : '' }}]]></replace>
+  </modification>
+  <modification type="public" template="dbtech_shop_item_list_macros" modification_key="sv_multiprefix_shop_product_list_macros2" description="UI for filtering by multiple prefixes" execution_order="6281" enabled="1" action="preg_replace">
+    <find><![CDATA[#<a href="{{ link\('dbtech\-shop/categories', \$category, {'prefix_id'.*?>{{ prefix.*? }}</a>#si]]></find>
+    <replace><![CDATA[{{ prefix_filters('dbtechShopItem', 'dbtech-shop/categories', $category, $item, $__globals.filters, '') }}]]></replace>
+  </modification>
+  <modification type="public" template="dbtech_shop_item_move" modification_key="sv_multiprefix_dbtech_shop_product_move" description="Enable multi prefixes when moving a item" execution_order="6281" enabled="1" action="str_replace">
+    <find><![CDATA[prefix-value="{$item.prefix_id}"]]></find>
+    <replace><![CDATA[$0
+				multi-prefix-value="{{ $item.sv_prefix_ids }}" multi-prefix-content-parent="{{ $item.Category }}" multi-prefix-content="{{ $item }}" full-row="{{ true }}"]]></replace>
+  </modification>
+  <modification type="public" template="dbtech_shop_overview_macros" modification_key="sv_multiprefix_shop_list_filter_bar" description="Add multiprefix filters" execution_order="6281" enabled="1" action="preg_replace">
+    <find><![CDATA[#(<xf:if is="\$filters.prefix_id">)(.*?prefix_title.*?)(\s*</xf:if>)#si]]></find>
+    <replace><![CDATA[$1
+<xf:include template="sv_multiprefix_filter">
+	<xf:set var="$prefixType" value="dbtechShopItem" />
+	<xf:set var="$baseLinkPath" value="{$baseLinkPath}" />
+	<xf:set var="$container" value="{$category}" />
+</xf:include>
+$3]]></replace>
+  </modification>
+  <modification type="admin" template="feed_edit" modification_key="sv_multiprefix_feed_edit" execution_order="6281" enabled="1" action="str_replace">
+    <find><![CDATA[listen-to="#js-nodeList"]]></find>
+    <replace><![CDATA[$0
+				multi-prefix-value="{{ $feed.sv_prefix_ids }}" full-row="{{ true }}"]]></replace>
+  </modification>
+  <modification type="admin" template="forum_edit" modification_key="sv_multiprefix_forum_edit" execution_order="6281" enabled="1" action="str_replace">
+    <find><![CDATA[<xf:checkboxrow name="require_prefix" value="{$forum.require_prefix}">
+					<xf:option value="1"
+						label="{{ phrase('require_users_to_select_prefix') }}"
+						hint="{{ phrase('if_selected_users_required_select_prefix_for_thread') }}" />
+				</xf:checkboxrow>]]></find>
+    <replace><![CDATA[<xf:numberboxrow label="{{ phrase('sv_multiprefix_min_prefixes') }}" name="sv_multiprefix_min_prefixes" value="{$forum.sv_min_prefixes}" />
+<xf:numberboxrow label="{{ phrase('sv_multiprefix_max_prefixes') }}" name="sv_multiprefix_max_prefixes" value="{$forum.sv_max_prefixes}" />]]></replace>
+  </modification>
+  <modification type="admin" template="forum_edit" modification_key="sv_multiprefix_forum_edit2" execution_order="6281" enabled="1" action="str_replace">
+    <find><![CDATA[<xf:selectrow name="default_prefix_id" value="{$forum.default_prefix_id}"]]></find>
+    <replace><![CDATA[<xf:selectrow name="sv_default_prefix_ids" value="{$forum.sv_default_prefix_ids}" multiple="true"]]></replace>
+  </modification>
+  <modification type="public" template="forum_filters" modification_key="sv_multiprefix_forum_filters" description="Enable multi prefixes in filtering dropdown" execution_order="6281" enabled="1" action="str_replace">
+    <find><![CDATA[arg-type="thread"]]></find>
+    <replace><![CDATA[$0
+arg-multiple="{{ true }}"]]></replace>
+  </modification>
+  <modification type="public" template="forum_post_quick_thread" modification_key="sv_multiprefix_forum_post_quick_thread" description="Add prefixes to quick-thread form" execution_order="6281" enabled="1" action="str_replace">
+    <find><![CDATA[<xf:editorrow]]></find>
+    <replace><![CDATA[<xf:include template="forum_post_quick_thread_multiprefix" />
+$0]]></replace>
+  </modification>
+  <modification type="public" template="forum_post_thread" modification_key="sv_multiprefix_forum_post_thread" description="Enable multi prefixes when posting a thread" execution_order="6281" enabled="1" action="str_replace">
+    <find><![CDATA[prefix-value="{{ $forum.draft_thread.prefix_id ?: ($thread.prefix_id ?: $forum.default_prefix_id) }}"]]></find>
+    <replace><![CDATA[$0
+				multi-prefix-value="{{ $forum.draft_thread.sv_prefix_ids ?: ($thread.sv_prefix_ids ?: $forum.sv_default_prefix_ids) }}" multi-prefix-content-parent="{{ $forum }}"]]></replace>
+  </modification>
+  <modification type="public" template="forum_view" modification_key="sv_multiprefix_forum_view" description="Add multiprefix filters" execution_order="6281" enabled="1" action="preg_replace">
+    <find><![CDATA[#(<xf:if is="\$filters.prefix_id">)(.*?prefix_title.*?)(\s*</xf:if>)#si]]></find>
+    <replace><![CDATA[$1
+<xf:include template="sv_multiprefix_filter">
+	<xf:set var="$prefixType" value="thread" />
+	<xf:set var="$baseLinkPath" value="forums" />
+	<xf:set var="$container" value="{$forum}" />
+</xf:include>
+$3]]></replace>
+  </modification>
+  <modification type="public" template="inline_mod_post_copy" modification_key="sv_multiprefix_inline_mod_post_copy" description="Enable multi prefixes when moving via mod-tools" execution_order="6281" enabled="1" action="str_replace">
+    <find><![CDATA[prefix-value="{$first.Thread.prefix_id}"]]></find>
+    <replace><![CDATA[$0
+multi-prefix-value="{$first.Thread.sv_prefix_ids}"]]></replace>
+  </modification>
+  <modification type="public" template="inline_mod_post_move" modification_key="sv_multiprefix_inline_mod_post_move" description="Enable multi prefixes when moving via mod-tools" execution_order="6281" enabled="1" action="str_replace">
+    <find><![CDATA[prefix-value="{$first.Thread.prefix_id}"
+]]></find>
+    <replace><![CDATA[$0
+multi-prefix-value="{$first.Thread.sv_prefix_ids}"]]></replace>
+  </modification>
+  <modification type="public" template="inline_mod_resource_move" modification_key="sv_multiprefix_inline_mod_resource_move" description="Enable multi prefixes when moving via mod-tools" execution_order="6281" enabled="1" action="str_replace">
+    <find><![CDATA[arg-prefixes="{$prefixes}"]]></find>
+    <replace><![CDATA[$0
+							arg-selected="{$selectedPrefix}" arg-minTokens="{$allowedMinPrefixes}" arg-maxTokens="{$allowedMaxPrefixes}"]]></replace>
+  </modification>
+  <modification type="public" template="inline_mod_thread_move" modification_key="sv_multiprefix_inline_mod_thread_move" description="Enable multi prefixes when moving via mod-tools" execution_order="6281" enabled="1" action="str_replace">
+    <find><![CDATA[arg-prefixes="{$prefixes}"]]></find>
+    <replace><![CDATA[$0
+arg-selected="{$selectedPrefix}" arg-minTokens="{$allowedMinPrefixes}" arg-maxTokens="{$allowedMaxPrefixes}"]]></replace>
+  </modification>
+  <modification type="public" template="post_edit" modification_key="sv_multiprefix_post_edit" description="Enable multi prefixes when editing the first post of a thread" execution_order="6281" enabled="1" action="str_replace">
+    <find><![CDATA[prefix-value="{$thread.prefix_id}"]]></find>
+    <replace><![CDATA[$0
+					multi-prefix-value="{{ $thread.sv_prefix_ids }}" multi-prefix-content-parent="{{ $thread.Forum }}" multi-prefix-content="{{ $thread }}"]]></replace>
+  </modification>
+  <modification type="public" template="prefix_input" modification_key="sv_multiprefix_prefix_input_select" description="Enable multi prefixes in prefix input" execution_order="6281" enabled="1" action="preg_replace">
+    <find><![CDATA[/(<xf:macro template="prefix_macros" name="select"(?:.*))\/>/sUi]]></find>
+    <replace><![CDATA[$1arg-multiple="{{ $prefixMultiple }}" />]]></replace>
+  </modification>
+  <modification type="public" template="svConvEss_inline_mod_conversation_copy_to_thread" modification_key="svMultiPrefix_svConvEss_copy_to_thread" description="Enable multi prefixes when copying to thread" execution_order="6281" enabled="1" action="str_replace">
+    <find><![CDATA[arg-type="thread"]]></find>
+    <replace><![CDATA[$0
+arg-noneLabel="{{ phrase('no_prefix')|parens }}"
+arg-multiple="{{ true }}"]]></replace>
+  </modification>
+  <modification type="admin" template="thread_batch_update_confirm" modification_key="sv_multiprefix_thread_batch_update_confirm" execution_order="6281" enabled="1" action="str_replace">
+    <find><![CDATA[arg-prefixes="{$prefixes.prefixesGrouped}"]]></find>
+    <replace><![CDATA[arg-noneLabel="{{ phrase('no_prefix')|parens }}"
+arg-multiple="{{ true }}"
+$0]]></replace>
+  </modification>
+  <modification type="public" template="thread_edit" modification_key="sv_multiprefix_thread_edit" description="Enable multi prefixes when editing a thread" execution_order="6281" enabled="1" action="str_replace">
+    <find><![CDATA[prefix-value="{$thread.prefix_id}"]]></find>
+    <replace><![CDATA[$0
+multi-prefix-value="{{ $thread.sv_prefix_ids }}" multi-prefix-content-parent="{{ $thread.Forum }}" multi-prefix-content="{{ $thread }}" full-row="{{ true }}"]]></replace>
+  </modification>
+  <modification type="public" template="thread_list_macros" modification_key="sv_multiprefix_thread_list_macros_class" description="css tagging of prefixed items" execution_order="6281" enabled="1" action="str_replace">
+    <find><![CDATA[{{ $thread.prefix_id ? ' is-prefix' . $thread.prefix_id : '' }}]]></find>
+    <replace><![CDATA[{{ $thread.sv_prefix_ids ? ' is-prefix' . ($thread.sv_prefix_ids|join(' is-prefix')) : '' }}]]></replace>
+  </modification>
+  <modification type="public" template="thread_list_macros" modification_key="sv_multiprefix_thread_list_macros_clickable2" description="Make prefixes clickable" execution_order="6281" enabled="1" action="str_replace">
+    <find><![CDATA[prefix('thread', $thread, 'html']]></find>
+    <replace><![CDATA[prefix('thread', $thread, 'html-clicky']]></replace>
+  </modification>
+  <modification type="public" template="thread_list_macros" modification_key="sv_multiprefix_thread_list_macros_clickable_prefix" description="Make prefixes clickable" execution_order="6282" enabled="1" action="preg_replace">
+    <find><![CDATA[#(<xf:if is="\$thread.prefix_id">\s*<xf:if is="\$forum)(">.*?)#si]]></find>
+    <replace><![CDATA[$1 || $xf.options.svClickablePrefixes $2]]></replace>
+  </modification>
+  <modification type="public" template="thread_list_macros" modification_key="sv_multiprefix_thread_list_macros_prefixes" description="UI for filtering by multiple prefixes" execution_order="6281" enabled="1" action="preg_replace">
+    <find><![CDATA[#<a href="{{ link\('forums', \$forum, {'prefix_id'.*?>{{ prefix.*? }}</a>#si]]></find>
+    <replace><![CDATA[{{ prefix_filters('thread', 'forums', $forum ?: $thread.Forum, $thread, $__globals.filters, '', $showFilterControls, $watchedThreadsFilter) }}]]></replace>
+  </modification>
+  <modification type="public" template="thread_list_macros" modification_key="sv_multiprefix_thread_list_macros_quick_thread" description="Disable inline quick thread prefixes" execution_order="6281" enabled="1" action="preg_replace">
+    <find><![CDATA[#(<xf:macro name="quick_thread".*?<xf:prefixinput.*?prefixes=")({{.*?}})#si]]></find>
+    <replace><![CDATA[$1 {{ [] }}]]></replace>
+  </modification>
+  <modification type="public" template="thread_move" modification_key="sv_multiprefix_thread_move" description="Enable multi prefixes when moving a thread" execution_order="6281" enabled="1" action="str_replace">
+    <find><![CDATA[prefix-value="{$thread.prefix_id}"]]></find>
+    <replace><![CDATA[$0
+				multi-prefix-value="{{ $thread.sv_prefix_ids }}" multi-prefix-content-parent="{{ $thread.Forum }}" multi-prefix-content="{{ $thread }}" full-row="{{ true }}"]]></replace>
+  </modification>
+  <modification type="public" template="thread_view" modification_key="thread_view_multiprefix_clickable" description="Make prefixes clickable" execution_order="6281" enabled="1" action="str_replace">
+    <find><![CDATA[{{ prefix('thread', $thread) }}]]></find>
+    <replace><![CDATA[{{ prefix('thread', $thread, 'html-clicky') }}]]></replace>
+  </modification>
+  <modification type="admin" template="xfrm_category_edit" modification_key="sv_multiprefix_xfrm_category_edit" execution_order="6281" enabled="1" action="str_replace">
+    <find><![CDATA[<xf:checkboxrow name="require_prefix" value="{$category.require_prefix}">
+					<xf:option value="1"
+						label="{{ phrase('require_users_to_select_prefix') }}"
+						hint="{{ phrase('xfrm_if_selected_users_required_select_prefix_when_creating_editing') }}" />
+				</xf:checkboxrow>]]></find>
+    <replace><![CDATA[<xf:numberboxrow label="{{ phrase('sv_multiprefix_min_prefixes') }}" name="sv_multiprefix_min_prefixes" value="{$category.sv_min_prefixes}" />
+<xf:numberboxrow label="{{ phrase('sv_multiprefix_max_prefixes') }}" name="sv_multiprefix_max_prefixes" value="{$category.sv_max_prefixes}" />]]></replace>
+  </modification>
+  <modification type="admin" template="xfrm_category_edit" modification_key="sv_multiprefix_xfrm_category_edit_2" execution_order="6281" enabled="1" action="str_replace">
+    <find><![CDATA[arg-href="{{ link('forums/prefixes') }}"]]></find>
+    <replace><![CDATA[arg-href="{{ link('forums/prefixes', '', {'force_limit_prefix': 1}) }}"]]></replace>
+  </modification>
+  <modification type="public" template="xfrm_filters" modification_key="sv_multiprefix_xfrm_filters" description="Enable multi prefixes in filtering dropdown" execution_order="6281" enabled="1" action="str_replace">
+    <find><![CDATA[arg-type="resource"]]></find>
+    <replace><![CDATA[$0
+arg-multiple="{{ true }}"]]></replace>
+  </modification>
+  <modification type="public" template="xfrm_overview_macros" modification_key="sv_multiprefix_list_filter_bar" description="Add multiprefix filters" execution_order="6281" enabled="1" action="preg_replace">
+    <find><![CDATA[#(<xf:if is="\$filters.prefix_id">)(.*?prefix_title.*?)(\s*</xf:if>)#si]]></find>
+    <replace><![CDATA[$1
+<xf:include template="sv_multiprefix_filter">
+	<xf:set var="$prefixType" value="resource" />
+	<xf:set var="$baseLinkPath" value="{$baseLinkPath}" />
+	<xf:set var="$container" value="{$category}" />
+</xf:include>
+$3]]></replace>
+  </modification>
+  <modification type="public" template="xfrm_resource_edit_macros" modification_key="sv_multiprefix_xfrm_resource_edit_macros" description="Render multiple prefixes in resource title" execution_order="6281" enabled="1" action="str_replace">
+    <find><![CDATA[prefix-value="{$resource.prefix_id}"]]></find>
+    <replace><![CDATA[$0
+multi-prefix-value="{{ $resource.sv_prefix_ids }}" multi-prefix-content-parent="{{ $resource.Category }}" multi-prefix-content="{{ $resource }}" full-row="{{ true }}"]]></replace>
+  </modification>
+  <modification type="public" template="xfrm_resource_list_macros" modification_key="sv_multiprefix_xfrm_resource_list_macros" description="css tagging of prefixed items" execution_order="6281" enabled="1" action="str_replace">
+    <find><![CDATA[{{ $resource.prefix_id ? 'is-prefix' . $resource.prefix_id : '' }}]]></find>
+    <replace><![CDATA[{{ $resource.sv_prefix_ids ? 'is-prefix' . $resource.sv_prefix_ids|join(' is-prefix') : '' }}]]></replace>
+  </modification>
+  <modification type="public" template="xfrm_resource_list_macros" modification_key="sv_multiprefix_xfrm_resource_list_macros_prefixes" description="UI for filtering by multiple prefixes" execution_order="6281" enabled="1" action="preg_replace">
+    <find><![CDATA[#<a href="{{ link\('resources/categories', \$category, {'prefix_id'.*?>{{ prefix.*? }}</a>#si]]></find>
+    <replace><![CDATA[{{ prefix_filters('resource', 'resources/categories', $category, $resource, $__globals.filters, '') }}]]></replace>
+  </modification>
+  <modification type="public" template="xfrm_resource_move" modification_key="sv_multiprefix_xfrm_resource_move" description="Enable multi prefixes when moving a resource" execution_order="6281" enabled="1" action="str_replace">
+    <find><![CDATA[prefix-value="{$resource.prefix_id}"]]></find>
+    <replace><![CDATA[$0
+				multi-prefix-value="{{ $resource.sv_prefix_ids }}" multi-prefix-content-parent="{{ $resource.Category }}" multi-prefix-content="{{ $resource }}" full-row="{{ true }}"]]></replace>
+  </modification>
+</template_modifications>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<template_modifications>
+  <modification type="public" template="app_user_banners.less" modification_key="XGT_KullaniciBanner_less" description="XGT Kullanıcı banner sistemi - Less" execution_order="10" enabled="1" action="preg_replace">
+    <find><![CDATA[/$/]]></find>
+    <replace><![CDATA[{{ include('XGT_UserBanner.less') }}]]></replace>
+  </modification>
+  <modification type="public" template="member_tooltip" modification_key="XGT_KullaniciBanner_tooltip" description="XGT Kullanıcı banner sistemi - Kullanıcı tooltip" execution_order="10" enabled="1" action="preg_replace">
+    <find><![CDATA[#(<div class="memberTooltip-banners">.*)(</div>)#sU]]></find>
+    <replace><![CDATA[<div class="memberTooltip-banners">
+	<xf:contentcheck><xf:userbanners user="$user" class="xgtUserBanner" /></xf:contentcheck>
+</div>]]></replace>
+  </modification>
+  <modification type="public" template="member_view" modification_key="XGT_KullaniciBanner_member_view" description="XGT Kullanıcı banner sistemi - Kullanıcı Kullanıcı profili" execution_order="10" enabled="1" action="preg_replace">
+    <find><![CDATA[#(<div class="memberHeader-banners">.*)(</div>)#sU]]></find>
+    <replace><![CDATA[							<div class="memberHeader-banners">
+								<xf:contentcheck><xf:userbanners user="$user" class="xgtUserBanner" /></xf:contentcheck>
+							</div>]]></replace>
+  </modification>
+  <modification type="public" template="message_macros" modification_key="XGT_KullaniciBanner_mesajlar" description="XGT Kullanıcı banner sistemi - Mesaj alanı" execution_order="10" enabled="1" action="str_replace">
+    <find><![CDATA[<xf:userbanners user="$user" tag="div" class="message-userBanner" itemprop="jobTitle" />]]></find>
+    <replace><![CDATA[<xf:userbanners user="$user" tag="div" class="message-userBanner xgtUserBanner-mesaj" itemprop="jobTitle" />]]></replace>
+  </modification>
+  <modification type="admin" template="user_group_edit" modification_key="XGT_KullaniciBanner_grup" description="XGT Kullanıcı banner sistemi - Kullanıcı grubu" execution_order="10" enabled="1" action="str_replace">
+    <find><![CDATA[value="{{ $userGroup.banner_css_class ? $userGroup.banner_css_class : 'userBanner userBanner--primary' }}"]]></find>
+    <replace><![CDATA[value="{{ $userGroup.banner_css_class ? $userGroup.banner_css_class : 'userBanner xgtUserBanner userBanner--primary ' }}"]]></replace>
+  </modification>
+</template_modifications>

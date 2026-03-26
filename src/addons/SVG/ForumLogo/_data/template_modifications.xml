@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<template_modifications>
+  <modification type="public" template="PAGE_CONTAINER" modification_key="svg_forumLogo_logo" description="Forum logo" execution_order="10" enabled="1" action="preg_replace">
+    <find><![CDATA[/<div class="p-header-logo p-header-logo--image"(.*?)<\/div>/s]]></find>
+    <replace><![CDATA[<xf:macro template="svg_forum_logo_macros" name="forumLogo" />]]></replace>
+  </modification>
+  <modification type="public" template="PAGE_CONTAINER" modification_key="svg_forumLogo_slogan" description="Forum slogan" execution_order="5" enabled="1" action="preg_replace">
+    <find><![CDATA[/p-header-logo(.*?)<\/div>/s]]></find>
+    <replace><![CDATA[$0
+<div class="svg-forum-slogan">
+	{{ (property('svg_textSlogan')) }}
+</div>]]></replace>
+  </modification>
+  <modification type="public" template="PAGE_CONTAINER" modification_key="svg_forumLogo_small" description="Small logo" execution_order="10" enabled="1" action="preg_replace">
+    <find><![CDATA[/<div class="p-nav-smallLogo"(.*?)<\/div>/s]]></find>
+    <replace><![CDATA[<xf:macro template="svg_forum_logo_macros" name="forumSmallLogo" />]]></replace>
+  </modification>
+  <modification type="public" template="extra.less" modification_key="svg_textLogo_webFont" description="Connect web fonts" execution_order="10" enabled="1" action="preg_replace">
+    <find><![CDATA[#^.*$#su]]></find>
+    <replace><![CDATA[$0
+{{ property('svg_textLogo_webFont') }}]]></replace>
+  </modification>
+  <modification type="public" template="helper_js_global" modification_key="svg_forumLogo_less" description="Connect less &amp; Google Font" execution_order="10" enabled="1" action="str_replace">
+    <find><![CDATA[<link rel="stylesheet" href="{{ css_url($cssUrls) }}" />]]></find>
+    <replace><![CDATA[<xf:set var="$cssUrls" value="{{ array_merge($cssUrls, ['public:svg_forum_logo.less']) }}" />
+	$0
+	<xf:if is="{{ property('svg_textLogo_googleFont') }}">
+		<link href='//fonts.googleapis.com/css?family={{ property('svg_textLogo_googleFont') }}' rel='stylesheet' type='text/css'>
+	</xf:if>]]></replace>
+  </modification>
+</template_modifications>

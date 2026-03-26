@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<phrases>
+  <phrase title="border_action" version_id="10" version_string="1.0"><![CDATA[Action]]></phrase>
+  <phrase title="border_add_border" version_id="10" version_string="1.0"><![CDATA[Add border]]></phrase>
+  <phrase title="border_attachment" version_id="10" version_string="1.0"><![CDATA[Attachment]]></phrase>
+  <phrase title="border_attachment_id_required" version_id="10" version_string="1.0"><![CDATA[Attachment D required.]]></phrase>
+  <phrase title="border_border" version_id="10" version_string="1.0"><![CDATA[Border]]></phrase>
+  <phrase title="border_click" version_id="10" version_string="1.0"><![CDATA[Click]]></phrase>
+  <phrase title="border_filename" version_id="10" version_string="1.0"><![CDATA[Filename]]></phrase>
+  <phrase title="border_here" version_id="10" version_string="1.0"><![CDATA[here]]></phrase>
+  <phrase title="border_imagemagick_pecl_extension_not_enabled" version_id="10" version_string="1.0"><![CDATA[ImageMagick PECL extension not enabled.]]></phrase>
+  <phrase title="border_post_id_required" version_id="10" version_string="1.0"><![CDATA[Post ID required.]]></phrase>
+  <phrase title="border_to_return_to_the_post" version_id="10" version_string="1.0"><![CDATA[to return to post. Reload page to see changes.]]></phrase>
+  <phrase title="option.borderBorderColor" version_id="10" version_string="1.0"><![CDATA[Border color]]></phrase>
+  <phrase title="option.borderBorderWidth" version_id="10" version_string="1.0"><![CDATA[Border width]]></phrase>
+  <phrase title="option_explain.borderBorderColor" version_id="10" version_string="1.0"><![CDATA[Set border color. 
+<br />
+<br />
+Example: #cccccc]]></phrase>
+  <phrase title="option_explain.borderBorderWidth" version_id="10" version_string="1.0"><![CDATA[Set border width.]]></phrase>
+  <phrase title="option_group.border" version_id="10" version_string="1.0"><![CDATA[Border]]></phrase>
+  <phrase title="option_group_description.border" version_id="10" version_string="1.0"><![CDATA[Options here control the Border add-on.]]></phrase>
+  <phrase title="permission.border_view" version_id="10" version_string="1.0"><![CDATA[View]]></phrase>
+  <phrase title="permission_interface.border" version_id="10" version_string="1.0"><![CDATA[Border]]></phrase>
+</phrases>

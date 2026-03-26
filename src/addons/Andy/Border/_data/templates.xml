@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<templates>
+  <template type="public" title="andy_border" version_id="10" version_string="1.0"><![CDATA[<xf:title>{{ phrase('border_border') }}</xf:title>
+
+{{ phrase('border_click') }} <a href="{{ link('posts', $post) }}">{{ phrase('border_here') }}</a> {{ phrase('border_to_return_to_the_post') }}
+<br />
+<br />
+
+<div class="block-container">
+	<div class="block-body">
+		<xf:datalist data-xf-init="responsive-data-list">
+			<xf:datarow rowtype="header">
+				<xf:cell>{{ phrase('border_attachment') }}</xf:cell>
+				<xf:cell>{{ phrase('border_filename') }}</xf:cell>
+				<xf:cell>{{ phrase('border_action') }}</xf:cell>
+			</xf:datarow>
+			<xf:foreach loop="$attachments" value="$attachment">
+				<xf:datarow rowclass="dataList-row--noHover">
+					<xf:cell><img class="resizeThumb" src="{$attachment.thumbnailUrl}?{$serverTime}"></xf:cell>
+					<xf:cell>{$attachment.filename}</xf:cell>
+					<xf:cell><a href="{{ link('posts/bordersave/', '', {'attachment_id': $attachment.attachment_id}) }}">{{ phrase('border_add_border') }}</a></xf:cell>
+				</xf:datarow>
+			</xf:foreach>
+		</xf:datalist>
+	</div>
+</div>]]></template>
+</templates>

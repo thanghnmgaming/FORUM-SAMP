@@ -1,0 +1,25 @@
+{
+    "legacy_addon_id": "",
+    "title": "[SC] Message User Info - XFRM",
+    "description": "This add-on allow you to add the number of resources in message user info.",
+    "version_id": 2000000,
+    "version_string": "2.0.0",
+    "dev": "SyTry",
+    "dev_url": "https://sytrycommunity.fr/",
+    "faq_url": "",
+    "support_url": "https://sytrycommunity.fr/forums/questions-aides-et-recherches.16/",
+    "extra_urls": {
+        "XenForo": "https://sytrycommunity.fr/forums/xenforo.29/"
+    },
+    "require": {
+        "XFRM": [
+            2000370,
+            "XenForo Resource Manager 2.0.3"
+        ],
+        "XF": [
+            2010031,
+            "XenForo 2.1.0 Beta 1+"
+        ]
+    },
+    "icon": "fa-info-circle"
+}

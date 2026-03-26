@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<widget_definitions>
+  <widget_definition definition_id="XenEncokGrnKonular_Widget" definition_class="XenGenTr\Xenistatistik\Widget\EnCokGrnKonular"/>
+  <widget_definition definition_id="XenYeniKonu_Widget" definition_class="XenGenTr\Xenistatistik\Widget\YeniKonular"/>
+  <widget_definition definition_id="XenYeniMesaj_Widget" definition_class="XenGenTr\Xenistatistik\Widget\YeniMesajlar"/>
+  <widget_definition definition_id="Xenuyeistatik_widget" definition_class="XenGenTr\Xenistatistik\Widget\Kullanicilar"/>
+</widget_definitions>

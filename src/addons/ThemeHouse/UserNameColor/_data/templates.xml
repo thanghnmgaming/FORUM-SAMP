@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<templates>
+  <template type="admin" title="th_unco_user_name_color_criteria" version_id="1000070" version_string="1.0.0"><![CDATA[<xf:checkboxrow label="{{ phrase('th_unco_user_name_color') }}">
+	<xf:option name="user_criteria[th_unco_user_name_color][rule]"
+			   value="th_unco_user_name_color"
+			   selected="{$criteria.th_unco_user_name_color}"
+			   label="{{ phrase('th_unco_user_has_user_name_color') }}" />
+	<xf:option name="user_criteria[th_unco_not_user_name_color][rule]"
+			   value="th_unco_not_user_name_color"
+			   selected="{$criteria.th_unco_not_user_name_color}"
+			   label="{{ phrase('th_unco_user_has_no_user_name_color') }}" />
+
+	<xf:option name="user_criteria[th_unco_color_preset][rule]"
+			   value="th_unco_color_preset"
+			   selected="{$criteria.th_unco_color_preset}"
+			   label="{{ phrase('th_unco_user_has_color_preset') }}" />
+	<xf:option name="user_criteria[th_unco_custom_color][rule]"
+			   value="th_unco_custom_color"
+			   selected="{$criteria.th_unco_custom_color}"
+			   label="{{ phrase('th_unco_user_has_custom_color') }}" />
+
+	<xf:option name="user_criteria[th_unco_style_one_of][rule]"
+			   value="th_unco_style_one_of"
+			   selected="{$criteria.th_unco_style_one_of}"
+			   label="{{ phrase('th_unco_user_name_color_style_one_of:') }}">
+		<xf:select name="user_criteria[th_unco_style_one_of][data][style_ids]"
+				   multiple="true"
+				   value="{$criteria.th_unco_style_one_of.style_ids}">
+			<xf:foreach loop="$data.thUncoStyles" value="$style">
+				<xf:option value="{$style.user_name_style_id}">{$style.title}</xf:option>
+			</xf:foreach>
+		</xf:select>
+	</xf:option>
+	<xf:option name="user_criteria[th_unco_style_not_one_of][rule]"
+			   value="th_unco_style_not_one_of"
+			   selected="{$criteria.th_unco_style_not_one_of}"
+			   label="{{ phrase('th_unco_user_name_color_style_not_one_of:') }}">
+		<xf:select name="user_criteria[th_unco_style_not_one_of][data][style_ids]"
+				   multiple="true"
+				   value="{$criteria.th_unco_style_not_one_of.style_ids}">
+			<xf:foreach loop="$data.thUncoStyles" value="$style">
+				<xf:option value="{$style.user_name_style_id}">{$style.title}</xf:option>
+			</xf:foreach>
+		</xf:select>
+	</xf:option>
+
+	<xf:option name="user_criteria[th_unco_custom_red][rule]"
+			   value="th_unco_custom_red"
+			   selected="{$criteria.th_unco_custom_red}"
+			   label="{{ phrase('th_unco_custom_name_color_red_value_at_least_x:') }}">
+		<xf:numberbox name="user_criteria[th_unco_custom_red][data][value]"
+					  value="{$criteria.th_unco_custom_red.value}"
+					  size="5" min="0" max="255" step="1" />
+	</xf:option>
+	<xf:option name="user_criteria[th_unco_custom_max_red][rule]"
+			   value="th_unco_custom_red"
+			   selected="{$criteria.th_unco_custom_max_red}"
+			   label="{{ phrase('th_unco_custom_name_color_red_value_no_more_than_x:') }}">
+		<xf:numberbox name="user_criteria[th_unco_custom_max_red][data][value]"
+					  value="{$criteria.th_unco_custom_max_red.value}"
+					  size="5" min="0" max="255" step="1" />
+	</xf:option>
+
+	<xf:option name="user_criteria[th_unco_custom_green][rule]"
+			   value="th_unco_custom_green"
+			   selected="{$criteria.th_unco_custom_green}"
+			   label="{{ phrase('th_unco_custom_name_color_green_value_at_least_x:') }}">
+		<xf:numberbox name="user_criteria[th_unco_custom_green][data][value]"
+					  value="{$criteria.th_unco_custom_green.value}"
+					  size="5" min="0" max="255" step="1" />
+	</xf:option>
+	<xf:option name="user_criteria[th_unco_custom_max_green][rule]"
+			   value="th_unco_custom_max_green"
+			   selected="{$criteria.th_unco_custom_max_green}"
+			   label="{{ phrase('th_unco_custom_name_color_green_value_no_more_than_x:') }}">
+		<xf:numberbox name="user_criteria[th_unco_custom_max_green][data][value]"
+					  value="{$criteria.th_unco_custom_max_green.value}"
+					  size="5" min="0" max="255" step="1" />
+	</xf:option>
+
+	<xf:option name="user_criteria[th_unco_custom_blue][rule]"
+			   value="th_unco_custom_blue"
+			   selected="{$criteria.th_unco_custom_blue}"
+			   label="{{ phrase('th_unco_custom_name_color_blue_value_at_least_x:') }}">
+		<xf:numberbox name="user_criteria[th_unco_custom_blue][data][value]"
+					  value="{$criteria.th_unco_custom_blue.value}"
+					  size="5" min="0" max="255" step="1" />
+	</xf:option>
+	<xf:option name="user_criteria[th_unco_custom_max_blue][rule]"
+			   value="th_unco_custom_max_blue"
+			   selected="{$criteria.th_unco_custom_max_blue}"
+			   label="{{ phrase('th_unco_custom_name_color_blue_value_no_more_than_x:') }}">
+		<xf:numberbox name="user_criteria[th_unco_custom_max_blue][data][value]"
+					  value="{$criteria.th_unco_custom_max_blue.value}"
+					  size="5" min="0" max="255" step="1" />
+	</xf:option>
+</xf:checkboxrow>]]></template>
+  <template type="admin" title="th_unco_user_name_style_edit" version_id="1000010" version_string="1.0.0 Alpha"><![CDATA[<xf:title>
+	<xf:if is="$style.isInsert()">
+		{{ phrase('th_unco_add_user_name_style') }}
+		<xf:else />
+		{{ phrase('th_unco_edit_user_name_style:') }} {$style.title}
+	</xf:if>
+</xf:title>
+
+<xf:form action="{{ link('th-unco/save', $style) }}"
+		 class="block">
+	<div class="block-container">
+		<h2 class="block-tabHeader tabs hScroller" data-xf-init="h-scroller tabs" role="tablist">
+			<span class="hScroller-scroll">
+				<a class="tabs-tab is-active" role="tab" tabindex="0" aria-controls="user-name-style-options">
+					{{ phrase('th_unco_user_name_style_options') }}
+				</a>
+				<xf:macro template="helper_criteria" name="user_tabs"
+						  arg-userTabTitle="{{ phrase('th_unco_available_if...') }}" />
+			</span>
+		</h2>
+
+		<ul class="block-body tabPanes">
+			<li class="is-active" role="tabpanel" id="user-name-style-option">
+				<xf:textboxrow name="title" label="{{ phrase('title') }}"
+							   value="{{ $style.isInsert() ? '' : $style.MasterTitle.phrase_text }}" />
+				
+				<xf:numberboxrow min="0" step="1" name="display_order"
+								 value="{$style.display_order}"
+								 label="{{ phrase('display_order') }}" />
+
+				<xf:checkboxrow>
+					<xf:option value="1" name="active"
+							   selected="{$style.active}">{{ phrase('enabled') }}</xf:option>
+				</xf:checkboxrow>
+
+				<hr class="formRowSep" />
+
+				<xf:codeeditorrow name="styling"
+								  label="{{ phrase('th_unco_styling') }}"
+								  mode="css"
+								  explain="{{ phrase('you_may_use_xenforo_template_syntax_here') }}"
+								  value="{$style.styling}" />
+			</li>
+
+			<xf:macro template="helper_criteria" name="user_panes"
+					  arg-criteria="{{ $userCriteria.getCriteriaForTemplate() }}"
+					  arg-data="{{ $userCriteria.getExtraTemplateData() }}" />
+		</ul>
+
+		<xf:submitrow icon="save" />
+	</div>
+</xf:form>]]></template>
+  <template type="admin" title="th_unco_user_name_style_list" version_id="1000010" version_string="1.0.0 Alpha"><![CDATA[<xf:title>
+	{{ phrase('th_unco_user_name_styles') }}
+</xf:title>
+
+<xf:pageaction>
+	<div class="buttonGroup">
+		<xf:button icon="add" href="{{ link('th-unco/add') }}">
+			{{ phrase('th_unco_add_style') }}
+		</xf:button>
+		<xf:button icon="sort" href="{{ link('th-unco/sort') }}">
+			{{ phrase('button.sort') }}
+		</xf:button>
+	</div>
+</xf:pageaction>
+
+<xf:form action="{{ link('th-unco/toggle') }}" class="block" ajax="true">
+	<div class="block-container">
+		<div class="block-body">
+			<xf:if is="$styles is not empty">
+				<xf:datalist>
+					<xf:foreach loop="$styles" value="$style">
+						<xf:set var="$titleHtml">
+							<span class="th-unco-user-name-style-{$style.user_name_style_id}">
+								<span>{$style.title}</span>
+							</span>
+						</xf:set>
+						<xf:datarow>
+							<xf:main label="{$titleHtml|raw}"
+									 href="{{ link('th-unco/edit', $style) }}" />
+
+							<xf:toggle name="active[{$style.user_name_style_id}]" selected="$style.active"
+									   submit="true"
+									   tooltip="{{ phrase('enable_disable_x', {'title': $style.title}) }}" />
+
+							<xf:delete icon="delete"
+									   href="{{ link('th-unco/delete', $style) }}" />
+
+
+						</xf:datarow>
+					</xf:foreach>
+				</xf:datalist>
+				<xf:else />
+				<div class="block-row">
+					{{ phrase('th_unco_no_styles_have_been_created_yet') }}
+				</div>
+			</xf:if>
+		</div>
+	</div>
+</xf:form>
+
+<xf:if is="$styles is not empty">
+	<xf:css src="public:th_unco_user_name_style_cache.less" />
+</xf:if>]]></template>
+  <template type="admin" title="th_unco_user_name_style_sort" version_id="1000010" version_string="1.0.0 Alpha"><![CDATA[<xf:title>{{ phrase('th_unco_sort_user_name_styles') }}</xf:title>
+
+<xf:macro template="public:nestable_macros" name="setup" />
+
+<xf:form action="{{ link('th-unco/sort') }}" class="block" ajax="true">
+	<div class="block-container">
+		<div class="block-body">
+			<div class="nestable-container" data-xf-init="nestable" data-parent-id="">
+				<ol class="nestable-list">
+					<xf:foreach loop="$styles" value="$style" i="$i">
+						<li class="nestable-item" data-id="{$style.user_name_style_id}">
+							<div class="nestable-handle" aria-label="{{ phrase('drag_handle') }}"><i class="fa fa-bars" aria-hidden="true"></i></div>
+							<div class="nestable-content">{$style.title}</div>
+						</li>
+					</xf:foreach>
+				</ol>
+				<xf:hiddenval name="styles" value="" />
+			</div>
+			<xf:submitrow icon="save" rowtype="simple" />
+		</div>
+	</div>
+</xf:form>]]></template>
+  <template type="public" title="th_unco_macros" version_id="1000070" version_string="1.0.0"><![CDATA[<xf:macro name="selector"
+		  arg-user="!"
+		  arg-styles="{{ [] }}">
+	<xf:if is="$user.hasPermission('th_unco', 'use')">
+		<xf:radiorow name="th_unco_style_id" label="{{ phrase('th_unco_user_name_styling') }}"
+					 value="{{ $user.th_unco_user_name_data.style ? $user.th_unco_user_name_data.style : ($user.th_unco_user_name_data.color ? -1 : 0) }}">
+			<xf:option value="0">
+				<span class="th-unco-preview">
+					{{ phrase('th_unco_default_none') }}
+				</span>
+			</xf:option>
+			<xf:foreach loop="$styles" value="$style">
+				<xf:option value="{$style.user_name_style_id}">
+					<span class="th-unco-preview th-unco-user-name-style-{$style.user_name_style_id}">
+						<span>{$style.title}</span>
+					</span>
+				</xf:option>
+			</xf:foreach>
+
+			<xf:if is="$user.hasPermission('th_unco', 'useCustom')">
+				<xf:option value="-1" label="{{ phrase('th_unco_custom_color:') }}">
+					<xf:macro name="color_picker"
+							  template="color_picker_macros"
+							  arg-value="{$user.th_unco_user_name_data.color}"
+							  arg-name="th_unco_custom_color"
+							  arg-row="{{ false }}" />
+				</xf:option>
+			</xf:if>
+		</xf:radiorow>
+	</xf:if>
+
+	<xf:css src="th_unco_user_name_style_cache.less" />
+</xf:macro>]]></template>
+</templates>

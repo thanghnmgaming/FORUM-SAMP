@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<options>
+  <option option_id="borderBorderColor" edit_format="textbox" data_type="string">
+    <default_value>#cccccc</default_value>
+    <relation group_id="border" display_order="2"/>
+  </option>
+  <option option_id="borderBorderWidth" edit_format="spinbox" data_type="numeric">
+    <default_value>1</default_value>
+    <edit_format_params>min=1</edit_format_params>
+    <relation group_id="border" display_order="1"/>
+  </option>
+</options>

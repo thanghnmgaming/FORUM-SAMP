@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<options>
+  <option option_id="cinvinHome_AutoEnableHome" edit_format="onoff" data_type="boolean">
+    <default_value>1</default_value>
+    <relation group_id="cinvinHome" display_order="1"/>
+  </option>
+  <option option_id="cinvinHome_BoardDescription" edit_format="textbox" data_type="string">
+    <default_value></default_value>
+    <relation group_id="cinvinHome" display_order="20"/>
+  </option>
+  <option option_id="cinvinHome_DisplayBoardDescription" edit_format="onoff" data_type="boolean">
+    <default_value>1</default_value>
+    <relation group_id="cinvinHome" display_order="210"/>
+  </option>
+  <option option_id="cinvinHome_DisplayBoardTitle" edit_format="onoff" data_type="boolean">
+    <default_value>1</default_value>
+    <relation group_id="cinvinHome" display_order="200"/>
+  </option>
+  <option option_id="cinvinHome_DisplayBreadcrumbs" edit_format="onoff" data_type="boolean">
+    <default_value>0</default_value>
+    <relation group_id="cinvinHome" display_order="220"/>
+  </option>
+  <option option_id="cinvinHome_DisplayButtonNewPosts" edit_format="onoff" data_type="boolean">
+    <default_value>1</default_value>
+    <relation group_id="cinvinHome" display_order="300"/>
+  </option>
+  <option option_id="cinvinHome_DisplayButtonPostThread" edit_format="onoff" data_type="boolean">
+    <default_value>1</default_value>
+    <relation group_id="cinvinHome" display_order="310"/>
+  </option>
+</options>

@@ -1,0 +1,14 @@
+{
+    "legacy_addon_id": "",
+    "title": "ServerDev Node Icon",
+    "description": "Set Fontawesome Icons for Node",
+    "version_id": 2100025,
+    "version_string": "2.1.0 Beta 5",
+    "dev": "ServerDev",
+    "dev_url": "",
+    "faq_url": "",
+    "support_url": "",
+    "extra_urls": [],
+    "require": [],
+    "icon": "fa-palette"
+}

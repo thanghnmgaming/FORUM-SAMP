@@ -1,0 +1,19 @@
+{
+    "legacy_addon_id": "XenResource",
+    "title": "XenForo Resource Manager",
+    "description": "The XenForo Resource Manager is an add-on that allows you to manage files, downloads, and article-like content within your forum.",
+    "version_id": 2010670,
+    "version_string": "2.1.6",
+    "dev": "XenForo Ltd.",
+    "dev_url": "https://xenforo.com/",
+    "faq_url": "https://xenforo.com/goto/xfrm-help",
+    "support_url": "https://xenforo.com/community/forums/resource-manager-support.82/",
+    "extra_urls": [],
+    "require": {
+        "XF": [
+            2010470,
+            "XenForo 2.1.4"
+        ]
+    },
+    "icon": "icon.png"
+}

@@ -1,0 +1,45 @@
+{
+    "legacy_addon_id": "XMMultiPrefix",
+    "title": "Multi Prefix",
+    "description": "Allow users to apply multiple prefixes to a piece of content.",
+    "version_id": 2070200,
+    "version_string": "2.7.2",
+    "dev": "Xon",
+    "dev_url": "https://atelieraphelion.com",
+    "faq_url": "",
+    "support_url": "https://xenforo.com/community/resources/multi-prefix.6281/",
+    "extra_urls": [],
+    "require": {
+        "XF": [
+            2010070,
+            "XenForo 2.1.0+"
+        ],
+        "php": [
+            "5.6",
+            "PHP 5.6+"
+        ]
+    },
+    "icon": "fa-object-group",
+    "require-soft": {
+        "SV/ConversationEssentials": [
+            2010000,
+            "Conversation Essentials v2.1.0+",
+            false
+        ],
+        "XFRM": [
+            2010070,
+            "XenForo Resource Manager v2.1.0+",
+            true
+        ],
+        "DBTech/eCommerce": [
+            1030170,
+            "[DBTech] DragonByte eCommerce v1.3.1+",
+            true
+        ],
+        "DBTech/Shop": [
+            906010032,
+            "[DBTech] DragonByte Shop v6.1.0+",
+            true
+        ]
+    }
+}

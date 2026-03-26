@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<phrases>
+  <phrase title="XGT_Banner1" version_id="1000002" version_string="1.0.0 Beta 1"><![CDATA[1. Banner]]></phrase>
+  <phrase title="XGT_Banner10" version_id="1000002" version_string="1.0.0 Beta 1"><![CDATA[10. Banner]]></phrase>
+  <phrase title="XGT_Banner2" version_id="1000002" version_string="1.0.0 Beta 1"><![CDATA[2. Banner]]></phrase>
+  <phrase title="XGT_Banner3" version_id="1000002" version_string="1.0.0 Beta 1"><![CDATA[3. Banner]]></phrase>
+  <phrase title="XGT_Banner4" version_id="1000002" version_string="1.0.0 Beta 1"><![CDATA[4. Banner]]></phrase>
+  <phrase title="XGT_Banner5" version_id="1000002" version_string="1.0.0 Beta 1"><![CDATA[5. Banner]]></phrase>
+  <phrase title="XGT_Banner6" version_id="1000002" version_string="1.0.0 Beta 1"><![CDATA[6. Banner]]></phrase>
+  <phrase title="XGT_Banner7" version_id="1000002" version_string="1.0.0 Beta 1"><![CDATA[7. Banner]]></phrase>
+  <phrase title="XGT_Banner8" version_id="1000002" version_string="1.0.0 Beta 1"><![CDATA[8. Banner]]></phrase>
+  <phrase title="XGT_Banner9" version_id="1000002" version_string="1.0.0 Beta 1"><![CDATA[9. Banner]]></phrase>
+  <phrase title="XGT_banner_ap" version_id="1000002" version_string="1.0.0 Beta 1"><![CDATA[Arka Plan rengi]]></phrase>
+  <phrase title="XGT_banner_baslik" version_id="1000003" version_string="1.0.0"><![CDATA[Başlık banner özelleştir]]></phrase>
+  <phrase title="XGT_banner_faikon" version_id="1000003" version_string="1.0.0"><![CDATA[Fa ikon unicode]]></phrase>
+  <phrase title="XGT_banner_faikon_aciklama" version_id="1000003" version_string="1.0.0"><![CDATA[FA ikon unicode belirtiniz,ikon unicode ve gorünümlerini <a href="https://fontawesome.com/icons?d=gallery" target="blank">bu bağlantıdan</a> inceleyebilirsiniz.
+<br />
+Örnek unicode: f195]]></phrase>
+  <phrase title="XGT_banner_renk" version_id="1000002" version_string="1.0.0 Beta 1"><![CDATA[Metin rengi]]></phrase>
+  <phrase title="XGT_banner_yonetici" version_id="1000002" version_string="1.0.0 Beta 1"><![CDATA[Yönetici banner]]></phrase>
+  <phrase title="XGT_banner_yonetici_etkin" version_id="1000002" version_string="1.0.0 Beta 1"><![CDATA[Yönetici banner özelleştir]]></phrase>
+  <phrase title="option.XGT_Kullanici_Banner_Kapat" version_id="1000003" version_string="1.0.0"><![CDATA[Banner sistemini etkinleştir]]></phrase>
+  <phrase title="option.XGT_Kullanici_Banner_secenekleri" version_id="1000002" version_string="1.0.0 Beta 1"><![CDATA[Kullanıcı banner sistemi]]></phrase>
+  <phrase title="option.XGT_Kullanici_Banner_yonetici" version_id="1000002" version_string="1.0.0 Beta 1"><![CDATA[Yönetici banner özelleştir]]></phrase>
+  <phrase title="option.XGT_Kullanici_baslik_yoneticisi" version_id="1000003" version_string="1.0.0"><![CDATA[Varsayılan kullanıcı başlıkları]]></phrase>
+  <phrase title="option_explain.XGT_Kullanici_Banner_Kapat" version_id="1000003" version_string="1.0.0"><![CDATA[Eğer deçim yapılırsa sistem çalışacaktır.]]></phrase>
+  <phrase title="option_explain.XGT_Kullanici_Banner_secenekleri" version_id="1000002" version_string="1.0.0 Beta 1"><![CDATA[]]></phrase>
+  <phrase title="option_explain.XGT_Kullanici_Banner_yonetici" version_id="1000002" version_string="1.0.0 Beta 1"><![CDATA[Yönetici banner özelleştirmek için kullanılabilir.]]></phrase>
+  <phrase title="option_explain.XGT_Kullanici_baslik_yoneticisi" version_id="1000003" version_string="1.0.0"><![CDATA[Varsayılan kullanıcı başlıklarını özelleştirebilirsiniz.]]></phrase>
+  <phrase title="option_group.XGT_Kullanici_Banner" version_id="1000002" version_string="1.0.0 Beta 1"><![CDATA[[XenGenTr] Kullanici banner sistemi]]></phrase>
+  <phrase title="option_group_description.XGT_Kullanici_Banner" version_id="1000003" version_string="1.0.0"><![CDATA[[XenGenTr] Kullanici banner sistemi görsel değişimler.]]></phrase>
+</phrases>

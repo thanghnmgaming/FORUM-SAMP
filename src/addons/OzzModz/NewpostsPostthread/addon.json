@@ -1,0 +1,14 @@
+{
+    "legacy_addon_id": "",
+    "title": "[OzzModz] Remove New Posts/Post Thread Buttons",
+    "description": "Removes New posts and Post thread buttons from the site",
+    "version_id": 2000170,
+    "version_string": "2.0.1",
+    "dev": "Ozzy47",
+    "dev_url": "https://snogssite.com",
+    "faq_url": "",
+    "support_url": "https://snogssite.com/threads/ozzmodz-remove-new-posts-post-thread-buttons.3268/",
+    "extra_urls": [],
+    "require": [],
+    "icon": ""
+}

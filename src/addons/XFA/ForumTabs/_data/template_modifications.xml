@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<template_modifications>
+  <modification type="public" template="account_preferences" modification_key="xfa_ft_account_preferences" description="Add tabbed mode disabler" execution_order="10" enabled="1" action="str_replace">
+    <find><![CDATA[<xf:macro template="helper_account" name="email_options_row" arg-showConversationOption="{{ true }}" />]]></find>
+    <replace><![CDATA[<xf:if is="{{ $xf.visitor->hasPermission('general', 'disableTabbedForumList') }}">
+				<xf:checkboxrow label="{{ phrase('xfa_ft_forum_list') }}">
+					<xf:option name="xfa_ft_disable"
+						label="{{ phrase('xfa_ft_disable_tabbed_forum_list_display') }}"
+						checked="{{ $xf.visitor.xfa_ft_disable ? true : false }}" />
+				</xf:checkboxrow>
+			</xf:if>
+			$0]]></replace>
+  </modification>
+  <modification type="public" template="forum_list" modification_key="xfa_ft_forum_list" description="Replace the forum displays" execution_order="1000" enabled="1" action="str_replace">
+    <find><![CDATA[<xf:macro name="node_list" arg-children="{$nodeTree}" arg-extras="{$nodeExtras}" />]]></find>
+    <replace><![CDATA[<xf:if is="{$isTabbed}"><xf:include template="xfa_ft_forum_list" /><xf:else />$0</xf:if>]]></replace>
+  </modification>
+</template_modifications>

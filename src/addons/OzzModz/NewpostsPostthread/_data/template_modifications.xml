@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<template_modifications>
+  <modification type="public" template="forum_overview_wrapper" modification_key="ozzmodz_remove_buttons_forum_overview_wrapper" description="Remove the new posts and post thread buttons" execution_order="10" enabled="1" action="preg_replace">
+    <find><![CDATA[/<xf:pageaction.+pageaction>/isU]]></find>
+    <replace><![CDATA[]]></replace>
+  </modification>
+  <modification type="public" template="whats_new_posts" modification_key="ozzmodz_remove_buttons_whats_new_posts" description="Remove the post thread button" execution_order="10" enabled="1" action="preg_replace">
+    <find><![CDATA[/<xf:pageaction.+pageaction>/isU]]></find>
+    <replace><![CDATA[]]></replace>
+  </modification>
+</template_modifications>

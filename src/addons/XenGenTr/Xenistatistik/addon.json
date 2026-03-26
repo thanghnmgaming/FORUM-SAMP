@@ -1,0 +1,14 @@
+{
+    "legacy_addon_id": "",
+    "title": "[XenGenTr] Forum istatistikleri",
+    "description": "[XenGenTr] Xenistatistik forumdan son mesajlar,konular en hit konular ve en cok mesaja sahip kullanicilari gosterir.",
+    "version_id": 1020070,
+    "version_string": "1.2.2 Beta 4",
+    "dev": "eTiKeT",
+    "dev_url": "https://xenforo.gen.tr",
+    "faq_url": "https://xenforo.gen.tr",
+    "support_url": "https://xenforo.gen.tr/xenforo-kaynaklari/xengentr-xenistatistik-turkce.394/",
+    "extra_urls": [],
+    "require": [],
+    "icon": "XenGenTr.png"
+}

@@ -1,0 +1,21 @@
+<?php
+return array (
+  'permission_interface.BR_ModernStatistics' => 'Brivium - Modern statistics permisisons',
+  'permission_interface.XGT_istatistik_izin_grubu' => '[XGT] Forum istatistikleri - izinleri',
+  'permission_interface.bookmarkPermissions' => 'Bookmark permissions',
+  'permission_interface.border' => 'Border',
+  'permission_interface.conversationModeratorPermissions' => 'Conversation moderator permissions',
+  'permission_interface.conversationPermissions' => 'Conversation permissions',
+  'permission_interface.forumModeratorPermissions' => 'Forum moderator permissions',
+  'permission_interface.forumPermissions' => 'Forum permissions',
+  'permission_interface.generalModeratorPermissions' => 'General moderator permissions',
+  'permission_interface.generalPermissions' => 'General permissions',
+  'permission_interface.postAttachmentPermissions' => 'Post attachment permissions',
+  'permission_interface.profilePostModeratorPermissions' => 'Profile post moderator permissions',
+  'permission_interface.profilePostPermissions' => 'Profile post permissions',
+  'permission_interface.resourceModeratorPermissions' => 'Resource moderator permissions',
+  'permission_interface.resourcePermissions' => 'Resource permissions',
+  'permission_interface.signaturePermissions' => 'Signature permissions',
+  'permission_interface.th_uix' => 'UI.X Permissions',
+  'permission_interface.th_unco' => '[TH] User Name Color permissions',
+);

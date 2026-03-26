@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<style_properties>
+  <style_property property_name="loadingtextlogo" group_name="mplloading" title="[MPL] - Loading Logo" description="[MPL] - Loading Yazı logo Belirleyebilirsiniz. Belirleyiniz. &#10;&#10;&lt;strong&gt; Örnek: &lt;Strong&gt; https://i.hizliresim.com/deneme.png" property_type="value" value_type="string" value_group="LoadingLogo" display_order="10">
+    <value>"https://xenforo.gen.tr/styles/XenGenTr/XGT-Tema-V2/images/XenGenTr.png"</value>
+  </style_property>
+  <style_property property_name="mplheartbeat" group_name="mplloading" title="Kalp Atışı" description="Kalp Atışı Seçimi" property_type="value" value_type="boolean" value_group="KalpAtisi" display_order="60">
+    <value>1</value>
+  </style_property>
+  <style_property property_name="mplhizi" group_name="mplloading" title="Kalp Hızı Ayarı" description="Kalp Hızı Ayarı düzenlemesi" property_type="value" value_type="string" display_order="12">
+    <value>".8s"</value>
+  </style_property>
+  <style_property property_name="mplloadingbackground" group_name="mplloading" title="Loading Arka Plan Rengi" description="Loading arka plan rengini değiştirebilirsiniz." property_type="value" value_type="color" value_group="Background" display_order="20">
+    <value>"#ffffff"</value>
+  </style_property>
+  <style_property property_name="mplloadingspinner" group_name="mplloading" title="Loading Spinner Rengi" description="Loading Spinner Rengini Değiştirebilirsiniz." property_type="value" value_type="color" value_group="SpinnerColor" display_order="30">
+    <value>"#000000"</value>
+  </style_property>
+  <style_property property_name="mplloadingspinnerlogo" group_name="mplloading" title="Loading Spinner" property_type="value" value_type="radio" value_group="LoadingSpinner" display_order="0">
+    <value_parameters>default=Varsayılan
+logo=Logo</value_parameters>
+    <value>"logo"</value>
+  </style_property>
+  <style_property property_name="mplloadingtext" group_name="mplloading" title="Loading Yazı Rengi" description="Loading Yazı Rengi Değiştirebilirsiniz." property_type="value" value_type="color" value_group="LoadingTextColor" display_order="40">
+    <value>"#000000"</value>
+  </style_property>
+  <style_property property_name="mplloadingtextone" group_name="mplloading" title="Loading Birinci Yazı Rengi" description="Loading Birinci Yazı Rengi Değiştirebilirsiniz." property_type="value" value_type="color" value_group="LoadingTextColorOne" display_order="50">
+    <value>"rgba(0, 0, 0, 0.2)"</value>
+  </style_property>
+  <style_property property_name="mpllogosize" group_name="mplloading" title="Logo Boyutu" description="Logo Boyutu Ayarı" property_type="value" value_type="string" value_group="LoadingLogo" display_order="11">
+    <value>"100px"</value>
+  </style_property>
+</style_properties>

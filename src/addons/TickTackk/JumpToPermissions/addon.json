@@ -1,0 +1,22 @@
+{
+    "legacy_addon_id": "JumpToPerms",
+    "title": "Jump To Permissions",
+    "description": "This add-on allows you to quickly switch between permission interface.",
+    "version_id": 2000170,
+    "version_string": "2.0.1",
+    "dev": "TickTackk",
+    "dev_url": "https://xenforo.com/community/members/batpool52.90375/",
+    "faq_url": "",
+    "support_url": "https://xenforo.com/community/threads/jump-to-permissions.142579/",
+    "extra_urls": {
+        "Twitter": "https://twitter.com/t1cktackk",
+        "Discord": "https://discord.gg/qdwgUpP"
+    },
+    "require": {
+        "XF": [
+            2000010,
+            "XenForo 2.0.0+"
+        ]
+    },
+    "icon": "fa-chevron-circle-down fa-flip-vertical"
+}

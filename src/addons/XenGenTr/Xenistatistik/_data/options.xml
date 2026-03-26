@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<options>
+  <option option_id="Xenistatistik_encokgrn_baslik" edit_format="textbox" data_type="string">
+    <default_value>En hit konular</default_value>
+    <relation group_id="Xenistatistik_secenekler" display_order="470"/>
+  </option>
+  <option option_id="xenistatistik_avatar" edit_format="onoff" data_type="string">
+    <default_value>1</default_value>
+    <relation group_id="Xenistatistik_secenekler" display_order="30"/>
+  </option>
+  <option option_id="xenistatistik_encokgrnkonukapat" edit_format="onoff" data_type="boolean">
+    <default_value>1</default_value>
+    <relation group_id="Xenistatistik_secenekler" display_order="460"/>
+  </option>
+  <option option_id="xenistatistik_encokgrnkonularforum" edit_format="callback" data_type="array">
+    <default_value>[]</default_value>
+    <edit_format_params>XF\Option\Forum::renderSelectMultiple</edit_format_params>
+    <sub_options>*</sub_options>
+    <relation group_id="Xenistatistik_secenekler" display_order="490"/>
+  </option>
+  <option option_id="xenistatistik_encokgrnkonulimiti" edit_format="spinbox" data_type="unsigned_integer">
+    <default_value>10</default_value>
+    <relation group_id="Xenistatistik_secenekler" display_order="480"/>
+  </option>
+  <option option_id="xenistatistik_konum" edit_format="radio" data_type="string">
+    <default_value>forumustu</default_value>
+    <edit_format_params>icerikustu={{ phrase('Xenistatistik_icerik_ustunde') }}
+forumustu={{ phrase('widget_pos.forum_list_above_nodes') }}
+forumalti={{ phrase('widget_pos.forum_list_below_nodes') }}
+ozelkonum={{ phrase('Xenistatistik_ozel_konum') }}</edit_format_params>
+    <relation group_id="Xenistatistik_secenekler" display_order="40"/>
+  </option>
+  <option option_id="xenistatistik_kullanicikapat" edit_format="onoff" data_type="boolean">
+    <default_value>1</default_value>
+    <relation group_id="Xenistatistik_secenekler" display_order="180"/>
+  </option>
+  <option option_id="xenistatistik_sonkonu_baslik" edit_format="textbox" data_type="string">
+    <default_value>En son konular</default_value>
+    <relation group_id="Xenistatistik_secenekler" display_order="270"/>
+  </option>
+  <option option_id="xenistatistik_uyegosterim" edit_format="spinbox" data_type="unsigned_integer">
+    <default_value>10</default_value>
+    <relation group_id="Xenistatistik_secenekler" display_order="190"/>
+  </option>
+  <option option_id="xenistatistik_yenikonuforum" edit_format="callback" data_type="array">
+    <default_value>[]</default_value>
+    <edit_format_params>XF\Option\Forum::renderSelectMultiple</edit_format_params>
+    <sub_options>*</sub_options>
+    <relation group_id="Xenistatistik_secenekler" display_order="290"/>
+  </option>
+  <option option_id="xenistatistik_yenikonukapat" edit_format="onoff" data_type="boolean">
+    <default_value>1</default_value>
+    <relation group_id="Xenistatistik_secenekler" display_order="260"/>
+  </option>
+  <option option_id="xenistatistik_yenikonuslimit" edit_format="spinbox" data_type="unsigned_integer">
+    <default_value>10</default_value>
+    <relation group_id="Xenistatistik_secenekler" display_order="280"/>
+  </option>
+  <option option_id="xenistatistik_yenimesajforum" edit_format="callback" data_type="array">
+    <default_value>[]</default_value>
+    <edit_format_params>XF\Option\Forum::renderSelectMultiple</edit_format_params>
+    <sub_options>*</sub_options>
+    <relation group_id="Xenistatistik_secenekler" display_order="390"/>
+  </option>
+  <option option_id="xenistatistik_yenimesajkapat" edit_format="onoff" data_type="boolean">
+    <default_value>1</default_value>
+    <relation group_id="Xenistatistik_secenekler" display_order="360"/>
+  </option>
+  <option option_id="xenistatistik_yenimesajlar_baslik" edit_format="textbox" data_type="string">
+    <default_value>En yeni mesajlar</default_value>
+    <relation group_id="Xenistatistik_secenekler" display_order="370"/>
+  </option>
+  <option option_id="xenistatistik_yenimesajlimit" edit_format="spinbox" data_type="unsigned_integer">
+    <default_value>10</default_value>
+    <relation group_id="Xenistatistik_secenekler" display_order="380"/>
+  </option>
+</options>

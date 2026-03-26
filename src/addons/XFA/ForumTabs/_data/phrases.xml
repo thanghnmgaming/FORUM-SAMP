@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<phrases>
+  <phrase title="admin_navigation.nodesTabs" version_id="901000090" version_string="1.0.0"><![CDATA[Node Tabs]]></phrase>
+  <phrase title="permission.general_disableTabbedForumList" version_id="901000090" version_string="1.0.0"><![CDATA[Disable tabbed forum list]]></phrase>
+  <phrase title="xfa_ft_add_tab" version_id="901000090" version_string="1.0.0"><![CDATA[Add tab]]></phrase>
+  <phrase title="xfa_ft_applicable_categories" version_id="901000090" version_string="1.0.0"><![CDATA[Applicable categories]]></phrase>
+  <phrase title="xfa_ft_disable_tabbed_forum_list_display" version_id="901000090" version_string="1.0.0"><![CDATA[Disable tabbed forum list display]]></phrase>
+  <phrase title="xfa_ft_edit_tab" version_id="901000090" version_string="1.0.0"><![CDATA[Edit tab]]></phrase>
+  <phrase title="xfa_ft_forum_list" version_id="901000090" version_string="1.0.0"><![CDATA[Forum list display]]></phrase>
+  <phrase title="xfa_ft_forum_tabs" version_id="901000090" version_string="1.0.0"><![CDATA[Forum tabs]]></phrase>
+  <phrase title="xfa_ft_icon" version_id="901000090" version_string="1.0.0"><![CDATA[Icon]]></phrase>
+  <phrase title="xfa_ft_nodes_tabs" version_id="901000090" version_string="1.0.0"><![CDATA[Nodes tabs]]></phrase>
+  <phrase title="xfa_ft_select_categories_to_display_in_tab" version_id="901000090" version_string="1.0.0"><![CDATA[Select the categories which shall be displayed in the tab.]]></phrase>
+  <phrase title="xfa_ft_visible_to_usergroups" version_id="901000090" version_string="1.0.0"><![CDATA[Visible to usergroups]]></phrase>
+</phrases>

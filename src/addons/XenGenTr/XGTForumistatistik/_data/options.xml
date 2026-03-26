@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<options>
+  <option option_id="xgtForumistatikKullaniciVerileri" edit_format="onoff" data_type="string">
+    <default_value>1</default_value>
+    <relation group_id="xgtForumistatistik_Secenekleri" display_order="55"/>
+  </option>
+  <option option_id="xgtForumistatikOzellikler" edit_format="checkbox" data_type="array" validation_class="XF\Option\Style" validation_method="triggerStyleUpdate">
+    <default_value>{"googlebutonu":"1","sekmeikon":"1","zamangoster":"1","forumugoster":"1","mesajgosterim":"1","sonyazan":"1","icerikvurgu":"1"}</default_value>
+    <edit_format_params>googlebutonu={{ phrase('xgt_forumistatik_google_butonu') }}
+sekmeikon={{ phrase('xgt_forumistatik_sekme_ikonlar') }}
+zamangoster= Veri listesi - Zamani göster
+forumugoster= Veri listesi - Forumu göster
+mesajgosterim= Veri listesi - Mesajı sayısını göster
+sonyazan= Veri listesi - Son yazan göster
+icerikvurgu= Veri listesi - İçerik vurgusunu göster</edit_format_params>
+    <sub_options>googlebutonu
+sekmeikon
+zamangoster
+forumugoster
+mesajgosterim
+sonyazan
+icerikvurgu</sub_options>
+    <relation group_id="xgtForumistatistik_Secenekleri" display_order="60"/>
+  </option>
+  <option option_id="xgtForumistatik_konumu" edit_format="select" data_type="string">
+    <default_value>forumlarustu</default_value>
+    <edit_format_params>iceriklerustu = Tüm içerik üstü
+forumlarustu = Forumların üstünde
+forumlaralti = Forumların altında
+kendikonumum = Kendi konumum</edit_format_params>
+    <relation group_id="xgtForumistatistik_Secenekleri" display_order="20"/>
+  </option>
+  <option option_id="xgtForumistatik_konumu_tumsayfalarda" edit_format="onoff" data_type="string">
+    <default_value></default_value>
+    <relation group_id="xgtForumistatistik_Secenekleri" display_order="50"/>
+  </option>
+  <option option_id="xgtIstatistikGosterimLimiti" edit_format="spinbox" data_type="integer">
+    <default_value>10</default_value>
+    <relation group_id="xgtForumistatistik_Secenekleri" display_order="30"/>
+  </option>
+  <option option_id="xgtIstatistikOtoyenileme" edit_format="template" data_type="array" validation_class="XF\Option\Style" validation_method="triggerStyleUpdate">
+    <default_value>{"otoyenileme":1,"otoyenilemezamani":30,"ziyaretciler":1}</default_value>
+    <edit_format_params>xgt_forumistatik_otoyenileme</edit_format_params>
+    <sub_options>otoyenileme
+otoyenilemezamani
+ziyaretciler</sub_options>
+    <relation group_id="xgtForumistatistik_Secenekleri" display_order="40"/>
+  </option>
+</options>

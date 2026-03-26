@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<phrases>
+  <phrase title="Xenistatistik_icerik_ustunde" version_id="1020040" version_string="1.2.2 Beta2"><![CDATA[İçeriklerin üstünde  : Sadece ana sayfada]]></phrase>
+  <phrase title="Xenistatistik_kullanici" version_id="1010300" version_string="1.1.3"><![CDATA[Kullanıcı seçenekleri]]></phrase>
+  <phrase title="Xenistatistik_ozel_konum" version_id="1020040" version_string="1.2.2 Beta2"><![CDATA[Konumu siz belirleyin]]></phrase>
+  <phrase title="Xenistatistik_tab_secenekler" version_id="1010300" version_string="1.1.3"><![CDATA[Seçenekler]]></phrase>
+  <phrase title="option.Xenistatistik_encokgrn_baslik" version_id="1010300" version_string="1.1.3"><![CDATA[Blok başlığınız]]></phrase>
+  <phrase title="option.xenistatistik_avatar" version_id="1010300" version_string="1.1.3"><![CDATA[Avatarları göster]]></phrase>
+  <phrase title="option.xenistatistik_encokgrnkonukapat" version_id="1020030" version_string="1.2.2 Beta1"><![CDATA[En hit konular aç]]></phrase>
+  <phrase title="option.xenistatistik_encokgrnkonularforum" version_id="1020030" version_string="1.2.2 Beta1"><![CDATA[Sadece seçili forumlardan içerik al]]></phrase>
+  <phrase title="option.xenistatistik_encokgrnkonulimiti" version_id="1020030" version_string="1.2.2 Beta1"><![CDATA[En hit konu limiti]]></phrase>
+  <phrase title="option.xenistatistik_konum" version_id="1010300" version_string="1.1.3"><![CDATA[Konum seç]]></phrase>
+  <phrase title="option.xenistatistik_kullanicikapat" version_id="1010300" version_string="1.1.3"><![CDATA[Kullanıcı istatistiğini aç]]></phrase>
+  <phrase title="option.xenistatistik_sonkonu_baslik" version_id="1010300" version_string="1.1.3"><![CDATA[Blok başlığınız]]></phrase>
+  <phrase title="option.xenistatistik_uyegosterim" version_id="1010300" version_string="1.1.3"><![CDATA[Kullanıcı limiti]]></phrase>
+  <phrase title="option.xenistatistik_yenikonuforum" version_id="1020030" version_string="1.2.2 Beta1"><![CDATA[Sadece seçili forumlardan içerik al]]></phrase>
+  <phrase title="option.xenistatistik_yenikonukapat" version_id="1010300" version_string="1.1.3"><![CDATA[Yeni konuları kapat]]></phrase>
+  <phrase title="option.xenistatistik_yenikonuslimit" version_id="1010300" version_string="1.1.3"><![CDATA[Son konular limiti]]></phrase>
+  <phrase title="option.xenistatistik_yenimesajforum" version_id="1020030" version_string="1.2.2 Beta1"><![CDATA[Sadece seçili forumlardan içerik al]]></phrase>
+  <phrase title="option.xenistatistik_yenimesajkapat" version_id="1010300" version_string="1.1.3"><![CDATA[Yeni mesajları kapat]]></phrase>
+  <phrase title="option.xenistatistik_yenimesajlar_baslik" version_id="1010300" version_string="1.1.3"><![CDATA[Blok başlığınız]]></phrase>
+  <phrase title="option.xenistatistik_yenimesajlimit" version_id="1010300" version_string="1.1.3"><![CDATA[Son mesaj limiti]]></phrase>
+  <phrase title="option_explain.Xenistatistik_encokgrn_baslik" version_id="1010300" version_string="1.1.3"><![CDATA[]]></phrase>
+  <phrase title="option_explain.xenistatistik_avatar" version_id="1010300" version_string="1.1.3"><![CDATA[Seçimyapılırsa son mesajlar içinde kullanıcı avatarı gösterilecektir.]]></phrase>
+  <phrase title="option_explain.xenistatistik_encokgrnkonukapat" version_id="1010300" version_string="1.1.3"><![CDATA[]]></phrase>
+  <phrase title="option_explain.xenistatistik_encokgrnkonularforum" version_id="1020030" version_string="1.2.2 Beta1"><![CDATA[Yalnızca seçim yapılmış forumlardan içerik alınır.]]></phrase>
+  <phrase title="option_explain.xenistatistik_encokgrnkonulimiti" version_id="1020030" version_string="1.2.2 Beta1"><![CDATA[En hit konularda gösterilecek olan en fazla konu sayısını belirtebilirsiniz.]]></phrase>
+  <phrase title="option_explain.xenistatistik_konum" version_id="1020040" version_string="1.2.2 Beta2"><![CDATA[Gösterim için belirtilen 3 konumdan birini seçebilirsiniz yada özel konumu seçerek istediğiniz alanda konumlandırabilirsiniz.<br />
+Özel konum için şu kodu kullanınız: <code>&lt;xf:include template="XenistatistikBlok" /&gt;</code>]]></phrase>
+  <phrase title="option_explain.xenistatistik_kullanicikapat" version_id="1010300" version_string="1.1.3"><![CDATA[]]></phrase>
+  <phrase title="option_explain.xenistatistik_sonkonu_baslik" version_id="1010300" version_string="1.1.3"><![CDATA[]]></phrase>
+  <phrase title="option_explain.xenistatistik_uyegosterim" version_id="1010300" version_string="1.1.3"><![CDATA[Bu blokta gösterilecek olan en fazla kullanıcı sayısını belirtiniz.]]></phrase>
+  <phrase title="option_explain.xenistatistik_yenikonuforum" version_id="1020030" version_string="1.2.2 Beta1"><![CDATA[Yalnızca seçim yapılmış forumlardan içerik alınır.]]></phrase>
+  <phrase title="option_explain.xenistatistik_yenikonukapat" version_id="1010300" version_string="1.1.3"><![CDATA[]]></phrase>
+  <phrase title="option_explain.xenistatistik_yenikonuslimit" version_id="1010300" version_string="1.1.3"><![CDATA[Yeni konularda gösterilecek olan en fazla konu sayısını belirtebilirsiniz.]]></phrase>
+  <phrase title="option_explain.xenistatistik_yenimesajforum" version_id="1020030" version_string="1.2.2 Beta1"><![CDATA[Yalnızca seçim yapılmış forumlardan içerik alınır.]]></phrase>
+  <phrase title="option_explain.xenistatistik_yenimesajkapat" version_id="1010300" version_string="1.1.3"><![CDATA[]]></phrase>
+  <phrase title="option_explain.xenistatistik_yenimesajlar_baslik" version_id="1010300" version_string="1.1.3"><![CDATA[]]></phrase>
+  <phrase title="option_explain.xenistatistik_yenimesajlimit" version_id="1010300" version_string="1.1.3"><![CDATA[Yeni mesajlarda gösterilecek olan en fazla mesaj sayısını belirtebilirsiniz.]]></phrase>
+  <phrase title="option_group.Xenistatistik_secenekler" version_id="1010300" version_string="1.1.3"><![CDATA[[XenGenTr] Forum istatistik sistemi]]></phrase>
+  <phrase title="option_group_description.Xenistatistik_secenekler" version_id="1010300" version_string="1.1.3"><![CDATA[[XenGenTr] Xenistatistik kontrol seçenekleri]]></phrase>
+  <phrase title="permission.xenistatistik_encokgrnkon_encokgrnkonu_gor" version_id="1010300" version_string="1.1.3"><![CDATA[En çok görüntülenen konuları görebilir mi?]]></phrase>
+  <phrase title="permission.xenistatistik_kullanici_kullancilari_gor" version_id="1010300" version_string="1.1.3"><![CDATA[Kullanıcı istatistiklerini görebilir mi?]]></phrase>
+  <phrase title="permission.xenistatistik_sonkonu_sonikonular_gor" version_id="1010300" version_string="1.1.3"><![CDATA[Son konuları görebilir mi?]]></phrase>
+  <phrase title="permission.xenistatistik_sonmesajlar_sonmesajlari_gor" version_id="1010300" version_string="1.1.3"><![CDATA[Son mesajları görebilir mi?]]></phrase>
+  <phrase title="permission_interface.XenistatistikizinGrubu" version_id="1010300" version_string="1.1.3"><![CDATA[[XenGenTr] Xenistatistik izinleri]]></phrase>
+  <phrase title="style_prop.xenist_govde" version_id="1010300" version_string="1.1.3"><![CDATA[Xenistatistik Gövde]]></phrase>
+  <phrase title="style_prop.xenistatistik_alt_header" version_id="1010300" version_string="1.1.3"><![CDATA[Alt header renk]]></phrase>
+  <phrase title="style_prop.xenistatistik_alt_header_metin" version_id="1010300" version_string="1.1.3"><![CDATA[Alt header metin rengi]]></phrase>
+  <phrase title="style_prop.xenistatistik_header_aktif_tab_metin_renk" version_id="1020030" version_string="1.2.2 Beta1"><![CDATA[Aktif tab buton metin renk]]></phrase>
+  <phrase title="style_prop.xenistatistik_header_aktif_tab_renk" version_id="1020030" version_string="1.2.2 Beta1"><![CDATA[Aktif tab buton rengi]]></phrase>
+  <phrase title="style_prop.xenistatistik_header_aktif_tab_sinir_renk" version_id="1020030" version_string="1.2.2 Beta1"><![CDATA[Aktif tab buton alt sınır renk]]></phrase>
+  <phrase title="style_prop.xenistatistik_header_metin_renk" version_id="1020030" version_string="1.2.2 Beta1"><![CDATA[Header metin renk]]></phrase>
+  <phrase title="style_prop.xenistatistik_header_renk" version_id="1020030" version_string="1.2.2 Beta1"><![CDATA[Header renk]]></phrase>
+  <phrase title="style_prop_desc.xenist_govde" version_id="1000010" version_string="1.0.0 Alpha"><![CDATA[]]></phrase>
+  <phrase title="style_prop_desc.xenistatistik_alt_header" version_id="1010300" version_string="1.1.3"><![CDATA[]]></phrase>
+  <phrase title="style_prop_desc.xenistatistik_alt_header_metin" version_id="1010300" version_string="1.1.3"><![CDATA[]]></phrase>
+  <phrase title="style_prop_desc.xenistatistik_header_aktif_tab_metin_renk" version_id="1020030" version_string="1.2.2 Beta1"><![CDATA[]]></phrase>
+  <phrase title="style_prop_desc.xenistatistik_header_aktif_tab_renk" version_id="1020030" version_string="1.2.2 Beta1"><![CDATA[]]></phrase>
+  <phrase title="style_prop_desc.xenistatistik_header_aktif_tab_sinir_renk" version_id="1020030" version_string="1.2.2 Beta1"><![CDATA[]]></phrase>
+  <phrase title="style_prop_desc.xenistatistik_header_metin_renk" version_id="1020030" version_string="1.2.2 Beta1"><![CDATA[]]></phrase>
+  <phrase title="style_prop_desc.xenistatistik_header_renk" version_id="1020030" version_string="1.2.2 Beta1"><![CDATA[]]></phrase>
+  <phrase title="style_prop_group.xenistatistiktema" version_id="1000010" version_string="1.0.0 Alpha"><![CDATA[[XenGenTr] Xenistatistik design]]></phrase>
+  <phrase title="style_prop_group_desc.xenistatistiktema" version_id="1010300" version_string="1.1.3"><![CDATA[[XenGenTr] Xenistatistik tasarım seçenekleri]]></phrase>
+  <phrase title="widget_def.XenEncokGrnKonular_Widget" version_id="1010300" version_string="1.1.3"><![CDATA[[XenGenTr] Xenistatistik - En çok görüntülenen konular]]></phrase>
+  <phrase title="widget_def.XenYeniKonu_Widget" version_id="1000010" version_string="1.0.0 Alpha"><![CDATA[[XenGenTr] Xenistatistik - Yeni konular]]></phrase>
+  <phrase title="widget_def.XenYeniMesaj_Widget" version_id="1000010" version_string="1.0.0 Alpha"><![CDATA[[XenGenTr] Xenistatistik - Yeni Mesajlar]]></phrase>
+  <phrase title="widget_def.Xenuyeistatik_widget" version_id="1000010" version_string="1.0.0 Alpha"><![CDATA[[XenGenTr] Xenistatistik - Kullanici]]></phrase>
+  <phrase title="widget_def_desc.XenEncokGrnKonular_Widget" version_id="1010300" version_string="1.1.3"><![CDATA[[XenGenTr] Xenistatistik - En çok görüntülenen konular widget]]></phrase>
+  <phrase title="widget_def_desc.XenYeniKonu_Widget" version_id="1000010" version_string="1.0.0 Alpha"><![CDATA[[XenGenTr] Xenistatistik - Yeni konular widget]]></phrase>
+  <phrase title="widget_def_desc.XenYeniMesaj_Widget" version_id="1000010" version_string="1.0.0 Alpha"><![CDATA[[XenGenTr] Xenistatistik - Yeni Mesajlar Widget]]></phrase>
+  <phrase title="widget_def_desc.Xenuyeistatik_widget" version_id="1000010" version_string="1.0.0 Alpha"><![CDATA[[XenGenTr] Xenistatistik - Kullanici widget]]></phrase>
+  <phrase title="xenistatistik_EnCokGrnKonular" version_id="1020030" version_string="1.2.2 Beta1"><![CDATA[En hit konular]]></phrase>
+  <phrase title="xenistatistik_YeniKonular" version_id="1010300" version_string="1.1.3"><![CDATA[Yeni konular]]></phrase>
+  <phrase title="xenistatistik_YeniMesajlar" version_id="1010300" version_string="1.1.3"><![CDATA[Yeni mesajlar]]></phrase>
+  <phrase title="xenistatistik_cevapsayisi" version_id="1010300" version_string="1.1.3"><![CDATA[Cevaplar]]></phrase>
+  <phrase title="xenistatistik_konu" version_id="1010300" version_string="1.1.3"><![CDATA[Konu]]></phrase>
+  <phrase title="xenistatistik_kullanici" version_id="1010300" version_string="1.1.3"><![CDATA[Kullanici]]></phrase>
+  <phrase title="xenistatistik_mesaj" version_id="1010300" version_string="1.1.3"><![CDATA[Mesaj]]></phrase>
+  <phrase title="xenistatistik_mesajsayisi" version_id="1010300" version_string="1.1.3"><![CDATA[Mesajlar]]></phrase>
+  <phrase title="xenistatistik_tarih" version_id="1010300" version_string="1.1.3"><![CDATA[Tarih]]></phrase>
+</phrases>

@@ -1,0 +1,26 @@
+{
+    "legacy_addon_id": "",
+    "title": "[XenGenTr] Forum istatistik sistemi",
+    "description": "Forumda konulara ait ozel istatistik verilerini listelemektedir.",
+    "version_id": 3000300,
+    "version_string": "3.0.3",
+    "dev": "eTiKeT",
+    "dev_url": "https://xenforo.gen.tr",
+    "faq_url": "",
+    "support_url": "https://xenforo.gen.tr/konular/xengentr-forum-istatistik-sistemi.3168/",
+    "extra_urls": {
+        "[XenGenTr] Forum istatistik sistemi": "https://xenforo.gen.tr/xenforo-kaynaklari/xengentr-forum-istatistik-sistemi.617/"
+    },
+    "require": {
+        "XF": [
+            2010070,
+            "XenForo 2.1.0+"
+        ],
+
+        "php": [
+            "7.0.0",
+            "PHP 7.0.0+"
+        ]
+    },
+    "icon": "XenGenTr.png"
+}

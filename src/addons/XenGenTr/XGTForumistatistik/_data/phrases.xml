@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<phrases>
+  <phrase title="admin_navigation.xgt_forumistatistik" version_id="1000016" version_string="1.0.0 Alpha 6"><![CDATA[[XGT] Forum istatistik]]></phrase>
+  <phrase title="admin_navigation.xgt_forumistatistik_secenekleri" version_id="1000016" version_string="1.0.0 Alpha 6"><![CDATA[İstatistik seçenekleri]]></phrase>
+  <phrase title="admin_navigation.xgt_forumistatistik_sekme_ekle" version_id="1000025" version_string="1.0.0 Beta 5"><![CDATA[İstatistik içerikleri]]></phrase>
+  <phrase title="admin_permission.xgtForumIstatistik_yonet" version_id="2002003" version_string="2.1.0 Beta 3"><![CDATA[[XGT] Forum istatistik - Veri ekleyebilir]]></phrase>
+  <phrase title="option.xgtForumistatikKullaniciVerileri" version_id="2002004" version_string="2.1.0 Beta 4"><![CDATA[Kullanıcı istatistik etkin]]></phrase>
+  <phrase title="option.xgtForumistatikOzellikler" version_id="1000024" version_string="1.0.0 Beta 4"><![CDATA[Ekstra fonksiyonlar]]></phrase>
+  <phrase title="option.xgtForumistatik_konumu" version_id="1000019" version_string="1.0.0 Alpha 9"><![CDATA[Sistem konumu]]></phrase>
+  <phrase title="option.xgtForumistatik_konumu_tumsayfalarda" version_id="1000023" version_string="1.0.0 Beta 3"><![CDATA[Tüm sayfalarda göster]]></phrase>
+  <phrase title="option.xgtIstatistikGosterimLimiti" version_id="1000016" version_string="1.0.0 Alpha 6"><![CDATA[İçerik gösterim limiti]]></phrase>
+  <phrase title="option.xgtIstatistikOtoyenileme" version_id="2002005" version_string="2.1.0 Beta 5"><![CDATA[Otomatik yenileme]]></phrase>
+  <phrase title="option_explain.xgtForumistatikKullaniciVerileri" version_id="2002004" version_string="2.1.0 Beta 4"><![CDATA[Kullanıcı istatistiğinin görünmesini istiyorsanız seçim yapmalısınız.]]></phrase>
+  <phrase title="option_explain.xgtForumistatikOzellikler" version_id="2002004" version_string="2.1.0 Beta 4"><![CDATA[Sistem için istenilen opsiyonları yönetmeniz için eklenmiştir. İstediğiniz özelliği kapatıp/açabilirsiniz.]]></phrase>
+  <phrase title="option_explain.xgtForumistatik_konumu" version_id="2002007" version_string="2.1.0 Beta 7"><![CDATA[Sitemin gösterim yapılacağı konumu seçiniz.<br /> Eğer özel bir konum belirlemek istiyorsanız "Kendi konumum" seçin ve aşağıdaki kodu istediğiniz şablona ekleyiniz:<br /><br />
+<textarea class="input input--fitHeight" rows="1" readonly="readonly" data-xf-init="textarea-handler"><xf:macro template="xgt_forumistatik_konum_macros" name="xgt_istatistik_konum" arg-template="{$template}" arg-location="kendikonumum" arg-position="!" /></textarea>]]></phrase>
+  <phrase title="option_explain.xgtForumistatik_konumu_tumsayfalarda" version_id="1000024" version_string="1.0.0 Beta 4"><![CDATA[Seçim yapılır ise,kendi konumum veya içeriklerin üstünde konularında biri seçili ise istatistik tüm sayfalarda gösterilecektir.]]></phrase>
+  <phrase title="option_explain.xgtIstatistikGosterimLimiti" version_id="1000019" version_string="1.0.0 Alpha 9"><![CDATA[İstatik içinde gösterilecek olan veri sayısı. Değer satır olarak listelenecekdir. 10=10 Satır veri]]></phrase>
+  <phrase title="option_explain.xgtIstatistikOtoyenileme" version_id="2002005" version_string="2.1.0 Beta 5"><![CDATA[Sistemin otomatik olarak yenilenmesi,istatistik konularının güncellenmesi için gerekli olan SANİYE cinsinden süre.]]></phrase>
+  <phrase title="option_group.xgtForumistatistik_Secenekleri" version_id="1000015" version_string="1.0.0 Alpha 5"><![CDATA[[XGT] Forum istatistik - Seçenekler]]></phrase>
+  <phrase title="option_group_description.xgtForumistatistik_Secenekleri" version_id="1000015" version_string="1.0.0 Alpha 5"><![CDATA[[XenGenTr] Forum istatistik sistemi seçenekleridir.]]></phrase>
+  <phrase title="permission.XGT_istatistik_izin_grubu_XGT_istatistik_gor" version_id="2002002" version_string="2.1.0 Beta 2"><![CDATA[İstatistikleri görebilir mi?]]></phrase>
+  <phrase title="permission.XGT_istatistik_izin_grubu_XGT_istatistik_kullanici" version_id="2002002" version_string="2.1.0 Beta 2"><![CDATA[Kullanıcı istatistik görebilir mi?]]></phrase>
+  <phrase title="permission_interface.XGT_istatistik_izin_grubu" version_id="2002002" version_string="2.1.0 Beta 2"><![CDATA[[XGT] Forum istatistikleri - izinleri]]></phrase>
+  <phrase title="style_prop.xgtForumIstatistikBaglantiRenk" version_id="2002001" version_string="2.1.0 Beta 1"><![CDATA[Bağlantılar rengi]]></phrase>
+  <phrase title="style_prop.xgtForumIstatistikFooter" version_id="1000025" version_string="1.0.0 Beta 5"><![CDATA[Footer rengi]]></phrase>
+  <phrase title="style_prop.xgtForumIstatistikGenelRadius" version_id="1000024" version_string="1.0.0 Beta 4"><![CDATA[Genel radius]]></phrase>
+  <phrase title="style_prop.xgtForumIstatistikGovdeRenk" version_id="1000024" version_string="1.0.0 Beta 4"><![CDATA[Gövde arka plan rengi]]></phrase>
+  <phrase title="style_prop.xgtForumIstatistikSatir1" version_id="1000024" version_string="1.0.0 Beta 4"><![CDATA[1. Satır rengi]]></phrase>
+  <phrase title="style_prop.xgtForumIstatistikSatir2" version_id="1000024" version_string="1.0.0 Beta 4"><![CDATA[2. Satır rengi]]></phrase>
+  <phrase title="style_prop.xgtForumIstatistikSatirMetinBoyut" version_id="1000024" version_string="1.0.0 Beta 4"><![CDATA[Metin boyutu]]></phrase>
+  <phrase title="style_prop.xgtForumIstatistikSatirSinirRengi" version_id="1000024" version_string="1.0.0 Beta 4"><![CDATA[Sinir rengi]]></phrase>
+  <phrase title="style_prop.xgtForumIstatistikSayisalRenk" version_id="1000025" version_string="1.0.0 Beta 5"><![CDATA[Sayısal değer rengi]]></phrase>
+  <phrase title="style_prop.xgtForumIstatistikTabHeader" version_id="1000024" version_string="1.0.0 Beta 4"><![CDATA[Tab header - Renk]]></phrase>
+  <phrase title="style_prop.xgtForumIstatistikTabHeaderAktif" version_id="1000024" version_string="1.0.0 Beta 4"><![CDATA[Aktif buton - Renk]]></phrase>
+  <phrase title="style_prop.xgtForumIstatistikTabHeaderAktifBorder" version_id="1000024" version_string="1.0.0 Beta 4"><![CDATA[Alt sınır rengi]]></phrase>
+  <phrase title="style_prop.xgtForumIstatistikTabHeaderAktifMetin" version_id="3000200" version_string="3.0.2"><![CDATA[Aktif buton - Metin]]></phrase>
+  <phrase title="style_prop.xgtForumIstatistikTabHeaderBoyut" version_id="1000024" version_string="1.0.0 Beta 4"><![CDATA[Metin boyutu]]></phrase>
+  <phrase title="style_prop.xgtForumIstatistikTabHeaderMetin" version_id="1000024" version_string="1.0.0 Beta 4"><![CDATA[Metin rengi]]></phrase>
+  <phrase title="style_prop.xgtForumIstatistikTabHeaderSagBorder" version_id="1000024" version_string="1.0.0 Beta 4"><![CDATA[Sağ sınır rengi]]></phrase>
+  <phrase title="style_prop.xgtForumIstatistikVurgula" version_id="1000024" version_string="1.0.0 Beta 4"><![CDATA[Vurgu rengi]]></phrase>
+  <phrase title="style_prop.xgtForumIstatistikVurgulaMetin" version_id="1000024" version_string="1.0.0 Beta 4"><![CDATA[Vurgu metin rengi]]></phrase>
+  <phrase title="style_prop.xgtForumIstatistik_MiniHeader" version_id="1000024" version_string="1.0.0 Beta 4"><![CDATA[Alt header - Arka plan rengi]]></phrase>
+  <phrase title="style_prop.xgtForumIstatistik_MiniHeaderMetin" version_id="1000024" version_string="1.0.0 Beta 4"><![CDATA[Alt header metin rengi]]></phrase>
+  <phrase title="style_prop_desc.xgtForumIstatistikBaglantiRenk" version_id="2002001" version_string="2.1.0 Beta 1"><![CDATA[İstatistik veriler içindeki tüm bağlantıların rengi.]]></phrase>
+  <phrase title="style_prop_desc.xgtForumIstatistikFooter" version_id="1000025" version_string="1.0.0 Beta 5"><![CDATA[]]></phrase>
+  <phrase title="style_prop_desc.xgtForumIstatistikGenelRadius" version_id="1000024" version_string="1.0.0 Beta 4"><![CDATA[]]></phrase>
+  <phrase title="style_prop_desc.xgtForumIstatistikGovdeRenk" version_id="1000024" version_string="1.0.0 Beta 4"><![CDATA[]]></phrase>
+  <phrase title="style_prop_desc.xgtForumIstatistikSatir1" version_id="1000024" version_string="1.0.0 Beta 4"><![CDATA[]]></phrase>
+  <phrase title="style_prop_desc.xgtForumIstatistikSatir2" version_id="1000024" version_string="1.0.0 Beta 4"><![CDATA[]]></phrase>
+  <phrase title="style_prop_desc.xgtForumIstatistikSatirMetinBoyut" version_id="1000024" version_string="1.0.0 Beta 4"><![CDATA[]]></phrase>
+  <phrase title="style_prop_desc.xgtForumIstatistikSatirSinirRengi" version_id="1000024" version_string="1.0.0 Beta 4"><![CDATA[]]></phrase>
+  <phrase title="style_prop_desc.xgtForumIstatistikSayisalRenk" version_id="1000025" version_string="1.0.0 Beta 5"><![CDATA[]]></phrase>
+  <phrase title="style_prop_desc.xgtForumIstatistikTabHeader" version_id="1000024" version_string="1.0.0 Beta 4"><![CDATA[]]></phrase>
+  <phrase title="style_prop_desc.xgtForumIstatistikTabHeaderAktif" version_id="1000024" version_string="1.0.0 Beta 4"><![CDATA[]]></phrase>
+  <phrase title="style_prop_desc.xgtForumIstatistikTabHeaderAktifBorder" version_id="1000024" version_string="1.0.0 Beta 4"><![CDATA[]]></phrase>
+  <phrase title="style_prop_desc.xgtForumIstatistikTabHeaderAktifMetin" version_id="3000200" version_string="3.0.2"><![CDATA[]]></phrase>
+  <phrase title="style_prop_desc.xgtForumIstatistikTabHeaderBoyut" version_id="1000024" version_string="1.0.0 Beta 4"><![CDATA[]]></phrase>
+  <phrase title="style_prop_desc.xgtForumIstatistikTabHeaderMetin" version_id="1000024" version_string="1.0.0 Beta 4"><![CDATA[]]></phrase>
+  <phrase title="style_prop_desc.xgtForumIstatistikTabHeaderSagBorder" version_id="1000024" version_string="1.0.0 Beta 4"><![CDATA[]]></phrase>
+  <phrase title="style_prop_desc.xgtForumIstatistikVurgula" version_id="1000024" version_string="1.0.0 Beta 4"><![CDATA[]]></phrase>
+  <phrase title="style_prop_desc.xgtForumIstatistikVurgulaMetin" version_id="1000024" version_string="1.0.0 Beta 4"><![CDATA[]]></phrase>
+  <phrase title="style_prop_desc.xgtForumIstatistik_MiniHeader" version_id="1000024" version_string="1.0.0 Beta 4"><![CDATA[]]></phrase>
+  <phrase title="style_prop_desc.xgtForumIstatistik_MiniHeaderMetin" version_id="1000024" version_string="1.0.0 Beta 4"><![CDATA[]]></phrase>
+  <phrase title="style_prop_group.xgtForumIstatistik_gorsel" version_id="1000024" version_string="1.0.0 Beta 4"><![CDATA[[XGT] Forum istatistik - Tasarım]]></phrase>
+  <phrase title="style_prop_group_desc.xgtForumIstatistik_gorsel" version_id="1000024" version_string="1.0.0 Beta 4"><![CDATA[[XenGenTr] Forum istatistik sistemi tasarım özellikleri.]]></phrase>
+  <phrase title="widget_def.xgtForumIstKullanici_wd" version_id="1000025" version_string="1.0.0 Beta 5"><![CDATA[[XGT] Forum istatistik - En çok mesaj]]></phrase>
+  <phrase title="widget_def_desc.xgtForumIstKullanici_wd" version_id="1000025" version_string="1.0.0 Beta 5"><![CDATA[]]></phrase>
+  <phrase title="xgt_acp_forumistatistikleri" version_id="1000015" version_string="1.0.0 Alpha 5"><![CDATA[[XGT] Forum istatistik içerikleri]]></phrase>
+  <phrase title="xgt_acp_forumistatistikleri_icerik_turu" version_id="1000016" version_string="1.0.0 Alpha 6"><![CDATA[İçerik türü]]></phrase>
+  <phrase title="xgt_acp_forumistatistikleri_icerik_turu_aciklama" version_id="1000016" version_string="1.0.0 Alpha 6"><![CDATA[İstatistiklere sisteminde göstermek istediğiniz veri türünü seçiniz.]]></phrase>
+  <phrase title="xgt_acp_forumistatistikleri_icerik_turu_ekle" version_id="1000016" version_string="1.0.0 Alpha 6"><![CDATA[içeriği ekle]]></phrase>
+  <phrase title="xgt_acp_forumistatistikleri_icerik_turu_sec" version_id="1000024" version_string="1.0.0 Beta 4"><![CDATA[Sekme içerik türünü seçiniz]]></phrase>
+  <phrase title="xgt_acp_forumistatistikleri_veri_ekle" version_id="1000024" version_string="1.0.0 Beta 4"><![CDATA[Sekme ekle]]></phrase>
+  <phrase title="xgt_forumistatik_acp_icerkleriniz" version_id="2002007" version_string="2.1.0 Beta 7"><![CDATA[Geçerli sekme içeriği...]]></phrase>
+  <phrase title="xgt_forumistatik_acp_ornek_tab" version_id="2002008" version_string="2.1.0 Beta 8"><![CDATA[[XGT] Forum istatistik - Örnek görünüş]]></phrase>
+  <phrase title="xgt_forumistatik_aktif" version_id="1000017" version_string="1.0.0 Alpha 7"><![CDATA[Aktif]]></phrase>
+  <phrase title="xgt_forumistatik_cevaplari" version_id="1000024" version_string="1.0.0 Beta 4"><![CDATA[Cevap]]></phrase>
+  <phrase title="xgt_forumistatik_encok_mesaj" version_id="1000025" version_string="1.0.0 Beta 5"><![CDATA[En çok mesaj]]></phrase>
+  <phrase title="xgt_forumistatik_forumu" version_id="1000024" version_string="1.0.0 Beta 4"><![CDATA[Forumu]]></phrase>
+  <phrase title="xgt_forumistatik_google_arama_yap" version_id="1000024" version_string="1.0.0 Beta 4"><![CDATA[Google arama yap]]></phrase>
+  <phrase title="xgt_forumistatik_google_butonu" version_id="1000024" version_string="1.0.0 Beta 4"><![CDATA[Google arat butonu]]></phrase>
+  <phrase title="xgt_forumistatik_goruntuleme" version_id="1000024" version_string="1.0.0 Beta 4"><![CDATA[Görüntüleme]]></phrase>
+  <phrase title="xgt_forumistatik_haric_forumlar" version_id="1000017" version_string="1.0.0 Alpha 7"><![CDATA[Veri alınmayacak forumlar]]></phrase>
+  <phrase title="xgt_forumistatik_haric_forumlar_detay" version_id="1000017" version_string="1.0.0 Alpha 7"><![CDATA[Eğer seçim yapılır ise belirtilen forumlardan içerik alınmayacaktır.]]></phrase>
+  <phrase title="xgt_forumistatik_icerik_turunu_secmelisiniz" version_id="1000016" version_string="1.0.0 Alpha 6"><![CDATA[Bir içerik türü seçmelisiniz!]]></phrase>
+  <phrase title="xgt_forumistatik_konu" version_id="1000024" version_string="1.0.0 Beta 4"><![CDATA[Konu]]></phrase>
+  <phrase title="xgt_forumistatik_konum_sec" version_id="1000019" version_string="1.0.0 Alpha 9"><![CDATA[Konum seç]]></phrase>
+  <phrase title="xgt_forumistatik_konusahibi" version_id="1000024" version_string="1.0.0 Beta 4"><![CDATA[Konu başlatan]]></phrase>
+  <phrase title="xgt_forumistatik_kullanici" version_id="1000025" version_string="1.0.0 Beta 5"><![CDATA[Kullanıcı]]></phrase>
+  <phrase title="xgt_forumistatik_mesaj_sayisi" version_id="1000025" version_string="1.0.0 Beta 5"><![CDATA[Mesajı]]></phrase>
+  <phrase title="xgt_forumistatik_otoyenileme" version_id="2002005" version_string="2.1.0 Beta 5"><![CDATA[Otomatik yenileme]]></phrase>
+  <phrase title="xgt_forumistatik_otoyenileme_etkin" version_id="2002005" version_string="2.1.0 Beta 5"><![CDATA[Otomatik olarak istatistigi yenile]]></phrase>
+  <phrase title="xgt_forumistatik_otoyenileme_zamani" version_id="2002005" version_string="2.1.0 Beta 5"><![CDATA[Ne kadar süre ile yenilensin ?]]></phrase>
+  <phrase title="xgt_forumistatik_otoyenileme_ziyaretci" version_id="3000100" version_string="3.0.1"><![CDATA[Ziyaretçiler içinde oto yenile]]></phrase>
+  <phrase title="xgt_forumistatik_otoyenileme_ziyaretci_detay" version_id="3000200" version_string="3.0.2"><![CDATA[Eger seçim yapılır ise otomatik yenileme sistemi sadece foruma giriş yapmış olan kullanıcılar için çalıştırılacaktır.]]></phrase>
+  <phrase title="xgt_forumistatik_sekme_ikonlar" version_id="1000024" version_string="1.0.0 Beta 4"><![CDATA[Sekme ikonları]]></phrase>
+  <phrase title="xgt_forumistatik_sekme_ikonu" version_id="1000023" version_string="1.0.0 Beta 3"><![CDATA[Sekme ikonu]]></phrase>
+  <phrase title="xgt_forumistatik_sekme_ikonu_detay" version_id="1000023" version_string="1.0.0 Beta 3"><![CDATA[Bu sekmeye bir Font Awesome ikonu ekleyebilirsiniz. İkonun HTML class ismini ekmeniz yeterli.<br>
+<b>Örnek :</b> fad fa-alarm-exclamation]]></phrase>
+  <phrase title="xgt_forumistatik_sekme_sirasi" version_id="1000023" version_string="1.0.0 Beta 3"><![CDATA[Sekme sırası]]></phrase>
+  <phrase title="xgt_forumistatik_tepkiskoru" version_id="1000024" version_string="1.0.0 Beta 4"><![CDATA[Tepki]]></phrase>
+  <phrase title="xgt_forumistatik_yazar" version_id="1000024" version_string="1.0.0 Beta 4"><![CDATA[Son yazan]]></phrase>
+  <phrase title="xgt_forumistatik_zamani" version_id="1000024" version_string="1.0.0 Beta 4"><![CDATA[Gönderim]]></phrase>
+  <phrase title="xgt_forumistatistik.encok_goruntulenen" version_id="1000015" version_string="1.0.0 Alpha 5"><![CDATA[En çok görüntülenen]]></phrase>
+  <phrase title="xgt_forumistatistik.encok_mesaj" version_id="1000015" version_string="1.0.0 Alpha 5"><![CDATA[En çok mesaj]]></phrase>
+  <phrase title="xgt_forumistatistik.encok_tepki" version_id="1000015" version_string="1.0.0 Alpha 5"><![CDATA[En çok tepki]]></phrase>
+  <phrase title="xgt_forumistatistik.yeni_konular" version_id="1000015" version_string="1.0.0 Alpha 5"><![CDATA[Yeni konular]]></phrase>
+  <phrase title="xgt_forumistatistik.yeni_mesajlar" version_id="1000015" version_string="1.0.0 Alpha 5"><![CDATA[Yeni mesajlar]]></phrase>
+  <phrase title="xgt_forumistatistik_baslik_aciklama" version_id="2002004" version_string="2.1.0 Beta 4"><![CDATA[Dilerseniz istatistik sekmesi için bir başlık berlileyebilirsiniz. Eğer başlık eklenmez ise sekme verisi başlığı kullanılacaktır. İlgili sekmenin içeriği]]></phrase>
+  <phrase title="xgt_istatistik_veri_duzenleniyor" version_id="1000024" version_string="1.0.0 Beta 4"><![CDATA[Düzenlenen sekme]]></phrase>
+  <phrase title="xgt_istatistik_veri_ekle" version_id="1000024" version_string="1.0.0 Beta 4"><![CDATA[İstatistik sekmesi ekle]]></phrase>
+</phrases>

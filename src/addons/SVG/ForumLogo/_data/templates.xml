@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<templates>
+  <template type="admin" title="svg_forumLogo_googleFont_property_template" version_id="2010770" version_string="2.1.7"><![CDATA[<xf:textboxrow name="{$formBaseKey}"
+	value="{$property.property_value}"
+	type="{$valueOptions.type}"
+	class="{$valueOptions.class}"
+	code="{$valueOptions.code}"
+	rowclass="{$rowClass}"
+	label="{$titleHtml}"
+	hint="{$hintHtml}"
+	explain="{$property.description}"
+	dir="auto" />
+<xf:formrow>
+	<dfn class="formRow-explain" style="margin: -30px 0 5px; color: rgb(242, 147, 13); font-weight: 600">{{ phrase('svg_textLogo_googleFont_example') }}</dfn>
+{{ bb_code('[ICODE]Open+Sans:300,400,600,700|Roboto+Condensed:300,400,700|Roboto:300,400,500,700,900&display=swap[/ICODE]', null, null) }}
+	<dfn class="formRow-explain" style="margin: 5px 0 0">{{ phrase('svg_textLogo_googleFont_locally') }}</dfn>
+</xf:formrow>]]></template>
+  <template type="admin" title="svg_forumLogo_webFont_property_template" version_id="2010770" version_string="2.1.7"><![CDATA[<xf:codeeditorrow name="{$formBaseKey}" value="{$property.property_value}"
+	mode="less"
+	class="codeEditor--autoSize"
+	label="{$titleHtml}"
+	hint="{$hintHtml}"
+	explain="{$property.description}" />
+<xf:formrow>
+	<dfn class="formRow-explain" style="margin: -30px 0 0; color: rgb(242, 147, 13); font-weight: 600">{{ phrase('svg_textLogo_webFont_example') }}</dfn>
+{{ bb_code("[CODE=css]@font-face {
+	font-family: 'MyFont';
+	src: url('/styles/fonts/myfont/myfont.woff2') format('woff2'),
+		 url('/styles/fonts/myfont/myfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}[/CODE]", null, null) }}
+</xf:formrow>]]></template>
+  <template type="public" title="svg_forum_logo.less" version_id="2010771" version_string="2.1.7.1"><![CDATA[.p-header-content {
+	display: flex;
+	justify-content: 	<xf:if is="property('svg_textSlogan_location') == 'row-reverse'">
+							<xf:if is="property('svg_textLogo_align') == 'flex-start'">
+								flex-end
+							<xf:elseif is="property('svg_textLogo_align') == 'flex-end'" />
+								flex-start
+							</xf:if>
+						<xf:else />
+							@xf-svg_textLogo_align
+						</xf:if>;
+	flex-flow: @xf-svg_textSlogan_location;
+	align-items: {{ (property('svg_textSlogan_location') == 'column' || property('svg_textSlogan_location') == 'column-reverse')  ? property('svg_textLogo_align') : 'center' }};
+	align-content: center;
+	padding: 5px 0 10px;
+	.p-header-logo {
+		margin-right: 10px;
+		.svg-forum-logo {
+			display: block;
+			.xf-svg_forumLogo();
+			margin: 0;
+		}
+	}
+	.svg-forum-slogan {
+		display: block;
+		.xf-svg_forumSlogan();
+		margin: 0;
+	}
+}
+
+.p-nav-smallLogo {
+	a {
+		.xf-svg_smallLogo_style();
+		white-space: nowrap;
+		text-decoration: none;
+	}	
+}
+
+<xf:if is="property('svg_header_disable')">
+	.p-header-inner {
+		display: none;
+	}
+	.p-nav-smallLogo {
+		display: block;
+		margin: 0 10px;
+	}
+</xf:if>]]></template>
+  <template type="public" title="svg_forum_logo_macros" version_id="2010771" version_string="2.1.7.1"><![CDATA[<xf:macro name="forumLogo">
+    <div class="p-header-logo p-header-logo--image">
+        <xf:if is="{{ (property('svg_textLogo')) }}">
+            <a href="{{ ($xf.options.logoLink && $xf.homePageUrl) ? $xf.homePageUrl : link('index') }}">
+                <span class="svg-forum-logo">{{ (property('svg_textLogo')) }}</span>
+            </a>
+        <xf:else />
+            <a href="{{ ($xf.options.logoLink && $xf.homePageUrl) ? $xf.homePageUrl : link('index') }}">
+                <img src="{{ base_url(property('publicLogoUrl')) }}" alt="{$xf.options.boardTitle}" {{ property('publicLogoUrl2x') ? 'srcset="' . base_url(property('publicLogoUrl2x')) . ' 2x"' : '' }} />
+            </a>
+        </xf:if>
+    </div>
+</xf:macro>
+<xf:macro name="forumSmallLogo">
+    <div class="p-nav-smallLogo">
+        <xf:if is="{{ (property('svg_smallLogo_type')) }} == 'default'">
+            <a href="{{ ($xf.options.logoLink && $xf.homePageUrl) ? $xf.homePageUrl : link('index') }}">
+                <img src="{{ base_url(property('publicLogoUrl')) }}" alt="{$xf.options.boardTitle}" {{ property('publicLogoUrl2x') ? 'srcset="' . base_url(property('publicLogoUrl2x')) . ' 2x"' : '' }} />
+            </a>
+        <xf:elseif is="{{ (property('svg_smallLogo_type')) }} == 'small'" />
+            <a href="{{ ($xf.options.logoLink && $xf.homePageUrl) ? $xf.homePageUrl : link('index') }}">
+            <img src="{{ base_url(property('svg_smallLogoUrl')) }}" alt="{$xf.options.boardTitle}" /></a>
+        <xf:elseif is="{{ (property('svg_smallLogo_type')) }} == 'text'" />
+            <a href="{{ ($xf.options.logoLink && $xf.homePageUrl) ? $xf.homePageUrl : link('index') }}">
+                {{ (property('svg_smallLogoText')) }}
+            </a>
+        </xf:if>
+    </div>
+</xf:macro>]]></template>
+</templates>

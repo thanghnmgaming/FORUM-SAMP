@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<phrases>
+  <phrase title="ad_pos.cinvin_home_above" version_id="1000070" version_string="1.0.0"><![CDATA[[CinVin] Home: Above]]></phrase>
+  <phrase title="ad_pos.cinvin_home_below" version_id="1000070" version_string="1.0.0"><![CDATA[[CinVin] Home: Below]]></phrase>
+  <phrase title="ad_pos.cinvin_home_content_above" version_id="1000070" version_string="1.0.0"><![CDATA[[CinVin] Home: Above Content, Below Top Widget]]></phrase>
+  <phrase title="ad_pos.cinvin_home_content_below" version_id="1000070" version_string="1.0.0"><![CDATA[[CinVin] Home: Below Content, Above Bottom Widget]]></phrase>
+  <phrase title="ad_pos_desc.cinvin_home_above" version_id="1000070" version_string="1.0.0"><![CDATA[Above the main content area]]></phrase>
+  <phrase title="ad_pos_desc.cinvin_home_below" version_id="1000070" version_string="1.0.0"><![CDATA[Below the main content area]]></phrase>
+  <phrase title="ad_pos_desc.cinvin_home_content_above" version_id="1000070" version_string="1.0.0"><![CDATA[Above the main Content area and below the top widget position]]></phrase>
+  <phrase title="ad_pos_desc.cinvin_home_content_below" version_id="1000070" version_string="1.0.0"><![CDATA[Below the main Content area and above the bottom widget position]]></phrase>
+  <phrase title="cinvin_home_viewing" version_id="1000170" version_string="1.0.1"><![CDATA[Home]]></phrase>
+  <phrase title="option.cinvinHome_AutoEnableHome" version_id="1000070" version_string="1.0.0"><![CDATA[Enable 'Home' Page]]></phrase>
+  <phrase title="option.cinvinHome_BoardDescription" version_id="1000070" version_string="1.0.0"><![CDATA[Home Page Description]]></phrase>
+  <phrase title="option.cinvinHome_DisplayBoardDescription" version_id="1000070" version_string="1.0.0"><![CDATA[Display Home Page Description]]></phrase>
+  <phrase title="option.cinvinHome_DisplayBoardTitle" version_id="1000070" version_string="1.0.0"><![CDATA[Display Board TItle]]></phrase>
+  <phrase title="option.cinvinHome_DisplayBreadcrumbs" version_id="1000070" version_string="1.0.0"><![CDATA[Display Breadcrumbs]]></phrase>
+  <phrase title="option.cinvinHome_DisplayButtonNewPosts" version_id="1000070" version_string="1.0.0"><![CDATA[Display 'New Posts' Button]]></phrase>
+  <phrase title="option.cinvinHome_DisplayButtonPostThread" version_id="1000070" version_string="1.0.0"><![CDATA[Display 'Post Thread' Button]]></phrase>
+  <phrase title="option_explain.cinvinHome_AutoEnableHome" version_id="1000070" version_string="1.0.0"><![CDATA[Should the CinVin Home page be automatically displayed as the "Home" page link.  If disabled the page is still reachable at <code>/cv-home</code> and will still work but an automatic link will not be automatically added to the navigation bar.<br />
+[Default: True]]]></phrase>
+  <phrase title="option_explain.cinvinHome_BoardDescription" version_id="1000070" version_string="1.0.0"><![CDATA[Enter a description for your Home page. This will be placed inside the meta description tag for the Home page, so avoid using HTML.  If left blank then the standard <a href="admin.php?options/boardDescription/view" target="_self">Board meta description</a> will be used.<br />[Default: <a href="admin.php?options/boardDescription/view" target="_self">Board meta description</a>]]]></phrase>
+  <phrase title="option_explain.cinvinHome_DisplayBoardDescription" version_id="1000070" version_string="1.0.0"><![CDATA[Display the <a href="admin.php?options/cinvinHome_BoardDescription/view" target="_self">Home Page Description</a> on the Home page.  If this option is enabled and if the Home Page Description is blank then the standard <a href="admin.php?options/boardDescription/view" target="_self">Board Meta Description</a> will be shown.
+<br />[Default: True]]]></phrase>
+  <phrase title="option_explain.cinvinHome_DisplayBoardTitle" version_id="1000070" version_string="1.0.0"><![CDATA[Display the <a href="admin.php?options/boardTitle/view" target="_self">Board Title</a> on the Home page.
+<br />[Default: True]]]></phrase>
+  <phrase title="option_explain.cinvinHome_DisplayBreadcrumbs" version_id="1000070" version_string="1.0.0"><![CDATA[Display the navigation 'Bread Crumbs' on the Home Page.
+<br />[Default: False]]]></phrase>
+  <phrase title="option_explain.cinvinHome_DisplayButtonNewPosts" version_id="1000070" version_string="1.0.0"><![CDATA[Display the 'New Posts' button.<br />
+[Default: True]]]></phrase>
+  <phrase title="option_explain.cinvinHome_DisplayButtonPostThread" version_id="1000070" version_string="1.0.0"><![CDATA[Display the 'Post Thread' button.<br />
+[Default: True]]]></phrase>
+  <phrase title="option_group.cinvinHome" version_id="1000070" version_string="1.0.0"><![CDATA[[CinVin] Home]]></phrase>
+  <phrase title="option_group_description.cinvinHome" version_id="1000070" version_string="1.0.0"><![CDATA[Quick "Home" page]]></phrase>
+  <phrase title="widget_pos.cinvin_home_content" version_id="1000070" version_string="1.0.0"><![CDATA[[CinVin] Home: Content]]></phrase>
+  <phrase title="widget_pos.cinvin_home_content_above" version_id="1000070" version_string="1.0.0"><![CDATA[[CinVin] Home: Content Above]]></phrase>
+  <phrase title="widget_pos.cinvin_home_content_below" version_id="1000070" version_string="1.0.0"><![CDATA[[CinVin] Home: Content Below]]></phrase>
+  <phrase title="widget_pos.cinvin_home_sidebar" version_id="1000070" version_string="1.0.0"><![CDATA[[CinVin] Home: Sidebar]]></phrase>
+  <phrase title="widget_pos_desc.cinvin_home_content" version_id="1000070" version_string="1.0.0"><![CDATA[Position of the main content area while viewing the Home page.]]></phrase>
+  <phrase title="widget_pos_desc.cinvin_home_content_above" version_id="1000070" version_string="1.0.0"><![CDATA[Position above the main content area while viewing the Home page.]]></phrase>
+  <phrase title="widget_pos_desc.cinvin_home_content_below" version_id="1000070" version_string="1.0.0"><![CDATA[Position below the main content area while viewing the Home page.]]></phrase>
+  <phrase title="widget_pos_desc.cinvin_home_sidebar" version_id="1000070" version_string="1.0.0"><![CDATA[Position in the sidebar while viewing the Home page.]]></phrase>
+</phrases>

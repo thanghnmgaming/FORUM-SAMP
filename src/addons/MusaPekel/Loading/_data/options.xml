@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<options>
+  <option option_id="loadingdelay" edit_format="spinbox" data_type="numeric">
+    <default_value>3000</default_value>
+    <relation group_id="mploading" display_order="60"/>
+  </option>
+  <option option_id="loadingload" edit_format="spinbox" data_type="string">
+    <default_value>1000</default_value>
+    <relation group_id="mploading" display_order="70"/>
+  </option>
+  <option option_id="loadingtext" edit_format="textbox" data_type="string">
+    <default_value></default_value>
+    <relation group_id="mploading" display_order="20"/>
+  </option>
+  <option option_id="loadingtextone" edit_format="textbox" data_type="string">
+    <default_value></default_value>
+    <relation group_id="mploading" display_order="40"/>
+  </option>
+</options>
